@@ -12,8 +12,8 @@
     - HeadSide
   - type: Sprite
     drawdepth: Mobs
-    scale: 0.8, 0.8 # Sich. Чому? Бо вони малі пташки.
-  - type: TypingIndicator # Sich
+    scale: 0.9, 0.9 # Sich. Чому? Бо вони малі пташки.
+  - type: TypingIndicator
     proto: avali
   - type: Vocal # Sich
     sounds:
