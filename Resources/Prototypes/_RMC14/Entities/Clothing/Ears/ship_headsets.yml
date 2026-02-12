@@ -53,6 +53,12 @@
       - CMEncryptionKeyCommon
   - type: GrantAreaInfo
   - type: GrantTacMapAlert
+  - type: GrantSquadLeaderTracker # Sich
+    defaultMode: CommandingOfficer
+    trackerModes:
+    - CommandingOfficer
+    - ExecutiveOfficer
+    - PrimaryLandingZone
 
 - type: entity
   parent: RMCHeadsetShip
@@ -80,8 +86,16 @@
   - type: RMCHeadset
     radioTextIncrease: 3
   - type: GrantSquadLeaderTracker
-    defaultMode: PrimaryLandingZone
+    defaultMode: CommandingOfficer # Sich
     trackerModes:
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
+    - AuxiliarySupportOfficer # Sich
+    - StaffOfficer # Sich
+    - ChiefMilitaryPolice # Sich
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
     - SquadLeader
     - PrimaryLandingZone
 
@@ -110,6 +124,18 @@
     cooldown: 60
   - type: RMCHeadset
     radioTextIncrease: 3
+  - type: GrantSquadLeaderTracker # Sich
+    defaultMode: CommandingOfficer
+    trackerModes:
+    - CommandingOfficer
+    - ExecutiveOfficer
+    - AuxiliarySupportOfficer
+    - StaffOfficer
+    - ChiefMilitaryPolice
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - Quartermaster
+    - PrimaryLandingZone
 
 - type: entity
   parent: RMCHeadsetShip
@@ -128,6 +154,10 @@
     defaultMode: ChiefEngineer
     trackerModes:
     - ChiefEngineer
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
+    - SquadLeader # Sich
+    - PrimaryLandingZone # Sich
 
 - type: entity
   parent: RMCHeadsetShip
@@ -150,6 +180,9 @@
     defaultMode: Quartermaster
     trackerModes:
     - Quartermaster
+    - AuxiliarySupportOfficer # Sich
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
 
 - type: entity
   parent: CMHeadsetRequisition
@@ -180,6 +213,10 @@
     defaultMode: ChiefMedicalOfficer
     trackerModes:
     - ChiefMedicalOfficer
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
+    - SquadLeader # Sich
+    - PrimaryLandingZone # Sich
 
 - type: entity
   parent: RMCHeadsetShip
@@ -198,6 +235,9 @@
     defaultMode: ChiefMedicalOfficer
     trackerModes:
     - ChiefMedicalOfficer
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
+    - PrimaryLandingZone # Sich
 
 - type: entity
   parent: RMCHeadsetShip
@@ -259,8 +299,16 @@
     trackerModes:
     - CommandingOfficer
     - ExecutiveOfficer
+    - AuxiliarySupportOfficer # Sich
+    - StaffOfficer # Sich
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
+    - SquadLeader # Sich
+    - PrimaryLandingZone # Sich
     - ChiefMilitaryPolice
     - MilitaryWarden
+    - ProvostInspector # Sich
 
 - type: entity
   parent: RMCHeadsetShip
@@ -291,6 +339,10 @@
     - CommandingOfficer
     - ExecutiveOfficer
     - AuxiliarySupportOfficer
+    - StaffOfficer # Sich
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
     - MilitaryWarden
     - ProvostInspector
 
@@ -326,6 +378,18 @@
     cooldown: 60
   - type: RMCHeadset
     radioTextIncrease: 3
+  - type: GrantSquadLeaderTracker # Sich
+    defaultMode: CommandingOfficer
+    trackerModes:
+    - CommandingOfficer
+    - ExecutiveOfficer
+    - AuxiliarySupportOfficer
+    - StaffOfficer
+    - ChiefMilitaryPolice
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - Quartermaster
+    - PrimaryLandingZone
 
 - type: entity
   parent: RMCHeadsetMarineCommand
@@ -365,6 +429,12 @@
     defaultMode: AuxiliarySupportOfficer
     trackerModes:
     - AuxiliarySupportOfficer
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
+    - PilotGunship # Sich
+    - PilotDropship # Sich
+    - DropshipCrewChief # Sich
+    - PrimaryLandingZone # Sich
 
 - type: entity
   parent: RMCHeadsetMarine
@@ -390,6 +460,8 @@
   - type: GrantSquadLeaderTracker
     defaultMode: AuxiliarySupportOfficer
     trackerModes:
+    - CommandingOfficer # Sich
+    - ExecutiveOfficer # Sich
     - AuxiliarySupportOfficer
     - SquadLeader
     - FireteamLeader
@@ -453,6 +525,13 @@
     trackerModes:
     - CommandingOfficer
     - ExecutiveOfficer
+    - AuxiliarySupportOfficer # Sich
+    - StaffOfficer # Sich
+    - ChiefMilitaryPolice # Sich
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
+    - PrimaryLandingZone # Sich
 
 - type: entity
   parent: RMCHeadsetShip
@@ -521,7 +600,12 @@
     trackerModes:
     - CommandingOfficer
     - ExecutiveOfficer
+    - AuxiliarySupportOfficer # Sich
+    - StaffOfficer # Sich
     - ChiefMilitaryPolice
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
     - Rifleman
 
 - type: entity
@@ -544,6 +628,12 @@
     trackerModes:
     - CommandingOfficer
     - ExecutiveOfficer
+    - AuxiliarySupportOfficer # Sich
+    - StaffOfficer # Sich
+    - ChiefMilitaryPolice # Sich
+    - ChiefEngineer # Sich
+    - ChiefMedicalOfficer # Sich
+    - Quartermaster # Sich
     - SquadLeader
     - PrimaryLandingZone
 
