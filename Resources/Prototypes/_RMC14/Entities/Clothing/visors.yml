@@ -11,6 +11,33 @@
 
 - type: entity
   parent: [ RMCVisorBase, RMCPowerCellSlotUnremovableSuper ]
+  id: RMCHunterVisorNightVision
+  name: модуль нічного бачення
+  description: Модуль маски хижака, забезпечує нічне бачення. Завдяки просунутій технології майже не споживає енергію.
+  suffix: Sich, Hunter
+  components:
+  - type: Sprite
+    state: nvg_sight
+  - type: Visor
+    toggledSprite:
+      sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
+      state: nvg_sight_right_hunter
+    onIcon:
+      sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
+      state: nvg_sight_down
+  - type: NightVisionVisor
+  - type: ToggleVisor
+    ignoreRedundancy: true
+  - type: ComponentToggler
+    components:
+    - type: PointLight
+      enabled: true
+      radius: 1.1
+      softness: 1
+      color: "#008000"
+
+- type: entity
+  parent: [ RMCVisorBase, RMCPowerCellSlotUnremovableSuper ]
   id: RMCVisorNightVision
   name: прилад нічного бачення
   description: Прилад-забрало, сумісний з усіма стандартними шоломами КМПОН. Виходячи з його назви, забезпечує бачення в темряві, проте має обмежений час використання через потребу в живленні від акумулятора. Вставте його в зарядну станцію для підзарядки внутрішнього акумулятора.
