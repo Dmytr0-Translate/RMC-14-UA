@@ -18,10 +18,10 @@ rmc-chem-master-pill-bottle-transfer = Скласти
 rmc-chem-master-pill-bottle-eject = Діст.
 rmc-chem-master-pill-bottle-window-title = Колір пляшечки
 
-rmc-chem-master-pill-bottle-box-empty = {$box} is empty and cannot be unloaded into the ChemMaster.
-rmc-chem-master-pill-bottle-box-start = You start to empty the {$box} into the {$target}...
-rmc-chem-master-pill-bottle-box-complete = You transferred {$count} pill bottles into the {$target}.
-rmc-chem-master-pill-bottle-box-failed = Failed to transfer any pill bottles.
+rmc-chem-master-pill-bottle-box-empty = {$box} нічого немає і не може заповнити ХімМастер.
+rmc-chem-master-pill-bottle-box-start = Ви починаєте переносити вміст {$box} в {$target}...
+rmc-chem-master-pill-bottle-box-complete = Ви перенесли {$count} пляшечок пігулок до {$target}.
+rmc-chem-master-pill-bottle-box-failed = Не вдалося перенести жодних пляшечок.
 
 rmc-chem-master-beaker-title = [bold]Колба[/bold]
 rmc-chem-master-beaker-eject = Вийняти колбу
