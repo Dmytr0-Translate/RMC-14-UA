@@ -1,0 +1,25 @@
+- type: entity
+  name: спис мисливця
+  parent: Spear
+  id: HunterSpear
+  description: Потужний дворучний спис, створений для полювання на найнебезпечнішу здобич. Виготовлений зі сплаву титану з таємничою домішкою, що дарує йому неймовірну міцність та довговічність, здатну витримати удари навіть найсильніших чудовиськ.
+  suffix: Sich, Hunter
+  components:
+   - type: Sprite
+     sprite: _RMC14/Objects/Weapons/Melee/spear.rsi
+   - type: MeleeWeapon
+     damage:
+      types:
+        Piercing: 32
+   - type: DamageOtherOnHit
+     damage:
+      types:
+        Piercing: 43
+   - type: Destructible
+     thresholds:
+     - trigger:
+        !type:DamageTrigger
+        damage: 450
+     behaviors:
+     - !type:DoActsBehavior
+      acts: [ "Destruction" ]

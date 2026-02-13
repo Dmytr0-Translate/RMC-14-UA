@@ -1,0 +1,27 @@
+- type: entity
+  name: клановий меч
+  parent: BaseSword
+  id: HunterSword
+  description: Майже ритуальна зброя мисливців, що передається в кланах від батька до сина. Його втрата означає втрату гідності й ганьбу. Тому в бій останнім завжди йде саме меч.
+  suffix: Sich, Hunter
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+    state: icon
+  - type: Item
+    size: Large
+    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Slash: 25
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    shape:
+    - 0,0,0,3
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+    slots:
+    - Belt
+  - type: DisarmMalus
