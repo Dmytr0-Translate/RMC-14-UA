@@ -1926,3 +1926,18 @@
 
 - type: Tag
   id: RMCM82FHolster
+
+- type: entity
+  parent: CMBeltBaseStorage
+  id: RMCBeltBag
+  name: поясна сумка
+  description: Маленька, але містка сумка, що кріпиться до поясу.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/belt_bag.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/belt_bag.rsi
+  - type: Storage
+    grid:
+    - 0,0,11,1
+  - type: FixedItemSizeStorage

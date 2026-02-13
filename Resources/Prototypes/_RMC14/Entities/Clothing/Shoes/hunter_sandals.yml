@@ -1,0 +1,12 @@
+- type: entity
+  parent: RMCShoesLaceup
+  id: RMCSandalsHunter
+  name: взуття мисливця
+  description: Попри технологічну досконалість броні, взуття мисливців виявляється напрочуд простим - це сандалі. Вони не мають особливих властивостей, але вирізняються міцною підошвою з антиковзним покриттям та м'якими матеріалами, що дозволяють годинами блукати лісом.
+  suffix: Sich, Hunter
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
+  - type: NoSlip
