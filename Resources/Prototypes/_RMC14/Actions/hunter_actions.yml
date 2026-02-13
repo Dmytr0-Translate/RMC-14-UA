@@ -1,0 +1,49 @@
+- type: entity
+  parent: BaseAction
+  id: ActionToggleHunterCloak
+  name: Голографічне маскування
+  description: Перемкнути роботу голографічних проєкторів що влаштовані в броню.
+  components:
+  - type: Action
+    useDelay: 5
+    priority: -9
+    icon:
+      sprite: _RMC14/Interface/cloak.rsi
+      state: cloak
+    iconOn:
+      sprite: _RMC14/Interface/cloak.rsi
+      state: cloak
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:ToggleActionEvent
+
+- type: entity
+  parent: BaseAction
+  id: ActionHunterJump
+  name: Зробити стрибок
+  description: Завдяки еволюційним перевагам та надзвичайно потужним м'язам, мисливець здатний здійснювати стрибки довжиною майже чотири метри.
+  components:
+  - type: Action
+    useDelay: 8
+    icon:
+      sprite: _RMC14/Interface/jump.rsi
+      state: icon
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:GravityJumpEvent {}
+
+- type: entity
+  parent: BaseAction
+  id: ActionHunterClawsToggle
+  name: Висунути кігті
+  description: Висунути або заховати бойові кігті з браслетів.
+  components:
+  - type: Action
+    useDelay: 2
+    priority: -10
+    icon:
+      sprite: _RMC14/Interface/claws.rsi
+      state: claws
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:HunterClawsToggleActionEvent {}
