@@ -1,0 +1,16 @@
+- type: reagent
+  parent: CMReagentMedicine
+  id: CMCellularBiomass
+  name: "клітинна біомаса"
+  desc: "Суміш стовбурових клітин та нанітів для швидкої регенерації тканин."
+  physicalDesc: "густа синя паста"
+  color: "#3a75c4"
+  metabolisms:
+    Medicine:
+      metabolismRate: 5
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -45 
+            Burn: -45 
