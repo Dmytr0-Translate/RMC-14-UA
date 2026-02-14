@@ -42,7 +42,7 @@
   id: RMCGuideRoleDrone
   priority: 2
   name: "Посібник Дрона"
-  text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideRoleDrone.xml"
+  text: "/ServerInfo/Guidebook/_RMC14/Guides/Xenonid/RMCGuideRoleDrone.xml"
 
 # Humanoid Roles
 - type: guideEntry
