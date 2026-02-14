@@ -1,6 +1,6 @@
 # Dress Shoes
 - type: entity
-  parent: RMCShoesLaceup
+  parent: RMCShoesLaceupDress
   id: CMShoesLaceupCommander
   name: туфлі командного офіцера
   description: Мають дуже м'яку підошву, настільки м'яку що відчуття такі ніби ви ходите по хмаринкам.

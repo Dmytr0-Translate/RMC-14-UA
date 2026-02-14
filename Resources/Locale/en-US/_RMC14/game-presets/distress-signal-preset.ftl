@@ -1,4 +1,4 @@
-﻿rmc-distress-signal-title = Сигнал Лиха
+rmc-distress-signal-title = Сигнал Лиха
 rmc-distress-signal-description = З ще одної планети отримано сигнал СОС. Знайдіть та зупиніть загрозу!
 
 cm-distress-signal-majormarinevictory = [color=green]Останнього ксеноїда було знищено. Дихати знову безпечно... Поки що.[/color]
@@ -28,6 +28,6 @@ rmc-distress-signal-fallen = В пам'ять про наших загиблих
 cm-distress-signal-medals = Нагороджено Медалями:
 cm-distress-signal-jellies = Нагороджено Королівським Желе:
 
-rmc-distress-signal-got-medal = {$receiver} нагороджено {$award} за: '{$awardDescription}'
+rmc-distress-signal-got-medal = {$receiver} нагороджено {$award} за: '{$awardDescription}' від {$giver}
 
 rmc-distress-signal-got-jelly = {$receiver} нагороджено {$award} за: '{$awardDescription}' від {$giver}

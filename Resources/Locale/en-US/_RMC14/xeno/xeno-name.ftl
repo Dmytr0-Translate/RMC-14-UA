@@ -1,4 +1,5 @@
-rmc-xeno-name-number = {$baseName} ({$prefix}-{$number}{$postfix})
+﻿rmc-xeno-name-number = {$baseName} ({$prefix}-{$number}{$postfix})
+rmc-xeno-name-leader = Лідер
 
 rmc-xeno-name = {$baseName} ({$prefix}{$postfix})
 rmc-xeno-young = Молодий {$baseName}

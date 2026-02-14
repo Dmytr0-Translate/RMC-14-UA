@@ -14,11 +14,13 @@ rmc-emote-name-bark = Гавкнути
 rmc-emote-name-snarl = Гарчати
 rmc-emote-name-whine = Скавчати
 rmc-emote-name-howl = Вити
+rmc-emote-name-yip = Їп
 
 rmc-emote-bark = гавкає.
 rmc-emote-snarl = гарчить.
 rmc-emote-whine = скавчить.
 rmc-emote-howl = виє.
+rmc-emote-yip = їпає.
 
 rmc-emote-name-gnash = Скрежетіти
 rmc-emote-gnash = скрежетить зубами.
@@ -44,3 +46,11 @@ rmc-emote-peep = здивовано піпає!
 rmc-emote-anger = агресивно трелить!
 rmc-emote-trill = трелить!
 rmc-emote-warble = співає!
+
+rmc-emote-name-slime-bubble = Булькати
+rmc-emote-name-slime-pop = Попати
+rmc-emote-name-slime-wobble = Дрижжати
+
+rmc-emote-slime-bubble = булькає.
+rmc-emote-slime-pop = попає!
+rmc-emote-slime-wobble = дрижжить.
