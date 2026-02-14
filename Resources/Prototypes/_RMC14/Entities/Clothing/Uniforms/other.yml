@@ -493,7 +493,7 @@
 
 - type: entity
   parent: RMCMarineUniformBase
-  id: RMCJumpsuitUNSecurity
+  id: RMCJumpsuitRiotControl
   name: уніформа Безпеки Об'єднаний Націй
   description: Міцний комбінезон з кевлару на синій сорочці, типовий для співробітників Безпеки ОН під час заворушень
   components:
