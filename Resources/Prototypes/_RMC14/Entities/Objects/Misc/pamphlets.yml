@@ -31,6 +31,9 @@
       path: /Audio/_RMC14/Handling/paper_drop.ogg
       params:
         volume: -5
+  - type: Tag
+    tags:
+    - RMCSkillPamphlet
 
 # SKILLS
 
@@ -223,6 +226,19 @@
     - popup: rmc-pamphlets-rifleman-warning
       jobProto: CMPVERifleman
 
+- type: entity
+  parent: CMPamphlet
+  id: RMCPamphletHeavyMachineGunner
+  name: heavy machinegunner instructional pamphlet
+  description: A pamphlet used to quickly impart vital knowledge. This one has an engineering and a machinegun insignia
+  components:
+  - type: Sprite
+    state: pamphlet_machinegunner
+  - type: SkillPamphlet
+    addSkills:
+      RMCSkillEngineer: 1
+    bypassLimit: true
+
 # OTHER
 
 # Honor Guard
@@ -313,3 +329,6 @@
   id: CMPamphletLanguageMonkey
   name: мальовані каракулі
   description: Шматок паперу розмальований бананами і приматами різних видів. Напевно його намалювала трирічна дитина... або ж не обділений розумом морпіх.
+
+- type: Tag
+  id: RMCSkillPamphlet

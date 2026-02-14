@@ -1,7 +1,8 @@
 cm-ui-rmc14 = РМС
 
 rmc-ui-options-cassettes-volume = Гучність касет:
-rmc-ui-options-hijack-song-volume = Гучність пісні захоплення:
+rmc-ui-options-hijack-song-volume = Гучність музики хайджеку:
+rmc-ui-options-xeno-ability-previews = Показувати попередній перегляд здібностей ксено
 
 rmc-ui-voicelines = Репліки
 rmc-ui-options-tab-voicelines = Репліки
@@ -91,6 +92,12 @@ rmc-other-credits-tab = Інше
 rmc-ui-auto-punctuate = Автоматично ставити розділові знаки в IC-повідомленнях
 rmc-ui-auto-eject-magazines = Автоматично виймати магазини зі зброї
 rmc-ui-damage-yourself = Увімкнути можливість нашкодити самому собі власною зброєю
+rmc-ui-show-new-player-icons = Показувати значки нових гравців будучи на ролі інструктора або керівників відділів
+rmc-ui-xeno-night-vision-default = Тип нічного бачення ксено за замовченням
+rmc-ui-xeno-night-vision-default-off = Вимкнуто
+rmc-ui-xeno-night-vision-default-half = На половину
+rmc-ui-xeno-night-vision-default-full = Повне
+rmc-night-vision-mode-verb = Встановити режим нічного бачення: {$mode}
 
 rmc-area-info = {$area}{$restrictions}
 rmc-tacmap-alert-ceiling-level-0 = [color=green]✓[/color] Усі дії дозволено
@@ -105,3 +112,7 @@ rmc-tacmap-alert-no-area = Невідома зона
 rmc-ui-options-alternate-sprites = Використовувати спрайти, що не викликають тріпофобію
 
 rmc-ui-options-chat-squad-color-mode = Розфарбовувати імена морпіхів відповідно до їх загону
+
+# Dialog input
+rmc-dialog-input-placeholder-default = Введіть текст
+rmc-dialog-input-placeholder-smart-check = Більше 3 послідовних пробілів буде видалено

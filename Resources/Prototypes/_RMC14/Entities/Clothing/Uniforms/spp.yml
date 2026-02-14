@@ -1,14 +1,43 @@
+# Sleeves Only
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
-  id: CMJumpsuitSPP
-  name: лахи СПН
-  description: Комплект одягу СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Націй.
+  id: CMJumpsuitSPPOfficer
+  name: лахи офіцера СПН
+  description: Комплект одягу СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Народів.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/uniform.rsi
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/officer.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchSPP
   - type: Foldable
     unfoldVerbText: rmc-sleeves-verb-unfold
     foldVerbText: rmc-sleeves-verb-fold
+  - type: FoldableClothing
+    foldedEquippedPrefix: sleeves
+  - type: Tag
+    tags:
+    - RMCUniformSPP
+
+- type: entity
+  parent: CMJumpsuitSPPOfficer
+  id: CMJumpsuitSPPMP
+  name: лахи військової поліції СПН
+  description: Комплект одягу військової поліції СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Народів.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/mp.rsi
+
+# Sleeves and Jacket
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: RMCJumpsuitSPPPaP
+  name: службові лахи НоП # PaP - People's armed Police
+  description: Пара блакитно-сірих брюк поєднана з блакитною сорочкою, оснащена вставками з венлару у критичних зонах для захисту від колючо-ріжучої зброї та куль малого калібру.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/pap.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchSPP
@@ -17,73 +46,7 @@
     - RMCUniformSPP
 
 - type: entity
-  parent: CMJumpsuitSPP
-  id: RMCJumpsuitSPPWebbing
-  components:
-  - type: WebbingClothing
-    startingWebbing: CMWebbing
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: RMCJumpsuitSPPWebbingVestBlack
-  components:
-  - type: WebbingClothing
-    startingWebbing: CMWebbingBlack
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: RMCJumpsuitSPPWebbingTools
-  components:
-  - type: WebbingClothing
-    startingWebbing: RMCToolWebbingFilled
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: CMJumpsuitSPPMedic
-  name: лахи медика СПН
-  description: Комплект одягу медика СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Націй.
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/medic.rsi
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: CMJumpsuitSPPEngi
-  name: лахи інженера СПН
-  description: Комплект одягу інженера СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Націй.
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/engi.rsi
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: CMJumpsuitSPPMP
-  name: лахи військової поліції СПН
-  description: Комплект одягу військової поліції СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Націй
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/mp.rsi
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: CMJumpsuitSPPOfficer
-  name: лахи офіцера СПН
-  description: Комплект одягу офіцера СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Націй
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/officer.rsi
-
-- type: entity
-  parent: CMJumpsuitSPP
-  id: RMCJumpsuitSPPPaP
-  name: службові лахи НоП # PaP - People's armed Police
-  description: Пара блакитно-сірих брюк поєднана з блакитною сорочкою, оснащена вставками з венлару у критичних зонах для захисту від колючо-ріжучої зброї та куль малого калібру.
-  components:
-  - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/pap.rsi
-
-- type: entity
-  parent: CMJumpsuitSPP
+  parent: RMCJumpsuitSPPPaP
   id: RMCJumpsuitSPPArmy
   name: лахи армії СПН
   description: Комплект одягу СПН, у масовому виробницстві для Озброєнних Колективів Соціалістичних Прогресивних Народів. Рідкість, особливо в зонах 3WE. Цей набір демонструє стандартну камуфляжну схему 202-го піхотного полку армії СПН.
@@ -98,12 +61,73 @@
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/army_alt.rsi
 
+# Sleeves and Jacket (hides undergarment top)
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: CMJumpsuitSPP
+  name: SPP fatigues
+  description: A set of SPP fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/uniform.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - RMCPatchSPP
+  - type: HideLayerClothing
+    slots:
+    - UndergarmentTop
+  - type: Tag
+    tags:
+    - RMCUniformSPP
+
+- type: entity
+  parent: CMJumpsuitSPP
+  id: RMCJumpsuitSPPWebbing
+  suffix: Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbing
+
+- type: entity
+  parent: CMJumpsuitSPP
+  id: RMCJumpsuitSPPWebbingVestBlack
+  suffix: Webbing, Black
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbingBlack
+
+- type: entity
+  parent: CMJumpsuitSPP
+  id: RMCJumpsuitSPPWebbingTools
+  suffix: Filled, Tool Webbing
+  components:
+  - type: WebbingClothing
+    startingWebbing: RMCToolWebbingFilled
+
+- type: entity
+  parent: CMJumpsuitSPP
+  id: CMJumpsuitSPPMedic
+  name: лахи медика СПН
+  description: Комплект одягу медика СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Народів.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/medic.rsi
+
+- type: entity
+  parent: CMJumpsuitSPP
+  id: CMJumpsuitSPPEngi
+  name: лахи інженера СПН
+  description: Комплект одягу інженера СПН, у масовому виробницстві для збройних сил Соціалістичних Прогресивних Народів.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/engi.rsi
+
 # Civilians
 - type: entity
   parent: RMCUniformBase
   id: CMJumpsuitSPPCiv1
   name: цивільні помаранчеві лахи СПН
-  description: Помаранчевий комбінезон з темно-бежевою підсорочкою. Тканина недовговічна, але краще, ніж нічого. Такий одяг зазвичай отримують працівники важкої фізичної праці.
+  description: Помаранчевий комбінезон з темно-бежевою підсорочкою. Тканина недовговічна, але краще, ніж нічого. Такий одяг зазвичай отримують ті, хто займаються важкою фізичною працею.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ1.rsi
@@ -112,7 +136,7 @@
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv2
   name: цивільні пісочні лахи СПН
-  description: Пісочний комбінезон з блакитною підсорочкою. Тканина недовговічна, але краще, ніж нічого. Такий одяг зазвичай отримують працівники важкої фізичної праці.
+  description: Пісочний комбінезон з блакитною підсорочкою. Тканина недовговічна, але краще, ніж нічого. Такий одяг зазвичай отримують ті, хто займаються важкою фізичною працею.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ2.rsi

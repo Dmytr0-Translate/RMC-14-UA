@@ -16,6 +16,7 @@ rmc-squad-info-fireteam = [font size=16][bold]Вогнева Група №{$fir
 rmc-squad-info-tracking-selection = Вибір відстеження
 rmc-squad-info-tracking-choose = Оберіть нову ціль відстеження:
 rmc-squad-info-change-tracker = Змінити відстежувач
+rmc-squad-info-none = нічого
 
 rmc-squad-info-CommandingOfficer = Командуючий Офіцер
 rmc-squad-info-ExecutiveOfficer = Виконавчий Офіцер
@@ -61,3 +62,11 @@ rmc-squad-info-InspectorTSEPA = Інспектор ІТСПА
 rmc-squad-info-SeniorConstableTSEPA = ІТСПА Старший Констебль
 
 rmc-squad-info-PrimaryLandingZone = Основна Посадкова Зона
+
+rmc-squad-info-RCMPVESectionLead = Section Leader
+rmc-squad-info-RCMPVETeamLead = Team Leader
+rmc-squad-info-RCMPVETroopSergeant = Troop Sergeant
+rmc-squad-info-RCMPVETroopCommander = Troop Commander
+
+rmc-squad-info-RCMTeamLead = Team Leader
+rmc-squad-info-RCMLieutenant = Lieutenant

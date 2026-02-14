@@ -656,8 +656,8 @@
 - type: entity
   parent: RMCHeadBeretSquadAlpha
   id: RMCHeadBeretSquadEcho
-  description: Щільно сплетений, як і належить.
-  suffix: Ехо
+  description: ільно сплетений, як і належить.
+  suffix: Echo
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/SquadBeret/echo.rsi
@@ -679,7 +679,7 @@
   parent: RMCHeadBeretSquadAlpha
   id: RMCHeadBeretSquadIntel
   description: Виглядає розумніше за свого власника.
-  suffix: Розвідка
+  suffix: Intel
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/SquadBeret/intel.rsi
