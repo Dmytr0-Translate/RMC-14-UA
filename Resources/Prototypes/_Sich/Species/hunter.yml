@@ -68,89 +68,89 @@
 - type: humanoidBaseSprite
   id: MobHunterEyes
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: eyes
 
 - type: humanoidBaseSprite
   id: MobHunterHead
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobHunterHeadMale
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobHunterHeadFemale
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: head_f
 
 - type: humanoidBaseSprite
   id: MobHunterTorso
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobHunterTorsoMale
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobHunterTorsoFemale
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: torso_f
 
 - type: humanoidBaseSprite
   id: MobHunterLLeg
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobHunterLHand
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobHunterLArm
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobHunterLFoot
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobHunterRLeg
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobHunterRHand
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobHunterRArm
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobHunterRFoot
   baseSprite:
-    sprite: _RMC14/Mobs/Hunter/parts.rsi
+    sprite: _Sich/Mobs/Hunter/parts.rsi
     state: r_foot

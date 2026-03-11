@@ -531,7 +531,7 @@
   id: RMCGuideHunter
   name: Посібник мисливця
   priority: 1
-  text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideHunter.xml"
+  text: "/ServerInfo/Guidebook/_Sich/Guides/RMCGuideHunter.xml"
   children:
   - RMCGuideHunterCodex 
 
@@ -540,4 +540,4 @@
   id: RMCGuideHunterCodex
   name: Кодекс полювання
   priority: 2
-  text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideHunterCodex.xml"
+  text: "/ServerInfo/Guidebook/_Sich/Guides/RMCGuideHunterCodex.xml"

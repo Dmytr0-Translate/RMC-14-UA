@@ -6,7 +6,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
+    sprite: _Sich/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
+    sprite: _Sich/Objects/Clothing/Shoes/Misc/hunter_sandals.rsi
   - type: NoSlip

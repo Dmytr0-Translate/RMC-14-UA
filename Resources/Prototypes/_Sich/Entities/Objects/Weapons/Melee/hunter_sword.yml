@@ -6,11 +6,13 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
     state: icon
   - type: Item
     size: Large
-    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    shape:
+    - 0,0,0,3
   - type: MeleeWeapon
     attackRate: 1
     damage:
@@ -18,10 +20,8 @@
         Slash: 25
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
-    shape:
-    - 0,0,0,3
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
     slots:
     - Belt
   - type: DisarmMalus

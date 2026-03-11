@@ -6,11 +6,11 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/hunter.rsi
+    sprite: _Sich/Objects/Clothing/OuterClothing/Armor/hunter.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/hunter.rsi
+    sprite: _Sich/Objects/Clothing/OuterClothing/Armor/hunter.rsi
     clothingVisuals:
-      head:
+      outerClothing:
       - state: equipped-OUTERCLOTHING
   - type: FireProtection
     reduction: 0.8
@@ -36,5 +36,3 @@
       components:
       - Xeno
   - type: CMHardArmor
-    item: Armor
-  

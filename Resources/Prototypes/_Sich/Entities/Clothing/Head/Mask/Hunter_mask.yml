@@ -7,9 +7,9 @@
   components:
   - type: EyeProtection
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Mask/hunter_mask.rsi
+    sprite: _Sich/Objects/Clothing/Mask/hunter_mask.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Clothing/Mask/hunter_mask.rsi
+    sprite: _Sich/Objects/Clothing/Mask/hunter_mask.rsi
     equippedPrefix: off
     clothingVisuals:
       head:

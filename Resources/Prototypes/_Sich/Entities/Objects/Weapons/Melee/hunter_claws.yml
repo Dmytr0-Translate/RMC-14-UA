@@ -5,10 +5,10 @@
   description: Гострі як бритва кігті, висунуті з браслетів.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Melee/hunter_claws.rsi
+    sprite: _Sich/Objects/Weapons/Melee/hunter_claws.rsi
     state: icon
   - type: Item
-    sprite: _RMC14/Objects/Weapons/Melee/hunter_claws.rsi
+    sprite: _Sich/Objects/Weapons/Melee/hunter_claws.rsi
     size: Large
     inhandVisuals:
       Left:
@@ -30,6 +30,6 @@
   description: Модуль для браслетів мисливця, що додає висувні кігті.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Devices/hunter_module.rsi
+    sprite: _Sich/Objects/Devices/hunter_module.rsi
     state: module
   - type: HunterClawModule
