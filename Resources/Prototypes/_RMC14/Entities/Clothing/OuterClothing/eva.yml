@@ -2,8 +2,8 @@
 - type: entity
   parent: RMCBaseArmor
   id: RMCSuitEVABase
-  name: pressure suit
-  description: A heavy and bulky space suit.
+  name: космічний костюм
+  description: Важкий, незручний космічний костюм.
   abstract: true
   components:
   - type: Sprite
@@ -35,8 +35,8 @@
   parent: RMCHardHat
   id: RMCHelmetEVABase
   categories: [ HideSpawnMenu ]
-  name: pressure helmet
-  description: A heavy space helmet, designed to be coupled with a pressure suit.
+  name: космічний шолом
+  description: Важкий космічний шолом, створений в парі з космічним костюмом.
   abstract: true
   components:
   - type: Sprite
@@ -77,9 +77,9 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVASGO
-  name: smart gun compatable pressure suit
+  name: космічний костюм для смартгану
   suffix: Smart Gun harness
-  description: A heavy and bulky space suit. For whatever reason, it seems this suit has the fittings for a smart weapon system.
+  description: Важкий, незручний космічний костюм. З якоїсь причини, схоже, що цей костюм має всі необхідні елементи для використання СмартГану.
   abstract: true
   components:
   - type: ClothingBlockBackpack
@@ -89,8 +89,8 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVAUNMC
-  name: UNMC MK.35 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  name: космічний костюм МК.35 КМПОН
+  description: Важкий, незручний військовий космічний костюм, який використовується Корпусом Морської Піхоти Об'єднаних Націй та кількома іншими організаціями ОН.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/unmc.rsi
@@ -109,8 +109,8 @@
 - type: entity
   parent: RMCSuitEVASGO
   id: RMCSuitEVAUNMCSGO
-  name: UNMC MK.35 ML66A compatable pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations. Seems this suit has the required fittings to be compatable with an ML66A Smart Gun.
+  name: космічний костюм МК.35 КМПОН для системи МЛ66А
+  description: Важкий, незручний військовий космічний костюм, який використовується Корпусом Морської Піхоти Об'єднаних Націй та кількома іншими організаціями ОН. Схоже, цей костюм має необхідні кріплення для сумісності з СмартГаном МЛ66А.
   components:
   - type: ClothingRequireEquipped
     denyReason: rmc-armor-not-marine-jumpsuit
@@ -122,8 +122,8 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVAUNMC
   categories: [ HideSpawnMenu ]
-  name: UNMC MK.35 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the MK.35 pressure suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  name: космічний шолом МК.35 КМПОН
+  description: Важкий космічний шолом, створений в парі з космічним костюмом МК.35, який використовується Корпусом Морської Піхоти Об'єднаних Націй та кількома іншими організаціями ОН. Відчувається наче ви можете тут зваритися.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
@@ -141,8 +141,8 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVASPP
-  name: SPP Type 2 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  name: космічний костюм Тип 2 СПН
+  description: Важкий, незручний військовий космічний костюм, який використовується Соціалістичними Прогресивними Народами та дотичними до них організаціями. Якщо воно не треба тобі для виживання, то такий собі трофей.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/spp.rsi
@@ -163,7 +163,7 @@
   id: RMCHelmetEVASPP
   categories: [ HideSpawnMenu ]
   name: SPP Type 2 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the Type 2 pressure suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  description: Важкий космічний шолом, створений в парі з космічним костюмом Тип 2, який використовується Соціалістичними Прогресивними Народами та дотичними до них організаціями. Якщо воно не треба тобі для виживання, то такий собі трофей.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/spp.rsi
@@ -181,7 +181,7 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVACivilian
-  name: white pressure suit
+  name: білий космічний костюм
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/EVA/white.rsi # TODO
@@ -198,7 +198,7 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVACivilian
   categories: [ HideSpawnMenu ]
-  name: white pressure helmet
+  name: білий космічний шолом
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/white.rsi # TODO

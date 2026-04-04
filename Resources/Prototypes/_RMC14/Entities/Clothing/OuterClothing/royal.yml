@@ -40,7 +40,7 @@
 - type: entity
   parent: RMCArmorRoyal
   id: RMCArmorRoyalHarness
-  name: броньоване кріплення оператора СмартГана 'Кестрел'
+  name: броньоване кріплення СмартГану 'Кестрел'
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Royal/padded.rsi
@@ -60,7 +60,7 @@
 - type: entity
   parent: RMCArmorRoyalPadded
   id: RMCArmorRoyalPointman
-  name: передова броня 'Кестрел'
+  name: штурмова броня 'Кестрел'
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Royal/pointman.rsi
