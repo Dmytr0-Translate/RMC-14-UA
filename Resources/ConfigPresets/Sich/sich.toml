@@ -18,10 +18,10 @@ round_restart_time = 180
 lobbyduration = 230
 
 [infolinks]
-discord = "https://discord.gg/qKNsBbV22F"
-github = "https://github.com/Violentfire/RMC-14"
+discord = " https://discord.gg/MMUsHnH2Tt"
+github = "https://github.com/Space-station-14-UA/RMC-14-UA"
 patreon = "https://send.monobank.ua/jar/8nmcqa8vnz" #Патреон, але монобанка, бо підтримка серверу йде саме через неї
-website = "https://www.ss14webpanel.online"
+website = "https://ss14.com.ua/"
 wiki = "https://wiki.rouny-ss14.com"
 
 [server]
