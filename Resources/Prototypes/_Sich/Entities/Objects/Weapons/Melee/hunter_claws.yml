@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseItem, RMCBaseMeleeWeapon]
+  parent: AbstractHunterMeleeBase
   id: RMCHunterClaws
   name: кігті мисливця
   description: Гострі як бритва кігті, висунуті з браслетів.
@@ -16,9 +16,10 @@
       Right:
       - state: claws
   - type: MeleeWeapon
+    attackRate: 1.6
     damage:
       types:
-        Slash: 20
+        Slash: 12
   - type: HunterClaws
   - type: StaticPrice
     price: 0

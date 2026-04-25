@@ -8,9 +8,23 @@
   - type: Insulated
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/bracers.rsi
+  - type: HunterBracer
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: HunterCloak
   - type: HunterBracelets
+  - type: Access
+    tags:
+    - RMCAccessHunter
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/bracers.rsi
+  - type: HunterTranslator
+    actionId: HunterActionTranslator
+  - type: UserInterface
+    interfaces:
+      enum.HunterTranslatorUiKey.Key:
+        type: HunterTranslatorBoundUserInterface
   - type: ContainerContainer
     containers:
       module_slot: !type:ContainerSlot {}

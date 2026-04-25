@@ -1,3 +1,4 @@
+# Використовується кастомна система фону
 - type: entity
   parent: BaseAction
   id: ActionToggleHunterCloak
@@ -8,14 +9,18 @@
     useDelay: 5
     priority: -9
     icon:
-      sprite: _RMC14/Interface/cloak.rsi
-      state: cloak
-    iconOn:
-      sprite: _RMC14/Interface/cloak.rsi
+      sprite: _Sich/Actions/hunter_action.rsi
       state: cloak
     itemIconStyle: NoItem
+  - type: RMCActionBackground
+    background:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template
+    backgroundOn:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template_on
   - type: InstantAction
-    event: !type:ToggleActionEvent
+    event: !type:HunterCloakToggleActionEvent {}
 
 - type: entity
   parent: BaseAction
@@ -26,9 +31,13 @@
   - type: Action
     useDelay: 8
     icon:
-      sprite: _RMC14/Interface/jump.rsi
-      state: icon
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: jump
     itemIconStyle: NoItem
+  - type: RMCActionBackground
+    background:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template
   - type: InstantAction
     event: !type:GravityJumpEvent {}
 
@@ -42,8 +51,56 @@
     useDelay: 2
     priority: -10
     icon:
-      sprite: _RMC14/Interface/claws.rsi
+      sprite: _Sich/Actions/hunter_action.rsi
       state: claws
     itemIconStyle: NoItem
+  - type: RMCActionBackground
+    background:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template
+    backgroundOn:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template_on
   - type: InstantAction
     event: !type:HunterClawsToggleActionEvent {}
+
+- type: entity
+  parent: BaseAction
+  id: HunterRecallAction
+  name: Повернути зброю
+  description: Активувати вбудовані в браслети лебідки, для повернення зброї до рук.
+  components:
+  - type: Action
+    useDelay: 1
+    priority: -5
+    icon:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: recall
+    itemIconStyle: NoItem
+    checkCanInteract: false
+  - type: RMCActionBackground
+    background:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template
+    backgroundOn:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template_on
+  - type: InstantAction
+    event: !type:HunterRecallActionEvent {}
+- type: entity
+  parent: RMCActionCycleVisor
+  id: RMCActionCycleVisorHunter
+  components:
+  - type: Action
+    icon:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: visor
+    itemIconStyle: NoItem
+  - type: RMCActionBackground
+    background:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template
+    backgroundOn:
+      sprite: _Sich/Actions/hunter_action.rsi
+      state: hunter_template_on
+

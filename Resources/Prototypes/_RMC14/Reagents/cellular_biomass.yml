@@ -1,9 +1,9 @@
 - type: reagent
   parent: CMReagentMedicine
   id: CMCellularBiomass
-  name: "клітинна біомаса"
-  desc: "Суміш стовбурових клітин та нанітів для швидкої регенерації тканин."
-  physicalDesc: "густа синя паста"
+  name: reagent-name-cellular-biomass
+  desc: reagent-desc-cellular-biomass
+  physicalDesc: reagent-physical-desc-cellular-biomass
   color: "#3a75c4"
   metabolisms:
     Medicine:

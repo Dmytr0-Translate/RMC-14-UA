@@ -244,8 +244,8 @@
 
 - type: reagent
   id: HunterBlood
-  name: зелена кров
-  desc: Дивна зелена рідина, схожа на кислоту, але з виразним металевим запахом.
+  name: reagent-name-hunter-blood
+  desc: reagent-desc-hunter-blood
   group: Biological
   parent: Blood
   color: "#00A86B"
