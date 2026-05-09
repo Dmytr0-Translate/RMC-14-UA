@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "wall",
+      "directions": 4
+    },
+    {
+      "name": "wall_alt",
+      "directions": 4
+    }
+  ]
+}

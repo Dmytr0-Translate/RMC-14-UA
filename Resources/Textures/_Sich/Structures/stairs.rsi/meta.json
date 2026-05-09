@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "small_stair",
+      "directions": 4
+    },
+    {
+      "name": "stair",
+      "directions": 4
+    },
+    {
+      "name": "staire",
+      "directions": 4
+    },
+    {
+      "name": "staire_alt",
+      "directions": 4
+    }
+  ]
+}
