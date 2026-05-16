@@ -1,0 +1,90 @@
+- type: entity
+  id: SichTerminalInput
+  parent: BaseStructureComputer
+  name: Термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: console
+  - type: SichTerminal
+    isInput: true
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: ItemSlots
+    slots:
+      id_card:
+        name: ID Card
+        whitelist:
+          components:
+          - IdCard
+          - Pda
+
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichTerminalOutput
+  parent: BaseStructureComputer
+  name: Термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: console
+  - type: SichTerminal
+    isInput: false
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichTerminalBroken
+  parent: ComputerBroken
+  name: зламаний термінал комунікації
+  description: Це корпоративний термінал комунікації з Ве-Я... Принаймні був.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: broken
