@@ -22,7 +22,7 @@ public sealed class SichTerminalCommand : IConsoleCommand
         var message = string.Join(" ", args);
         var system = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<SichTerminalSystem>();
         
-        system.BroadcastMessage(message);
-        shell.WriteLine($"Буде відправлено повідомлення: {message}");
+        system.SendCorporateMessage(message);
+        shell.WriteLine($"Корпоративне повідомлення відправлено: {message}");
     }
 }

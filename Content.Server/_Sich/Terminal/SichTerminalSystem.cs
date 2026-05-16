@@ -123,4 +123,9 @@ public sealed class SichTerminalSystem : SharedSichTerminalSystem
     {
         _ui.SetUiState(uid, SichTerminalUiKey.Key, new SichTerminalState(component.IsInput, component.Messages, component.AuthorizedName));
     }
+
+    public void SendCorporateMessage(string message)
+    {
+        BroadcastMessage($"ВЕСТОН-ЯМАДА > {message.ToUpper()}");
+    }
 }
