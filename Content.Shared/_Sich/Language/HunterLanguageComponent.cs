@@ -1,37 +1,26 @@
 using Content.Shared.Actions;
+using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Sich.Language;
 
-/// <summary>
-///     Компонент-маркер для мобів, які розмовляють мисливською мовою.
-/// </summary>
+
 [RegisterComponent]
 public sealed partial class HunterLanguageComponent : Component
 {
-    /// <summary>
-    ///     Чи розуміє цей моб звичайну людську мову?
-    ///     За замовчуванням так для мисливців.
-    /// </summary>
+
     [DataField("understandsHuman")]
     public bool UnderstandsHuman = true;
 
-    /// <summary>
-    ///     Який префікс використовувати для обфускованих повідомлень.
-    /// </summary>
+
     [DataField("obfuscationPrefix")]
     public string ObfuscationPrefix = "cm-hunter-speech-obfuscated-";
 }
 
-/// <summary>
-///     Компонент для браслетів-перекладачів.
-/// </summary>
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class HunterTranslatorComponent : Component
 {
-    /// <summary>
-    ///     Максимальна довжина повідомлення для перекладу.
-    /// </summary>
+
     [DataField("maxLength")]
     public int MaxLength = 200;
 
@@ -40,6 +29,20 @@ public sealed partial class HunterTranslatorComponent : Component
 
     [DataField("actionEntity")]
     public EntityUid? ActionEntity;
+
+    [DataField, AutoNetworkedField]
+    public HunterTranslationCategory TranslationTarget = HunterTranslationCategory.All;
+
+    [DataField, AutoNetworkedField]
+    public NetEntity? ActiveUser;
+}
+
+[Serializable, NetSerializable]
+public enum HunterTranslationCategory : byte
+{
+    All = 0,
+    Human,
+    Xeno,
 }
 
 [RegisterComponent]
@@ -52,17 +55,28 @@ public enum HunterTranslatorUiKey : byte
 }
 
 [Serializable, NetSerializable]
-public sealed class HunterTranslatorSendMessage : BoundUserInterfaceMessage
+public sealed class HunterTranslatorBoundUserInterfaceState : BoundUserInterfaceState
 {
-    public string Message { get; }
+    public HunterTranslationCategory TranslationTarget { get; }
 
-    public HunterTranslatorSendMessage(string message)
+    public HunterTranslatorBoundUserInterfaceState(HunterTranslationCategory translationTarget)
     {
-        Message = message;
+        TranslationTarget = translationTarget;
     }
 }
 
-/// <summary>
-///     Подія активації актіона перекладача.
-/// </summary>
+[Serializable, NetSerializable]
+public sealed class HunterTranslatorSendMessage : BoundUserInterfaceMessage
+{
+    public string? Message { get; }
+    public HunterTranslationCategory? TranslationTarget { get; }
+
+    public HunterTranslatorSendMessage(string? message = null, HunterTranslationCategory? translationTarget = null)
+    {
+        Message = message;
+        TranslationTarget = translationTarget;
+    }
+}
+
+
 public sealed partial class HunterTranslatorActionEvent : InstantActionEvent {}

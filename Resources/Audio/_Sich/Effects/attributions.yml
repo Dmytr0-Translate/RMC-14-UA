@@ -1,29 +1,19 @@
-- files: ["Hunter_click.ogg"]
-  license: "CC0-1.0"
-  copyright: "Modifications by Roct"
-  source: "https://freesound.org/people/Ediecz/sounds/507771/"
-
-- files: ["Hunter_laugh1.ogg"]
+- files: ["pred_translator.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "CMSS13 contributors"
-  source: "https://github.com/cmss13-devs/cmss13/blob/master/sound/voice/pred_laugh4.ogg"
+  copyright: "Taken from CMSS13 source audio. License and authorship per CMSS13 README: assets are CC BY-SA 3.0 unless otherwise indicated; authorship defined as the active CMSS13 development team unless stated by commit/file metadata."
+  source: "https://github.com/cmss13-devs/cmss13/blob/d631df8846269b31210eb346ebe9483fc8205b4b/sound/items/pred_crystal_inject.ogg"
 
-- files: ["Hunter_laugh2.ogg"]
+- files: ["pred_countdown.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "CMSS13 contributors"
-  source: "https://github.com/cmss13-devs/cmss13/blob/master/sound/voice/pred_laugh5.ogg"
+  copyright: "Taken from CMSS13 source audio. License and authorship per CMSS13 README: assets are CC BY-SA 3.0 unless otherwise indicated; authorship defined as the active CMSS13 development team unless stated by commit/file metadata."
+  source: "https://github.com/cmss13-devs/cmss13/blob/e97c5f08fdcfd60743481011e30ccdccc7fd7c88/sound/effects/pred_countdown.ogg"
 
-- files: ["Hunter_roar1.ogg"]
+- files: ["predalien_click.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "CMSS13 contributors"
-  source: "https://github.com/cmss13-devs/cmss13/blob/master/sound/voice/pred_roar3.ogg"
+  copyright: "Taken from CMSS13 source audio. License and authorship per CMSS13 README: assets are CC BY-SA 3.0 unless otherwise indicated; authorship defined as the active CMSS13 development team unless stated by commit/file metadata."
+  source: "https://github.com/cmss13-devs/cmss13/blob/e97c5f08fdcfd60743481011e30ccdccc7fd7c88/sound/voice/predalien_click.ogg"
 
-- files: ["Hunter_roar2.ogg"]
+- files: ["predalien_roar.ogg"]
   license: "CC-BY-SA-3.0"
-  copyright: "CMSS13 contributors"
-  source: "https://github.com/cmss13-devs/cmss13/blob/master/sound/voice/pred_roar5.ogg"
-
-- files: ["Hunter_roar3.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "CMSS13 contributors"
-  source: "https://github.com/cmss13-devs/cmss13/blob/master/sound/voice/predalien_death.ogg"
+  copyright: "Taken from CMSS13 source audio. License and authorship per CMSS13 README: assets are CC BY-SA 3.0 unless otherwise indicated; authorship defined as the active CMSS13 development team unless stated by commit/file metadata."
+  source: "https://github.com/cmss13-devs/cmss13/blob/e97c5f08fdcfd60743481011e30ccdccc7fd7c88/sound/voice/predalien_roar.ogg"

@@ -1,0 +1,47 @@
+- type: decal
+  id: HunterRune_s
+  name: руна мисливця (південь)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Sich/Decals/yautja_ship.rsi
+    state: rune_s
+
+- type: decal
+  id: HunterRune_w
+  name: руна мисливця (захід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Sich/Decals/yautja_ship.rsi
+    state: rune_w
+
+- type: decal
+  id: HunterRune_n
+  name: руна мисливця (північ)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Sich/Decals/yautja_ship.rsi
+    state: rune_n
+
+- type: decal
+  id: HunterRune_e
+  name: руна мисливця (схід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Sich/Decals/yautja_ship.rsi
+    state: rune_e

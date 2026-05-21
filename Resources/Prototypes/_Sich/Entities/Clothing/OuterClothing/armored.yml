@@ -41,4 +41,7 @@
     transmitFrequencyId: SichHunterSensor
     receiveFrequencyId: SichHunterSensor
   - type: HunterCasterProvider
-
+    soundOn:
+      path: /Audio/_Sich/Effects/pred_plasmacaster_on.ogg
+    soundOff:
+      path: /Audio/_Sich/Effects/pred_plasmacaster_off.ogg

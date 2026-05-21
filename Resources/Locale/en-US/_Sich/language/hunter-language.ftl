@@ -1,6 +1,6 @@
-hunter-translator-window-title = Перекладач
-hunter-translator-label = Повідомлення:
-hunter-translator-send = Надіслати
+hunter-translator-window-title = Універсальний перекладач
+hunter-translator-send = Відправити
+hunter-translator-placeholder = Переклад. . .
 
 hunter-action-translator-name = Перекладач
 hunter-action-translator-desc = Відкриває інтерфейс перекладача.
@@ -10,3 +10,7 @@ cm-hunter-speech-obfuscated-2 = Клік-клік-клік...
 cm-hunter-speech-obfuscated-3 = Ссссс...
 cm-hunter-speech-obfuscated-4 = Кхх...
 cm-hunter-speech-obfuscated-5 = Хррчшш...
+
+hunter-translator-target-all = Усі
+hunter-translator-target-human = Люди
+hunter-translator-target-xeno = Ксено

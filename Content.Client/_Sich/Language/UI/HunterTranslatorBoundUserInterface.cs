@@ -17,12 +17,19 @@ public sealed class HunterTranslatorBoundUserInterface : BoundUserInterface
 
         _window = new HunterTranslatorWindow();
         _window.OnClose += Close;
-        _window.OnSendMessage += message =>
-        {
-            SendMessage(new HunterTranslatorSendMessage(message));
-        };
+        _window.OnSendMessage += message => SendMessage(new HunterTranslatorSendMessage(message: message));
+        _window.OnTargetChanged += target => SendMessage(new HunterTranslatorSendMessage(translationTarget: target));
 
         _window.OpenCentered();
+    }
+
+    protected override void UpdateState(BoundUserInterfaceState state)
+    {
+        base.UpdateState(state);
+        if (state is not HunterTranslatorBoundUserInterfaceState s)
+            return;
+
+        _window?.UpdateState(s.TranslationTarget);
     }
 
     protected override void Dispose(bool disposing)

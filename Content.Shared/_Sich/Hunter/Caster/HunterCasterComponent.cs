@@ -2,6 +2,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Prototypes;
 using Content.Shared.Actions;
+using Robust.Shared.Audio;
 
 namespace Content.Shared._Sich.Hunter.Caster;
 
@@ -31,6 +32,12 @@ public sealed partial class HunterCasterProviderComponent : Component
     public EntityUid? SpawnedCaster;
 
     public EntityUid? ActionEntity;
+
+    [DataField]
+    public SoundSpecifier? SoundOn;
+
+    [DataField]
+    public SoundSpecifier? SoundOff;
 }
 
 [Serializable, NetSerializable]

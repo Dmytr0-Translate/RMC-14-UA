@@ -6,13 +6,12 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Popups;
-using Content.Shared.Weapons.Ranged.Components;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 #if CLIENT
 using Robust.Client.GameObjects;
 #endif
 using Robust.Shared.Network;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Shared._Sich.Hunter.Caster;
 
@@ -24,6 +23,7 @@ public sealed class HunterCasterSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -59,6 +59,8 @@ public sealed class HunterCasterSystem : EntitySystem
                 comp.Active = false;
                 comp.SpawnedCaster = null;
                 Dirty(armor.Value, comp);
+                
+                _audio.PlayPvs(comp.SoundOff, performer);
             }
             
             _popup.PopupEntity("Ви згорнули плазмовий кастер.", performer, performer);
@@ -73,6 +75,7 @@ public sealed class HunterCasterSystem : EntitySystem
             {
                 comp.Active = true;
                 comp.SpawnedCaster = caster;
+                _audio.PlayPvs(comp.SoundOn, performer);
                 _popup.PopupEntity("Ви розгорнули плазмовий кастер.", performer, performer);
             }
             else
@@ -139,18 +142,18 @@ public sealed class HunterCasterSystem : EntitySystem
             _ => "Невідомо"
         };
 
-        // Update BatteryAmmoProvider component
+        // Update ammo provider with mode-specific cost and projectile
         if (TryComp<HunterCasterAmmoProviderComponent>(uid, out var ammo))
         {
             var (cost, proto) = comp.CurrentMode switch
             {
-                HunterCasterMode.Stun => (30, "ProjectileHunterStun"),
-                HunterCasterMode.Immobilizer => (150, "ProjectileHunterImmobilizer"),
-                HunterCasterMode.Bolt => (500, "ProjectileHunterBolt"),
-                HunterCasterMode.Eradicator => (1000, "ProjectileHunterEradicator"),
-                _ => (30, "ProjectileHunterStun")
+                HunterCasterMode.Stun        => (30f,   "ProjectileHunterStun"),
+                HunterCasterMode.Immobilizer => (150f,  "ProjectileHunterImmobilizer"),
+                HunterCasterMode.Bolt        => (500f,  "ProjectileHunterBolt"),
+                HunterCasterMode.Eradicator  => (1000f, "ProjectileHunterEradicator"),
+                _                            => (30f,   "ProjectileHunterStun")
             };
-            
+
             ammo.FireCost = cost;
             ammo.Prototype = proto;
             Dirty(uid, ammo);
