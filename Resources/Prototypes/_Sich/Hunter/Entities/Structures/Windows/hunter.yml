@@ -7,10 +7,10 @@
   - type: Corrodible
     isCorrodible: false
   - type: Sprite
-    sprite: _Sich/Structures/Windows/hunter_window.rsi
+    sprite: _Sich/Hunter/Structures/Windows/hunter_window.rsi
     state: hunter_window0
   - type: Icon
-    sprite: _Sich/Structures/Windows/hunter_window.rsi
+    sprite: _Sich/Hunter/Structures/Windows/hunter_window.rsi
     state: hunter_window0
   - type: IconSmooth
     key: windows

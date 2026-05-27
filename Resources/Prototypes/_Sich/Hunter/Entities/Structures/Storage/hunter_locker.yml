@@ -6,7 +6,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Storage/Closets/hunter.rsi
+    sprite: _Sich/Hunter/Structures/Storage/Closets/hunter.rsi
   - type: StorageFill
     contents:
       - id: RMCHunterBracers
@@ -19,5 +19,5 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Storage/Closets/hunter_closed.rsi
+    sprite: _Sich/Hunter/Structures/Storage/Closets/hunter_closed.rsi
     state: closed

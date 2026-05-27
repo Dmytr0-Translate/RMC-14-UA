@@ -36,8 +36,8 @@
 - type: entity
   parent: RMCHunterCape
   id: RMCHunterCapeThird
-  name: третина плаща
-  description: Масивний плащ, виготовлений з невідомого матеріалу. Третина.
+  name: РїР»Р°С‰
+  description: РўСЂРµС‚РёРЅРЅРёР№ РїР»Р°С‰, РІРёРіРѕС‚РѕРІР»РµРЅРёР№ Р· РЅРµРІС–РґРѕРјРѕРіРѕ РјР°С‚РµСЂС–Р°Р»Сѓ.
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Objects/Clothing/Neck/cape_third.rsi
@@ -51,8 +51,8 @@
 - type: entity
   parent: RMCHunterCape
   id: RMCHunterCapeHalf
-  name: половина плаща
-  description: Масивний плащ, виготовлений з невідомого матеріалу. Половина.
+  name: РїР»Р°С‰
+  description: РџРѕР»РѕРІРёРЅРЅРёР№ РїР»Р°С‰, РІРёРіРѕС‚РѕРІР»РµРЅРёР№ Р· РЅРµРІС–РґРѕРјРѕРіРѕ РјР°С‚РµСЂС–Р°Р»Сѓ.
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Objects/Clothing/Neck/cape_half.rsi
@@ -66,8 +66,8 @@
 - type: entity
   parent: RMCHunterCape
   id: RMCHunterCapeQuarter
-  name: чверть плаща
-  description: Масивний плащ, виготовлений з невідомого матеріалу. Чверть.
+  name: РїР»Р°С‰
+  description: Р§РµС‚РІРµСЂС‚РёРЅРЅРёР№ РїР»Р°С‰, РІРёРіРѕС‚РѕРІР»РµРЅРёР№ Р· РЅРµРІС–РґРѕРјРѕРіРѕ РјР°С‚РµСЂС–Р°Р»Сѓ.
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Objects/Clothing/Neck/cape_quarter.rsi
@@ -81,8 +81,8 @@
 - type: entity
   parent: RMCHunterCape
   id: RMCHunterCapePoncho
-  name: плащ пончо
-  description: Масивний плащ у вигляді пончо.
+  name: РїРѕРЅС‡Рѕ
+  description: РџРѕРЅС‡Рѕ, РІРёРіРѕС‚РѕРІР»РµРЅРµ Р· РЅРµРІС–РґРѕРјРѕРіРѕ РјР°С‚РµСЂС–Р°Р»Сѓ.
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Objects/Clothing/Neck/cape_poncho.rsi
@@ -96,8 +96,8 @@
 - type: entity
   parent: RMCHunterCape
   id: RMCHunterCapeDamaged
-  name: пошкоджений плащ
-  description: Плащ, який багато бачив.
+  name: РїРѕС€РєРѕРґР¶РµРЅРёР№ РїР»Р°С‰
+  description: Р¦РµР№ РїР»Р°С‰ СЃРёР»СЊРЅРѕ РїРѕС€РєРѕРґР¶РµРЅРёР№... РЎС…РѕР¶Рµ РІС–РЅ РїСЂРѕР№С€РѕРІ С‡РµСЂРµР· С‡РёРјР°Р»Рѕ Р±РѕС—РІ.
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Objects/Clothing/Neck/cape_damaged.rsi

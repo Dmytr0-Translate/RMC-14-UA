@@ -10,7 +10,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Doors/Airlocks/hunter_door.rsi
+    sprite: _Sich/Hunter/Structures/Doors/Airlocks/hunter_door.rsi
   - type: AccessReader
     access: [["RMCAccessHunter"]]
   - type: Airlock

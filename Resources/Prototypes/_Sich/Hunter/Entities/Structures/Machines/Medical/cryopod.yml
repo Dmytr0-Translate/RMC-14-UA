@@ -6,7 +6,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/Medical/hunter_cryopod.rsi
+    sprite: _Sich/Hunter/Structures/Machines/Medical/hunter_cryopod.rsi
     layers:
       - sprite: Structures/Piping/Atmospherics/pipe.rsi
         state: pipeHalf

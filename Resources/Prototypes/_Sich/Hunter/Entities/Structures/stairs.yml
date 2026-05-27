@@ -4,7 +4,7 @@
   name: сходи
   components:
   - type: Sprite
-    sprite: _Sich/Structures/stairs.rsi
+    sprite: _Sich/Hunter/Structures/stairs.rsi
     state: stair
 
 - type: entity
@@ -13,7 +13,7 @@
   name: сходи
   components:
   - type: Sprite
-    sprite: _Sich/Structures/stairs.rsi
+    sprite: _Sich/Hunter/Structures/stairs.rsi
     state: small_stair
 
 - type: entity
@@ -22,7 +22,7 @@
   name: сходи
   components:
   - type: Sprite
-    sprite: _Sich/Structures/stairs.rsi
+    sprite: _Sich/Hunter/Structures/stairs.rsi
     state: staire
 
 - type: entity
@@ -31,5 +31,5 @@
   name: сходи
   components:
   - type: Sprite
-    sprite: _Sich/Structures/stairs.rsi
+    sprite: _Sich/Hunter/Structures/stairs.rsi
     state: staire_alt

@@ -19,7 +19,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_duelling_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_duelling_sword.rsi
     state: icon
   - type: Item
     size: Large
@@ -35,7 +35,7 @@
   - type: Execution
     doAfterDuration: 4.0
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_duelling_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_duelling_sword.rsi
     slots:
     - Belt
   - type: DisarmMalus
@@ -48,7 +48,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     state: icon
   - type: Item
     size: Large
@@ -64,7 +64,7 @@
   - type: Execution
     doAfterDuration: 4.0
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     slots:
     - Belt
     - Back
@@ -80,10 +80,10 @@
   description: Меч клана, призначений для нанесення глибоких ран.
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     state: icon1
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     slots:
     - Belt
     - Back
@@ -98,18 +98,18 @@
   description: Меч клана з плазмовим лезом, ідеальний для пробиття броні.
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     state: icon2
   - type: Item
     size: Large
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     inhandVisuals:
       Left:
       - state: inhand-left2
       Right:
       - state: inhand-right2
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     slots:
     - Belt
     - Back
@@ -125,10 +125,10 @@
   description: Зазубрений меч клана, створений для відтинання кінцівок.
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     state: icon3
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_sword.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_sword.rsi
     slots:
     - Belt
     - Back
@@ -281,11 +281,11 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_knife.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_knife.rsi
     state: icon
   - type: Item
     size: Small
-    sprite: _Sich/Objects/Weapons/Melee/hunter_knife.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_knife.rsi
   - type: Tag
     tags:
     - Knife
@@ -317,7 +317,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_glave.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_glave.rsi
     state: icon
   - type: Item
     size: Large
@@ -338,7 +338,7 @@
   - type: HandheldItemVisuals
     wieldedPrefix: wielded
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_glave.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_glave.rsi
     slots:
     - Back
     clothingVisuals:
@@ -380,7 +380,7 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_glave_alt.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_glave_alt.rsi
     state: icon
   - type: Item
     size: Large
@@ -401,7 +401,7 @@
   - type: HandheldItemVisuals
     wieldedPrefix: wielded
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_glave_alt.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_glave_alt.rsi
     slots:
     - Back
     clothingVisuals:
@@ -416,11 +416,11 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Weapons/Melee/hunter_combistick.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_combistick.rsi
     state: combistick_f
   - type: Item
     size: Small
-    sprite: _Sich/Objects/Weapons/Melee/hunter_combistick.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_combistick.rsi
   - type: ItemToggle
   - type: ItemToggleSize
     activatedSize: Large
@@ -446,7 +446,7 @@
     wieldedPrefix: wielded
   - type: HunterRecallWeapon
   - type: Clothing
-    sprite: _Sich/Objects/Weapons/Melee/hunter_combistick.rsi
+    sprite: _Sich/Hunter/Objects/Weapons/Melee/hunter_combistick.rsi
     slots:
     - Belt
     - Back

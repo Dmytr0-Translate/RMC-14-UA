@@ -15,8 +15,8 @@
   - type: RMCHunterNightVisionVisor
   - type: ToggleVisor
     ignoreRedundancy: true
-    soundOn: /Audio/_Sich/Effects/pred_vision.ogg
-    soundOff: /Audio/_Sich/Effects/pred_vision.ogg
+    soundOn: /Audio/_Sich/Hunter/pred_vision.ogg
+    soundOff: /Audio/_Sich/Hunter/pred_vision.ogg
   - type: ComponentToggler
     components:
     - type: PointLight

@@ -12,7 +12,7 @@
       state: icon
   - type: RMCActionBackground
     background:
-      sprite: _Sich/Actions/hunter_action.rsi
+      sprite: _Sich/Hunter/Actions/hunter_action.rsi
       state: hunter_template
   - type: InstantAction
     event: !type:HunterTranslatorActionEvent

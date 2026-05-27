@@ -4,7 +4,7 @@
   name: мікрохвильовка
   components:
   - type: Sprite
-    sprite: _Sich/Hunter/Structures/Machines/microwave.rsi
+    sprite: _Sich/Structures/Machines/microwave.rsi
     layers:
     - state: mw
       map: [ "enum.MicrowaveVisualizerLayers.Base" ]
@@ -103,6 +103,10 @@
   components:
   - type: Sprite
     sprite: _Sich/Hunter/Structures/smes.rsi
+    layers:
+    - state: smes
+  - type: GenericVisualizer
+    visuals: {}
   - type: Icon
     sprite: _Sich/Hunter/Structures/smes.rsi
     state: smes

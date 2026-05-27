@@ -6,9 +6,9 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Clothing/Shoes/Misc/hunter_boots.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/Shoes/Misc/hunter_boots.rsi
   - type: Clothing
-    sprite: _Sich/Objects/Clothing/Shoes/Misc/hunter_boots.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/Shoes/Misc/hunter_boots.rsi
   - type: ContainerContainer
     containers:
       item: !type:ContainerSlot

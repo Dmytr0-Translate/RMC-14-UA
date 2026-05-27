@@ -95,7 +95,7 @@
   id: HuntTechleft
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/hunter.rsi
+    sprite: _Sich/Hunter/Structures/Machines/VendingMachines/hunter.rsi
     state: left
     offset: 0, 0.5
 
@@ -104,7 +104,7 @@
   id: HuntTechlcenter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/hunter.rsi
+    sprite: _Sich/Hunter/Structures/Machines/VendingMachines/hunter.rsi
     state: lcenter
     offset: 0, 0.5
 
@@ -113,7 +113,7 @@
   id: HuntTechrcenter
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/hunter.rsi
+    sprite: _Sich/Hunter/Structures/Machines/VendingMachines/hunter.rsi
     state: rcenter
     offset: 0, 0.5
 
@@ -122,6 +122,6 @@
   id: HuntTechright
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Machines/VendingMachines/hunter.rsi
+    sprite: _Sich/Hunter/Structures/Machines/VendingMachines/hunter.rsi
     state: right
     offset: 0, 0.5

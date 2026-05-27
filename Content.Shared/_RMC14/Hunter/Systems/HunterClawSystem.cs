@@ -10,6 +10,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Hands;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared._RMC14.Hunter.Events;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
 
@@ -24,6 +25,7 @@ public sealed class HunterClawSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -174,6 +176,7 @@ public sealed class HunterClawSystem : EntitySystem
             return;
         }
 
+        var spawned = false;
         foreach (var handName in emptyHands)
         {
             var claw = Spawn(component.ClawPrototype, Transform(user).Coordinates);
@@ -183,18 +186,25 @@ public sealed class HunterClawSystem : EntitySystem
             if (_hands.TryPickup(user, claw, handName, handsComp: handsComp))
             {
                 component.ActiveClaws.Add(claw);
+                spawned = true;
             }
             else
             {
                 QueueDel(claw);
             }
         }
+
+        if (spawned)
+            _audio.PlayPvs(component.DeploySound, user);
     }
 
     private void RetractClaws(EntityUid uid, HunterClawModuleComponent component)
     {
         if (_net.IsClient)
             return;
+
+        if (component.ActiveClaws.Count > 0)
+            _audio.PlayPvs(component.RetractSound, uid);
 
         foreach (var claw in component.ActiveClaws.ToArray())
         {

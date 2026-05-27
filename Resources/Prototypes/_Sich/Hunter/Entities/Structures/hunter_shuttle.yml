@@ -19,10 +19,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "leftengine"
+        - state: "stan_leftengine"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "leftengine"
+      state: "stan_leftengine"
 
 - type: entity
   parent: HunterShuttleBase
@@ -184,10 +184,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "rightengine"
+        - state: "stan_rightengine"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "rightengine"
+      state: "stan_rightengine"
 
 - type: entity
   parent: HunterShuttleBase
@@ -349,10 +349,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "middle"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "middle"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -484,10 +484,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "inside"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "inside"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -664,10 +664,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "left_front"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "left_front"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -769,10 +769,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "right_front"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "right_front"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -874,10 +874,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "front_middle_window"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "front_middle_window"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -1009,10 +1009,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "left_window"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "left_window"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -1069,10 +1069,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "right_window"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "right_window"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase
@@ -1129,10 +1129,10 @@
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
       drawdepth: Walls
       layers:
-        - state: "bottom_window"
+        - state: "hunter1"
     - type: Icon
       sprite: _Sich/Hunter/Structures/hunter_shuttle.rsi
-      state: "bottom_window"
+      state: "hunter1"
 
 - type: entity
   parent: HunterShuttleBase

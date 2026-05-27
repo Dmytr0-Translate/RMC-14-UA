@@ -14,7 +14,7 @@
     - map: ["computerLayerBody"]
       state: computer_generic
     - map: ["computerLayerScreen"]
-      sprite: _Sich/Objects/Computers/hunter_consoles.rsi
+      sprite: _Sich/Hunter/Objects/Computers/hunter_consoles.rsi
       state: crew
   - type: ActivatableUI
     key: enum.HunterCrewUiKey.Key

@@ -5,7 +5,9 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/stun_projectiles.rsi
-    state: stun
+    layers:
+    - state: stun
+      shader: unshaded
   - type: Projectile
     damage:
       types:
@@ -22,7 +24,9 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
-    state: neurotoxin
+    layers:
+    - state: neurotoxin
+      shader: unshaded
   - type: Projectile
     damage:
       types:
@@ -39,7 +43,9 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
-    state: xeno_acid_normal
+    layers:
+    - state: xeno_acid_normal
+      shader: unshaded
   - type: Projectile
     damage:
       types:
@@ -55,7 +61,9 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
-    state: xeno_acid_strong
+    layers:
+    - state: xeno_acid_strong
+      shader: unshaded
   - type: Projectile
     damage:
       types:

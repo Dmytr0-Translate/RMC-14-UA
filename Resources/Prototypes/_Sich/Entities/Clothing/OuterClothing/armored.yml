@@ -6,9 +6,9 @@
   suffix: Sich, Hunter
   components:
   - type: Sprite
-    sprite: _Sich/Objects/Clothing/OuterClothing/Armor/hunter.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/OuterClothing/Armor/hunter.rsi
   - type: Clothing
-    sprite: _Sich/Objects/Clothing/OuterClothing/Armor/hunter.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/OuterClothing/Armor/hunter.rsi
     clothingVisuals:
       outerClothing:
       - state: equipped-OUTERCLOTHING
@@ -42,6 +42,6 @@
     receiveFrequencyId: SichHunterSensor
   - type: HunterCasterProvider
     soundOn:
-      path: /Audio/_Sich/Effects/pred_plasmacaster_on.ogg
+      path: /Audio/_Sich/Hunter/pred_plasmacaster_on.ogg
     soundOff:
-      path: /Audio/_Sich/Effects/pred_plasmacaster_off.ogg
+      path: /Audio/_Sich/Hunter/pred_plasmacaster_off.ogg

@@ -6,7 +6,7 @@
   suffix: Fuel
   components:
   - type: Sprite
-    sprite: _Sich/Structures/Storage/hunter_tank.rsi
+    sprite: _Sich/Hunter/Structures/Storage/hunter_tank.rsi
     layers:
     - state: fuel_tank
   - type: SolutionContainerManager

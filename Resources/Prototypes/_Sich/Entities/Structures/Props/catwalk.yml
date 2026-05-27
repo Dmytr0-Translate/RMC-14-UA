@@ -5,10 +5,10 @@
   description: решітка для захисту електроники корабля.
   components:
   - type: Sprite
-    sprite: _Sich/Structures/catwalk.rsi
+    sprite: _Sich/Hunter/Structures/catwalk.rsi
     state: hunter_catwalk
   - type: Icon
-    sprite: _Sich/Structures/catwalk.rsi
+    sprite: _Sich/Hunter/Structures/catwalk.rsi
     state: hunter_catwalk
 
 - type: entity
@@ -18,8 +18,8 @@
   description: решітка для захисту електроники корабля.
   components:
   - type: Sprite
-    sprite: _Sich/Structures/catwalk.rsi
+    sprite: _Sich/Hunter/Structures/catwalk.rsi
     state: hunter_catwalk_alt
   - type: Icon
-    sprite: _Sich/Structures/catwalk.rsi
+    sprite: _Sich/Hunter/Structures/catwalk.rsi
     state: hunter_catwalk_alt

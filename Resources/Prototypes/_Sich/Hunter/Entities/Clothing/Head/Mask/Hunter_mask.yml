@@ -8,9 +8,9 @@
   - type: RMCParasiteImmune
   - type: EyeProtection
   - type: Sprite
-    sprite: _Sich/Objects/Clothing/Mask/hunter_mask.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/Mask/hunter_mask.rsi
   - type: Clothing
-    sprite: _Sich/Objects/Clothing/Mask/hunter_mask.rsi
+    sprite: _Sich/Hunter/Objects/Clothing/Mask/hunter_mask.rsi
     equippedPrefix: off
     clothingVisuals:
       head:
@@ -41,9 +41,9 @@
   - type: HunterZoom
     actionId: ActionHunterZoom
     soundOn:
-      path: /Audio/_Sich/Effects/pred_zoom_on.ogg
+      path: /Audio/_Sich/Hunter/pred_zoom_on.ogg
     soundOff:
-      path: /Audio/_Sich/Effects/pred_zoom_off.ogg
+      path: /Audio/_Sich/Hunter/pred_zoom_off.ogg
   - type: IntegratedVisors
     visorsToAdd:
     - RMCHunterVisorNightVision
