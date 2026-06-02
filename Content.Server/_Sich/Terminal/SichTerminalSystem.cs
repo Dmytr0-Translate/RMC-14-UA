@@ -4,8 +4,10 @@ using Content.Server.Chat.Managers;
 using Content.Shared._Sich.Terminal;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
 using Content.Shared.PDA;
 using Content.Shared.Audio;
+using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Server.GameObjects;
@@ -22,6 +24,8 @@ public sealed class SichTerminalSystem : SharedSichTerminalSystem
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
+    [Dependency] private readonly GunIFFSystem _gunIFF = default!;
 
     public override void Initialize()
     {
@@ -84,10 +88,14 @@ public sealed class SichTerminalSystem : SharedSichTerminalSystem
         var query = EntityQueryEnumerator<SichTerminalComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
+            // Add message to the terminal
             component.Messages.Add(message);
             if (component.Messages.Count > 100)
                 component.Messages.RemoveAt(0);
 
+            // Play admin sound only for admin messages
+            if (message.StartsWith("ВЕСТОН-ЯМАДА >"))
+                _audio.PlayPvs(component.AdminMessageSound, uid);
             Dirty(uid, component);
             UpdateUI(uid, component);
         }
@@ -100,6 +108,60 @@ public sealed class SichTerminalSystem : SharedSichTerminalSystem
 
         if (string.IsNullOrWhiteSpace(args.Message))
             return;
+
+        _audio.PlayPvs(component.ClickSound, uid);
+
+        // Check if there is an ID card/PDA inserted in the terminal
+        if (!_itemSlots.TryGetSlot(uid, component.IdCardSlotId, out var slot) || slot.Item == null)
+        {
+            component.Messages.Add("ВЕСТОН-ЯМАДА > СТАТУС КОРИСТУВАЧА: НЕВИЗНАЧЕНО\nДОСТУП ЗАБЛОКОВАНО. ПОТРІБНА ID ІДЕНТИФІКАЦІЯ.");
+            if (component.Messages.Count > 100)
+                component.Messages.RemoveAt(0);
+
+            Dirty(uid, component);
+            UpdateUI(uid, component);
+            return;
+        }
+
+        // If access levels are required, check if the inserted card/PDA has at least one of them
+        var card = slot.Item.Value;
+
+        // Check if the card belongs to a hostile faction (UPP/SPP or CLF)
+        if (_gunIFF.IsInFaction(card, "FactionSPP") || _gunIFF.IsInFaction(card, "FactionCLF"))
+        {
+            component.Messages.Add("ВЕСТОН-ЯМАДА > СТАТУС КОРИСТУВАЧА: ВОРОГ КОМПАНІЇ.\nУ ДОСТУПІ АВТОМАТИЧНО ВІДХИЛЕНО.");
+            if (component.Messages.Count > 100)
+                component.Messages.RemoveAt(0);
+
+            Dirty(uid, component);
+            UpdateUI(uid, component);
+            return;
+        }
+
+        if (component.RequiredAccesses.Count > 0)
+        {
+            var tags = _accessReader.FindAccessTags(card);
+            var hasAccess = false;
+            foreach (var reqAccess in component.RequiredAccesses)
+            {
+                if (tags.Contains(reqAccess))
+                {
+                    hasAccess = true;
+                    break;
+                }
+            }
+
+            if (!hasAccess)
+            {
+                component.Messages.Add("ВЕСТОН-ЯМАДА > ВАШ РІВЕНЬ ДОСТУПУ НЕ ВІДПОВІДАЄ ВИМОГАМ КОРПОРАТИВНОЇ МЕРЕЖІ. ДОСТУП ДО КАНАЛУ КОРПОРАТИВНИХ КОМУНІКАЦІЙ АВТОМАТИЧНО ВІДХИЛЕНО.");
+                if (component.Messages.Count > 100)
+                    component.Messages.RemoveAt(0);
+
+                Dirty(uid, component);
+                UpdateUI(uid, component);
+                return;
+            }
+        }
 
         var message = args.Message.Trim();
         if (message.Length > 500)
@@ -115,7 +177,6 @@ public sealed class SichTerminalSystem : SharedSichTerminalSystem
         _chatManager.SendAdminAnnouncement($"Термінал ({name}) отримав повідомлення від {sender} ({ckey}): {message}");
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{args.Actor:player} відправив повідомлення в термінал {name} (від {sender}): {message}");
 
-        _audio.PlayPvs(component.ClickSound, uid);
         BroadcastMessage($"[{sender}]: {message}");
     }
 

@@ -1,9 +1,17 @@
 - type: entity
+<<<<<<< Updated upstream
   parent: [ BaseMachinePowered, RMCConstructibleMachine ]
   id: SichTerminalInput
   name: термінал комунікації
   suffix: Січ, Ввід
   description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я. Має слот для ID-картки.
+=======
+  id: SichTerminalInputCorporate
+  suffix: Вхід (Корпорат)
+  parent: BaseStructureComputer
+  name: Термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+>>>>>>> Stashed changes
   components:
   - type: Transform
     anchored: false
@@ -13,6 +21,13 @@
     state: console
   - type: SichTerminal
     isInput: true
+<<<<<<< Updated upstream
+=======
+    requiredAccesses:
+    - RMCAccessWeYa
+  - type: Clickable
+  - type: Rotatable
+>>>>>>> Stashed changes
   - type: ActivatableUI
     key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
   - type: UserInterface
@@ -27,6 +42,7 @@
           components:
           - IdCard
           - Pda
+<<<<<<< Updated upstream
   - type: WallMount
     arc: 360
   - type: EmitSoundOnUIOpen
@@ -36,6 +52,61 @@
         volume: -1
   - type: Corrodible
     isCorrodible: false
+=======
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichTerminalInput
+  suffix: Вхід (Командний)
+  parent: BaseStructureComputer
+  name: Термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: console
+  - type: SichTerminal
+    isInput: true
+    requiredAccesses:
+    - RMCAccessCommand
+    - CMAccessCO
+    - CMAccessCMO
+    - CMAccessCE
+    - CMAccessCMP
+    - CMAccessQM
+    - CMAccessASO
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: ItemSlots
+    slots:
+      id_card:
+        name: ID Card
+        whitelist:
+          components:
+          - IdCard
+          - Pda
+>>>>>>> Stashed changes
   - type: Destructible
     thresholds:
     - trigger:
@@ -60,8 +131,15 @@
 - type: entity
   parent: SichTerminalInput
   id: SichTerminalOutput
+<<<<<<< Updated upstream
   suffix: Січ, Перегляд
   description: Корпоративний термінал для перегляду каналу зв'язку Ве-Я та їх представника.
+=======
+  suffix: Вихід
+  parent: BaseStructureComputer
+  name: Термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з представниками та КМПОН.
+>>>>>>> Stashed changes
   components:
   - type: SichTerminal
     isInput: false
@@ -78,3 +156,159 @@
   - type: Sprite
     sprite: _Sich/Structures/Machines/console.rsi
     state: broken
+
+
+- type: entity
+  id: SichWallTerminalInputCorporate
+  suffix: Вхід (Корпорат)
+  parent: BaseStructureComputer
+  name: настінний термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: wall
+  - type: WallMount
+    arc: 360
+  - type: SichTerminal
+    isInput: true
+    requiredAccesses:
+    - RMCAccessWeYa
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: ItemSlots
+    slots:
+      id_card:
+        name: ID Card
+        whitelist:
+          components:
+          - IdCard
+          - Pda
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichWallTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichWallTerminalInput
+  suffix: Вхід (Командний)
+  parent: BaseStructureComputer
+  name: настінний термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з Ве-Я.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: wall
+  - type: WallMount
+    arc: 360
+  - type: SichTerminal
+    isInput: true
+    requiredAccesses:
+    - RMCAccessCommand
+    - CMAccessCO
+    - CMAccessCMO
+    - CMAccessCE
+    - CMAccessCMP
+    - CMAccessQM
+    - CMAccessASO
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: ItemSlots
+    slots:
+      id_card:
+        name: ID Card
+        whitelist:
+          components:
+          - IdCard
+          - Pda
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichWallTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichWallTerminalOutput
+  suffix: Вихід
+  parent: BaseStructureComputer
+  name: настінний термінал комунікації
+  description: Корпоративний термінал для прямого каналу зв'язку з представниками та КМПОН.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: wall
+  - type: WallMount
+    arc: 360
+  - type: SichTerminal
+    isInput: false
+  - type: Clickable
+  - type: Rotatable
+  - type: ActivatableUI
+    key: enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.Content.Shared._Sich.Terminal.SichTerminalUiKey.Key:
+        type: SichTerminalBoundUserInterface
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SichWallTerminalBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: SichWallTerminalBroken
+  parent: ComputerBroken
+  name: зламаний настінний термінал комунікації
+  description: Це корпоративний термінал комунікації з Ве-Я... Принаймні був.
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Machines/console.rsi
+    state: broken_wall
+  - type: WallMount
+    arc: 360
