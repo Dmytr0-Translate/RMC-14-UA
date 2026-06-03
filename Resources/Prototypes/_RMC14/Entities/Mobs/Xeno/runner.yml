@@ -27,6 +27,12 @@
     tags:
     - DoorBumpOpener
     - RMCSynthGrabbable
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 4
+    - id: RMCXenoClaw
+      amount: 3
   - type: Xeno
     role: CMXenoRunner
     tier: 1

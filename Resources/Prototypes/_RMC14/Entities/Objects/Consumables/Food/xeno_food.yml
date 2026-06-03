@@ -1,0 +1,262 @@
+- type: entity
+  parent: CMFoodBase
+  id: RMCFoodParasiteLeg
+  name: лапки паразита
+  description: Колись вони бігали, а тепер час з'їсти їх та побігти далі
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - acid
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Food
+    transferAmount: 2
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: parasiteleg
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: SulfuricAcid
+          Quantity: 2
+  - type: Item
+    size: Tiny
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: CMFoodBase
+  id: RMCFoodParasiteLegCooked
+  name: смажені лапки паразита
+  description: Смажені лапи паразита ксеноморфів... Пахне цікаво
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - acid
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Food
+    transferAmount: 2
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: parasiteleg-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: SulfuricAcid
+          Quantity: 1
+  - type: Item
+    size: Tiny
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: FoodBowlBase
+  id: RMCFoodQueenSalad
+  name: салат Королева
+  description: Салат "Королева" - пряме переосмислення салату "Цезар", в умовах коли з м'ясу бігає лише ворог
+  components:
+  - type: FlavorProfile
+    flavors:
+    - onion
+    - cabbage
+    - bread
+    - acid
+  - type: Sprite
+    sprite: Objects/Consumable/Food/bowl.rsi
+    layers:
+    - state: bowl
+    - sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+      state: queen
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 25
+        - ReagentId: Vitamin
+          Quantity: 15
+        - ReagentId: SulfuricAcid
+          Quantity: 1
+  - type: Item
+    size: Small
+    sprite: Objects/Consumable/Food/bowl.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: CMFoodBase
+  id: RMCFoodLarvaCooked
+  name: смажена лярва
+  description: Це смажена лярва під лимонним соком. Певно не настільки гумова на смак, якщо думати що це була майбутня королева
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - sour
+    - acid
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Food
+    transferAmount: 4
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: embryo_cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Protein
+          Quantity: 15
+        - ReagentId: SulfuricAcid
+          Quantity: 2
+  - type: Item
+    size: Small
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: CMFoodBase
+  id: RMCFoodParasitelegs
+  name: паразитоніжка
+  description: Паразитична багатоніжка! Варто за нею пильно слідкувати, хто зна чи має вона план втечі
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bread
+    - cheesy
+    - meaty
+    - acid
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Food
+    transferAmount: 5
+  - type: SliceableFood
+    slice: RMCFoodParasitelegsHalf
+    count: 2
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: parasitelegs
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 60
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+        - ReagentId: Protein
+          Quantity: 20
+        - ReagentId: SulfuricAcid
+          Quantity: 3
+  - type: Item
+    size: Small
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: CMFoodBase
+  id: RMCFoodParasitelegsHalf
+  name: половина паразитоніжок
+  description: Половина ніжок, все ще можуть втікти, але на 3 ніжки повільніше
+  components:
+  - type: FlavorProfile
+    flavors:
+    - bread
+    - cheesy
+    - meaty
+    - acid
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: parasitelegs-half
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: SulfuricAcid
+          Quantity: 1.5
+  - type: Item
+    size: Small
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: InjectableSolution
+    solution: food
+  - type: DrawableSolution
+    solution: food
+
+- type: entity
+  parent: BaseItem
+  id: RMCXenoClaw
+  name: кіготь ксеноморфа
+  description: Гострий кіготь чужопланетного хижака.
+  components:
+  - type: Tag
+    tags:
+    - Ingredient
+  - type: Sprite
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi
+    state: claw
+  - type: Item
+    size: Small
+    sprite: _Mriya/Objects/Consumable/Food/xeno.rsi

@@ -82,6 +82,10 @@
     entities:
     - RMCDecalSpawnerGibsLesserDrone
     - RMCGibEffectXenoLesserDrone
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 2
   - type: WhitelistPickup
     whitelist:
       components:

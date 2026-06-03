@@ -74,6 +74,12 @@
     entities:
     # - RMCDecalSpawnerGibsParasite # TODO
     - RMCGibEffectXenoSmall
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatXeno
+      amount: 1
+    - id: RMCFoodParasiteLeg
+      amount: 4
   - type: XenoParasite
   - type: InfectOnPullAttempt
   - type: Item

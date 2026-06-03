@@ -477,3 +477,49 @@
     FoodBreadBaguette: 1
     FoodMeatCutlet: 3
     FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeParasiteLegCooked
+  name: fried parasite legs recipe
+  result: RMCFoodParasiteLegCooked
+  time: 30
+  group: Savory
+  solids:
+    RMCFoodParasiteLeg: 1
+
+- type: microwaveMealRecipe
+  id: RecipeQueenSalad
+  name: queen salad recipe
+  result: RMCFoodQueenSalad
+  time: 5
+  group: Salad
+  reagents:
+    OilOlive: 5
+  solids:
+    FoodBowlBig: 1
+    FoodOnionRedSlice: 1
+    FoodBreadPlainSlice: 1
+    FoodCabbage: 1
+    RMCXenoEmbryo: 1
+
+- type: microwaveMealRecipe
+  id: RecipeXenoEmbryoCooked
+  name: fried embryo recipe
+  result: RMCFoodLarvaCooked
+  time: 30
+  group: Savory
+  solids:
+    FoodLemon: 1
+    RMCXenoEmbryo: 1
+
+- type: microwaveMealRecipe
+  id: RecipeXenoParasitelegs
+  name: parasitocentipede recipe
+  result: RMCFoodParasitelegs
+  time: 10
+  group: Savory
+  solids:
+    FoodBreadBaguette: 1
+    FoodCheeseSlice: 1
+    RMCFoodParasiteLeg: 5
+
