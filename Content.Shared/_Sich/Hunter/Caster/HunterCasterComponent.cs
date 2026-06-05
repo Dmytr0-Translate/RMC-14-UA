@@ -10,7 +10,7 @@ namespace Content.Shared._Sich.Hunter.Caster;
 public sealed partial class HunterCasterComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public HunterCasterMode CurrentMode = HunterCasterMode.Stun;
+    public HunterCasterMode CurrentMode = HunterCasterMode.Disabler;
 
     [DataField, AutoNetworkedField]
     public bool Active = false;
@@ -34,7 +34,7 @@ public sealed partial class HunterCasterProviderComponent : Component
     public EntityUid? ActionEntity;
 
     [DataField]
-    public SoundSpecifier? SoundOn;
+public SoundSpecifier? SoundOn = new SoundPathSpecifier("/Audio/_Sich/Hunter/pred_plasmacaster_fire.ogg");
 
     [DataField]
     public SoundSpecifier? SoundOff;
@@ -43,7 +43,7 @@ public sealed partial class HunterCasterProviderComponent : Component
 [Serializable, NetSerializable]
 public enum HunterCasterMode : byte
 {
-    Stun,
+    Disabler,
     Immobilizer,
     Bolt,
     Eradicator

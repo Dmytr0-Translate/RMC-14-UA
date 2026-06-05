@@ -135,7 +135,7 @@ public sealed class HunterCasterSystem : EntitySystem
         
         var modeName = comp.CurrentMode switch
         {
-            HunterCasterMode.Stun => "Оглушливий постріл",
+            HunterCasterMode.Disabler => "Дезайблер",
             HunterCasterMode.Immobilizer => "Паралізуючий вибух",
             HunterCasterMode.Bolt => "Плазмовий постріл",
             HunterCasterMode.Eradicator => "Плазмовий знищувач",
@@ -147,9 +147,9 @@ public sealed class HunterCasterSystem : EntitySystem
         {
             var (cost, proto) = comp.CurrentMode switch
             {
-                HunterCasterMode.Stun        => (30f,   "ProjectileHunterStun"),
+                HunterCasterMode.Disabler        => (30f,   "ProjectileHunterStun"),
                 HunterCasterMode.Immobilizer => (150f,  "ProjectileHunterImmobilizer"),
-                HunterCasterMode.Bolt        => (500f,  "ProjectileHunterBolt"),
+                HunterCasterMode.Bolt        => (175f,  "PlasmaRifleBolt"),
                 HunterCasterMode.Eradicator  => (1000f, "ProjectileHunterEradicator"),
                 _                            => (30f,   "ProjectileHunterStun")
             };

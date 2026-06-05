@@ -2,6 +2,7 @@ using Content.Shared._Sich.Hunter.Autodoc;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
+using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
 using Content.Shared.Storage.Components;
@@ -60,17 +61,17 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
             return;
         }
 
-        // args.Target and args.Part are already EntityUid — no GetEntity() needed
-        if (!args.Target.IsValid() || !args.Part.IsValid())
-            return;
+        // args.Target and args.Part are now NetEntity — need GetEntity()
+        var patientEnt = GetEntity(args.Target);
+        var partEnt = GetEntity(args.Part);
 
-        var patientEnt = args.Target;
-        var partEnt = args.Part;
+        if (!patientEnt.IsValid() || !partEnt.IsValid())
+            return;
 
         // 20% slower than normal = 2.4 seconds base
         float duration = 2.4f;
 
-        var ev = new AutodocSurgeryDoAfterEvent(args.Surgery, args.Step, patientEnt, partEnt);
+        var ev = new AutodocSurgeryDoAfterEvent(args.Surgery, args.Step, GetNetEntity(patientEnt), GetNetEntity(partEnt));
         var doAfter = new DoAfterArgs(EntityManager, ent, TimeSpan.FromSeconds(duration), ev, ent, patientEnt)
         {
             BreakOnMove = false,
@@ -90,7 +91,7 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
             return;
 
         var patient = storage.Contents.ContainedEntities[0];
-        if (patient != args.Target)
+        if (patient != GetEntity(args.Target))
             return;
 
         if (!IsNaked(patient))
@@ -100,7 +101,7 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
             return;
 
         // CMSurgeryStepEvent(User, Body, Part, Tools)
-        var stepEv = new CMSurgeryStepEvent(ent.Owner, patient, args.Part, new List<EntityUid> { ent.Owner });
+        var stepEv = new CMSurgeryStepEvent(ent.Owner, patient, GetEntity(args.Part), new List<EntityUid> { ent.Owner });
         RaiseLocalEvent(stepEnt, ref stepEv);
 
         args.Handled = true;
@@ -144,7 +145,7 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
                             {
                                 var name = surgeryProto.Name;
                                 if (string.IsNullOrEmpty(name)) name = surgeryProto.ID;
-                                options.Add(new AutodocHunterSurgeryOption(surgeryId, stepProtoId, part.Id, name));
+                                options.Add(new AutodocHunterSurgeryOption(surgeryId, stepProtoId, GetNetEntity(part.Id), name));
                             }
                         }
                     }
@@ -152,7 +153,7 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
             }
         }
 
-        _ui.SetUiState(ent, AutodocHunterUiKey.Key, new AutodocHunterBuiState(ent.Comp.IsHealing, options));
+        _ui.SetUiState(ent.Owner, AutodocHunterUiKey.Key, new AutodocHunterBuiState(ent.Comp.IsHealing, options));
     }
 
     public override void Update(float frameTime)
@@ -224,22 +225,5 @@ public sealed class AutodocHunterSystem : SharedAutodocHunterSystem
             return false;
 
         return true;
-    }
-}
-
-[Serializable, NetSerializable]
-public sealed partial class AutodocSurgeryDoAfterEvent : SimpleDoAfterEvent
-{
-    public EntProtoId Surgery { get; }
-    public EntProtoId Step { get; }
-    public EntityUid Target { get; }
-    public EntityUid Part { get; }
-
-    public AutodocSurgeryDoAfterEvent(EntProtoId surgery, EntProtoId step, EntityUid target, EntityUid part)
-    {
-        Surgery = surgery;
-        Step = step;
-        Target = target;
-        Part = part;
     }
 }

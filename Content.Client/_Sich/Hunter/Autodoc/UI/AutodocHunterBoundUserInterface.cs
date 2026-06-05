@@ -22,7 +22,7 @@ public sealed class AutodocHunterBoundUserInterface : BoundUserInterface
         
         _window.OnClose += Close;
         _window.OnAutoHealPressed += () => SendMessage(new AutodocHunterHealMsg());
-        _window.OnSurgeryStepPressed += (surgery, step, part) => SendMessage(new AutodocHunterSurgeryStepMsg(surgery, step, part, Owner));
+        _window.OnSurgeryStepPressed += (surgery, step, part) => SendMessage(new AutodocHunterSurgeryStepMsg(surgery, step, part, EntMan.GetNetEntity(Owner)));
 
         _window.OpenCentered();
     }

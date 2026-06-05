@@ -7,14 +7,14 @@
 
 - type: typingIndicator
   id: hunter
-  spritePath: /Textures/_Sich/Hunter/Effects/hunter_typing.rsi
+  spritePath: /Textures/_Mriya/Hunter/Effects/hunter_typing.rsi
   typingState: typing
   idleState: typing
   offset: 0, 0.5
 
 - type: typingIndicator
   id: hunter_translate
-  spritePath: /Textures/_Sich/Hunter/Effects/hunter_typing.rsi
+  spritePath: /Textures/_Mriya/Hunter/Effects/hunter_typing.rsi
   typingState: typing_translate
   idleState: typing_translate
   offset: 0, 0.5

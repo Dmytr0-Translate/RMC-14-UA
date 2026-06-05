@@ -12,7 +12,7 @@ namespace Content.Client._Sich.Hunter.Autodoc.UI;
 public sealed partial class AutodocHunterWindow : DefaultWindow
 {
     public Action? OnAutoHealPressed;
-    public Action<EntProtoId, EntProtoId, EntityUid>? OnSurgeryStepPressed;
+    public Action<EntProtoId, EntProtoId, NetEntity>? OnSurgeryStepPressed;
 
     public AutodocHunterWindow()
     {

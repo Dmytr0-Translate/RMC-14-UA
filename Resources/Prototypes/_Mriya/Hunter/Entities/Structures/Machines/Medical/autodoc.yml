@@ -1,0 +1,48 @@
+- type: entity
+  id: AutodocHunter
+  parent: BaseMachine
+  name: авто-лікар
+  description: Просунута технологія що здатна проводити хірургічні операцію на паціенті.
+  components:
+  - type: AutodocHunter
+  - type: DoAfter
+  - type: Sprite
+    sprite: _Mriya/Hunter/Structures/Machines/Medical/autodoc.rsi
+    state: closed # Or whichever state the RSI uses
+    snapCardinals: true
+  - type: Physics
+    bodyType: Static
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: EntityStorage
+    capacity: 1
+    isCollidableWhenOpen: true
+    showContents: false
+    occludesLight: false
+  - type: DragInsertContainer
+    containerId: entity_storage
+  - type: ExitContainerOnMove
+    containerId: entity_storage
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: ActivatableUI
+    key: enum.AutodocHunterUiKey.Key
+    requireLock: false
+    requireHands: false
+  - type: UserInterface
+    interfaces:
+      enum.AutodocHunterUiKey.Key:
+        type: AutodocHunterBoundUserInterface

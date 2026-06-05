@@ -23,7 +23,7 @@
   copyright: "Taken from CMSS13."
   source: "https://github.com/cmss13-devs/cmss13/blob/e97c5f08fdcfd60743481011e30ccdccc7fd7c88/sound/effects"
 
-- files: ["pred_plasmacaster_off.ogg, pred_plasmacaster_on.ogg"]
+- files: ["pred_plasmacaster_off.ogg, pred_plasmacaster_on.ogg, pred_plasmacaster_fire.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Taken from CMSS13."
   source: "https://github.com/cmss13-devs/cmss13/blob/e97c5f08fdcfd60743481011e30ccdccc7fd7c88/sound/effects"

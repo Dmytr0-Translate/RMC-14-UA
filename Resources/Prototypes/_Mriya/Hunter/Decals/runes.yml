@@ -1,0 +1,144 @@
+- type: decal
+  id: HunterRune_s
+  name: руна мисливця (південь)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_s
+
+- type: decal
+  id: HunterRune_w
+  name: руна мисливця (захід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_w
+
+- type: decal
+  id: HunterRune_n
+  name: руна мисливця (північ)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_n
+
+- type: decal
+  id: HunterRune_e
+  name: руна мисливця (схід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_e
+
+- type: decal
+  id: HunterRune_es
+  name: руна мисливця (схід-південь)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_es
+
+- type: decal
+  id: HunterRune_se
+  name: руна мисливця (схід-північ)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_se
+
+- type: decal
+  id: HunterRune_en
+  name: руна мисливця (північ-схід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_en
+
+- type: decal
+  id: HunterRune_ne
+  name: руна мисливця (північ-схід)
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_ne
+
+
+- type: decal
+  id: HunterRuneAngle_ne
+  name: руна мисливця 
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_angle_ne
+
+- type: decal
+  id: HunterRuneAngle_ws
+  name: руна мисливця 
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_angle_ws
+
+- type: decal
+  id: HunterRuneAngle_es
+  name: руна мисливця
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_angle_es
+
+- type: decal
+  id: HunterRuneAngle_nw
+  name: руна мисливця
+  tags: ["hunter-runes"]
+  isCM: true
+  defaultCleanable: false
+  defaultCustomColor: false
+  defaultSnap: true
+  sprite:
+    sprite: _Mriya/Hunter/Decals/yautja_ship.rsi
+    state: rune_angle_nw

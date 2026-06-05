@@ -58,6 +58,13 @@ public sealed class HunterCasterAmmoProviderSystem : EntitySystem
 
     private void OnBatteryTakeAmmo(EntityUid uid, HunterCasterAmmoProviderComponent component, TakeAmmoEvent args)
     {
+        // Recalculate shots from the actual hunter energy before checking
+        if (TryGetHunterEnergy(uid, out var energyComp, out var energyOwner, args.User))
+        {
+            component.Shots = (int) (energyComp.Energy.Float() / component.FireCost);
+            component.Capacity = (int) (energyComp.MaxEnergy.Float() / component.FireCost);
+        }
+
         var shots = Math.Min(args.Shots, component.Shots);
 
         if (shots == 0)
@@ -74,10 +81,10 @@ public sealed class HunterCasterAmmoProviderSystem : EntitySystem
 
         component.Shots -= shots;
 
-        if (TryGetHunterEnergy(uid, out var energy, out var energyUid))
+        if (energyComp != null)
         {
             var cost = component.FireCost * shots;
-            _hunterEnergy.TryUseEnergy((energyUid, energy), cost);
+            _hunterEnergy.TryUseEnergy((energyOwner, energyComp), cost);
         }
         
         Dirty(uid, component);
@@ -96,17 +103,19 @@ public sealed class HunterCasterAmmoProviderSystem : EntitySystem
         return TryGetHunterEnergy(casterUid, out energy, out _);
     }
 
-    private bool TryGetHunterEnergy(EntityUid casterUid, [NotNullWhen(true)] out HunterEnergyComponent? energy, out EntityUid energyUid)
+    private bool TryGetHunterEnergy(EntityUid casterUid, [NotNullWhen(true)] out HunterEnergyComponent? energy, out EntityUid energyUid, EntityUid? user = null)
     {
         energy = null;
         energyUid = default;
 
-        var parent = Transform(casterUid).ParentUid;
-        if (!parent.IsValid())
-            return false;
+        if (user != null && TryComp<HunterEnergyComponent>(user.Value, out energy))
+        {
+            energyUid = user.Value;
+            return true;
+        }
 
-        // The parent of the caster should be the mob holding it
-        if (TryComp<HunterEnergyComponent>(parent, out energy))
+        var parent = Transform(casterUid).ParentUid;
+        if (parent.IsValid() && TryComp<HunterEnergyComponent>(parent, out energy))
         {
             energyUid = parent;
             return true;
