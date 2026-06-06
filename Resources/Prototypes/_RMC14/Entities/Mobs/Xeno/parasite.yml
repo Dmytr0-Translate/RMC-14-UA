@@ -78,7 +78,7 @@
     spawned:
     - id: FoodMeatXeno
       amount: 1
-    - id: RMCFoodParasiteLeg
+    - id: MRFoodParasiteLeg
       amount: 4
   - type: XenoParasite
   - type: InfectOnPullAttempt
