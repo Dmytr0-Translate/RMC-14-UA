@@ -7,7 +7,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: CMJobDoctor
-    time: 36000 # 10 hours
+    time: 18000 # Sich. 5 годин, 10 в оригіналі
   ranks:
     RMCRankSecondLT: []
   startingGear: CMGearFieldDoctor
@@ -16,6 +16,7 @@
   supervisors: cm-job-supervisors-cmo
   accessGroups:
   - CMMedbay
+  - Researcher # Sich
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -27,6 +28,9 @@
         RMCSkillFireman: 1
         RMCSkillMedical: 3
         RMCSkillSurgery: 2
+    - type: CMVendorUser # Sich
+      id: RMCFieldDoctor
+      points: 45
     - type: RMCUserBulkyArmorIncapable
     - type: JobPrefix
       prefix: rmc-job-prefix-field-doctor
@@ -37,7 +41,7 @@
       background:
         sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: background_medical
-  hidden: true # TODO RMC14
+#  hidden: true # TODO RMC14 – Sich
 
 - type: startingGear
   id: CMGearFieldDoctor

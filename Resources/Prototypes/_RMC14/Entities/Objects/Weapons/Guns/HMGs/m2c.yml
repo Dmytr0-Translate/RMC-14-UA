@@ -2,8 +2,8 @@
   parent: [ CMBaseWeaponGun, BaseItem]
   id: RMCMachineGunM2C
   categories: [ HideSpawnMenu ]
-  name: M2C heavy machine gun
-  description: The top half of a M2C heavy machine gun post. However it ain't much use without a tripod.
+  name: М2С важкий кулемет
+  description: Верхня половина великокаліберного кулемета М2С. Однак без триноги вона не дуже корисна.
   components:
   - type: Item
     size: Huge
@@ -41,7 +41,7 @@
     soundGunshot:
       path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m2c2.ogg
       params:
-        volume: -2
+        volume: -5
         variation: 0.05
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
@@ -50,7 +50,7 @@
     - FullAuto
     recoilUnwielded: 0
     scatterUnwielded: 0
-    baseFireRate: 5 # Sich. Імба зброя нам не треба
+    baseFireRate: 7 # Sich. 10 в оригіналі. Імба зброя нам не треба
     modifiers:
       FullAuto:
         maxScatterModifier: 0
@@ -110,8 +110,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineM2C
-  name: M2C Ammunition Box (10x28mm tungsten rounds)
-  description: A box of 125, 10x28mm caseless tungsten rounds for the M2C heavy machine gun system.
+  name: М2С коробка з набоями (10x28 мм Вольфрам)
+  description: Коробка зі 125 безгільзовими вольфрамовими набоями калібру 10x28 мм для важкої кулеметної системи М2С.
   components:
   - type: Tag
     tags:
@@ -139,7 +139,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeHMG10x28mmTungsten
-  name: cartridge (10x28mm Tungsten)
+  name: набій (10x28 мм Вольфрам)
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -157,7 +157,7 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletHMG10x28mmTungsten
-  name: bullet (10x28mm Tungsten)
+#  name: куля (10x28mm Вольфрам) – Sich
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -173,7 +173,7 @@
     amount: 30
   - type: RMCProjectileDamageFalloff
     thresholds:
-    - range: 2 # cm13 code says 7 but after testing it looks like it starts losing damage after the first tile
+    - range: 1 # cm13 code says 7 but after testing it looks like it starts losing damage after the first tile
       falloff: 3
     - range: 15
       falloff: 9999
@@ -181,7 +181,11 @@
     accuracy: 75
     thresholds:
     - range: 6 # porting this 1:1, which is what the component mentions, from cm13(10), makes it too accurate at high ranges so I lowered it
-      falloff: 5
+      falloff: 15
+    - range: 7 # Lose a chunk of accuracy at once instead of gradually over distance.
+      falloff: -15
+    - range: 10 # Start losing accuracy every unit of distance again
+      falloff: 10
 
 # Tags
 - type: Tag

@@ -5,6 +5,7 @@
   - RMCXenoVentCrawler
   id: CMXenoLarva
   name: Лярва
+  description: Мала чужопланетна червоподібна істота, яка дуже швидко збільшується в розмірах. Схоже скоро з неї з'явиться щось нове. # Sich
   components:
   - type: GuideHelp
     guides:
@@ -40,8 +41,8 @@
     plasma: 10
     maxPlasma: 10
     plasmaRegenOnWeeds: 0.1
-  - type: RMCGibOnDeath
-    gibChance: 0.25
+#  - type: RMCGibOnDeath – Sich
+#    gibChance: 0.25
   - type: RMCSpawnEntitiesOnGib
     entities:
     # - RMCDecalSpawnerGibsLarva # TODO
@@ -98,6 +99,10 @@
       3: rmc-xeno-elder-larva
       4: rmc-xeno-elder-larva
       5: rmc-xeno-elder-larva
+      6: rmc-xeno-elder-larva # Sich
+      7: rmc-xeno-elder-larva # Sich
+      8: rmc-xeno-elder-larva # Sich
+      9: rmc-xeno-elder-larva # Sich
   - type: FixedIdentity
     name: cm-job-name-xeno-larva
   - type: VentCrawler
@@ -109,8 +114,8 @@
 - type: entity
   id: RMCXenoEmbryo
   parent: BaseItem
-  name: alien embryo
-  description: All slimy and yucky.
+  name: чужопланетний ембріон
+  description: Виглядає слизьким та гидким. Якщо ви вважаєте ембріонів за дітей, то це чиясь мертва дитина.
   components:
     - type: Sprite
       sprite: _RMC14/Mobs/Xenonids/Larva/larva.rsi

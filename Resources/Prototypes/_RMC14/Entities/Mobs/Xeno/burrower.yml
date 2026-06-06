@@ -8,8 +8,8 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoBurrower
-  name: Копач
-  description: Кремезний ксеноїд з гострими кігтями.
+  name: Копачка
+  description: Дужа чужопланетна істота з товстим панцирем, лапами схожі на ковші та дивним ротом-хоботом.
   components:
   - type: CanBuildThickFromConstructNode
   - type: GuideHelp
@@ -124,7 +124,7 @@
     - HiveRecoveryNodeXenoConstructionNode
     - HivePlasmaTreeXenoConstructionNode
   - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.2
+    value: 0.7 # Sich. 0.2 в оригіналі
   - type: FixedIdentity
     name: cm-job-name-xeno-burrower
   - type: RMCSurgeryXenoHeart

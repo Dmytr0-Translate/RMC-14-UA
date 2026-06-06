@@ -474,6 +474,8 @@ public sealed class CMGunSystem : EntitySystem
         var session = CompOrNull<ActorComponent>(user)?.PlayerSession;
         if (gunComp.Target.Value == user.Owner)
         {
+            return; // Sich. Просто прибирає можливість це робити. Ніяких моментальних самогубств
+
             if (gunComp.SelectedMode == SelectiveFire.FullAuto)
                 return;
 
@@ -616,6 +618,7 @@ public sealed class CMGunSystem : EntitySystem
         RaiseLocalEvent(gun, ref ev);
 
         gun.Comp.ModifiedMultiplier = ev.Multiplier;
+        Dirty(gun);
     }
 
     public bool HasRequiredEquippedPopup(Entity<GunRequireEquippedComponent?> gun, EntityUid user)

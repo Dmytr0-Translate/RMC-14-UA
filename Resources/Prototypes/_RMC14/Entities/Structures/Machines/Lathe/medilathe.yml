@@ -1,16 +1,16 @@
 - type: entity
   parent: BaseMachinePowered
   id: RMCMedilathe
-  name: medilathe
+  name: медистат
   suffix: Right Output
-  description: A specialized autolathe made for printing medical items.
+  description: Спеціальна версія автостату для друкування медичного приладдя.
   components:
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false
   - type: RequiresSkill
     skills:
-      RMCSkillMedical: 3
+      RMCSkillMedical: 2 # Sich. 3 в оригіналі
   - type: Sprite
     sprite: _RMC14/Structures/Machines/medilathe.rsi
     layers:

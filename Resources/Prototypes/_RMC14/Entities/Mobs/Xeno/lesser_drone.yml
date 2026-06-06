@@ -6,8 +6,8 @@
   - RMCXenoSpeechSounds
   - RMCXenoVentCrawler
   id: CMXenoLesserDrone
-  name: Малий Дрон
-  description: Чужопланетний дрон. Виглядає… дрібнішою.
+  name: Мала Дрон
+  description: Чужопланетна істота з повноцінними лапами та малим хоботом. Виглядає... малою.
   components:
   - type: GhostRole
     name: cm-job-name-xeno-lesser-drone
@@ -77,7 +77,7 @@
       types:
         Heat: 15
   - type: RMCGibOnDeath
-    gibChance: 1.0
+    gibChance: 0.75 # Sich. 1.0 в оригіналі
   - type: RMCSpawnEntitiesOnGib
     entities:
     - RMCDecalSpawnerGibsLesserDrone
@@ -122,4 +122,7 @@
     ventCrawlIcon: lesser
   - type: RMCActionOrder
     id: CMXenoLesserDrone
-  - type: ExcludedFromKingVote
+#  - type: ExcludedFromKingVote – Sich
+  - type: XenoEvolution # Sich
+    strains:
+    - RMCXenoLesserCarrier

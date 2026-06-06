@@ -8,8 +8,8 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoSentinel
-  name: Вартовий
-  description: Слизький чужопланетянин що плюється.
+  name: Вартова
+  description: Невеличка жовта чужопланетна істота з кислотною залозою на шиї.
   components:
   - type: GuideHelp
     guides:
@@ -95,7 +95,7 @@
     cost: 70
     spray: XenoAcidSprayTrapWeak
   - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.1
+    value: 0.4 # 0.1 в оригіналі
   - type: FixedIdentity
     name: cm-job-name-xeno-sentinel
   - type: RMCSurgeryXenoHeart

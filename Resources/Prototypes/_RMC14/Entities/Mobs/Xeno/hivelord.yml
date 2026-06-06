@@ -8,8 +8,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: CMXenoHivelordBase
-  name: Володар Вулика
-  description: Будівник справді великих вуликів.
+  name: Володарка Вулика
+  description: Велика чужопланетна істота з повноцінними лапами та хоботом. Будівниця справді великих вуликів.
   components:
   - type: GhostRole
     name: cm-job-name-xeno-hivelord
@@ -95,13 +95,14 @@
   - type: FixedIdentity
     name: cm-job-name-xeno-hivelord
   - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.2
+    value: 0.7 # Sich. 0.2 в оригіналі
   - type: RMCSurgeryXenoHeart
     item: RMCOrganXenoHeartT2
 
 - type: entity
   parent: CMXenoHivelordBase
   id: CMXenoHivelord
+  description: Велика чужопланетна істота з повноцінними лапами та хоботом. Будівниця справді великих вуликів. # Sich
   components:
   - type: CanBuildThickFromConstructNode
   - type: GuideHelp
@@ -157,6 +158,7 @@
 - type: entity
   parent: CMXenoHivelordBase
   id: CMXenoHivelordResinWhisperer
+  description: Велика чужопланетна істота з повноцінними лапами та хоботом. Схоже має якийсь особливий зв'язок з травою за допомогою довших лап. # Sich
   suffix: Resin Whisperer
   components:
   - type: CanBuildThickFromConstructNode
@@ -212,6 +214,7 @@
 - type: entity
   parent: CMXenoHivelordBase
   id: CMXenoHivelordDesigner
+  description: Велика чужопланетна істота з повноцінними лапами та хоботом. З її лап капає якась дивна люмінісцентна рідина. # Sich
   suffix: Designer
   components:
   - type: GuideHelp

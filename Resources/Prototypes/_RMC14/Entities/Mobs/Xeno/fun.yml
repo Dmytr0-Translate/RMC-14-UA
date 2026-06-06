@@ -3,9 +3,9 @@
   - CMXenoRunner
   - RMCXenoCommendationReceiver
   id: RMCXenoRouny
-  name: Rouny
+  name: Руня
   suffix: RMC14
-  description: thas a fuckin rouny.
+  description: Це Руня!
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi
@@ -21,8 +21,8 @@
   - CMXenoRunner
   - RMCXenoCommendationReceiver
   id: RMCXenoWehny
-  name: Wehny
-  description: A cruel, cruel joke made by some sick individual.
+  name: Веххі
+  description: Жорстокий, дуже жорстокий жарт, вигаданий якоюсь хворою людиною.
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi
@@ -39,9 +39,10 @@
   - CMXenoTail
   - CMXenoFlammable
   - RMCXenoSpeechSounds
+  - RMCXenoVentCrawler # Sich
   id: RMCXenoLesserCarrier
-  name: Lesser Carrier
-  description: A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures. Looks... smaller.
+  name: Мала Носійка
+  description: Дивна на вигляд інопланетна істота. Схоже по ній повзають дивні крапобоподібні істоти. Виглядає... малою.
   components:
   - type: GhostRole
     name: roles-lesser-carrier-name
@@ -151,9 +152,9 @@
         - XenoEgg
   - type: XenoInhands
     prefix: lesser
-  - type: XenoEggSustainer
-    maxSustainedEggs: 1
-    sustainedEggsRange: 7
+#  - type: XenoEggSustainer – Sich. Нерф, бо не адмеме
+#    maxSustainedEggs: 1
+#    sustainedEggsRange: 7
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 3.5
@@ -174,3 +175,19 @@
   - type: XenoHidden
   - type: FixedIdentity
     name: rmc-lesser-carrier
+  # Sich start. Більше не адмеме, наші фікси
+  - type: RMCGibOnDeath
+    gibChance: 0.5
+  - type: RMCSpawnEntitiesOnGib
+    entities:
+    - RMCDecalSpawnerGibsLesserDrone
+    - RMCGibEffectXenoLesserDrone
+  - type: XenoStrain
+    name: sich-xeno-lesser-carrier-name
+    description: sich-xeno-lesser-carrier-description
+    popup: sich-xeno-lesser-carrier-popup
+  - type: VentCrawler
+    ventCrawlIcon: lesser
+  - type: RMCActionOrder # Збереження біндів
+    id: RMCXenoLesserCarrier
+  # Sich end

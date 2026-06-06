@@ -1,8 +1,8 @@
 - type: entity
   parent: CMPamphlet
-  id: SichCMPamphletSherpa
+  id: SichPamphletSherpa
   name: довідник шерпи
-  description: Він навчить вас переносити важкі речі.
+  description: Тут описується, як правильно переносити важкі речі.
   components:
     - type: Sprite
       sprite: _Sich/Objects/Misc/pamphlets.rsi
@@ -22,6 +22,23 @@
         sprite: /Textures/_Sich/Interface/map_blips.rsi
         state: sherpa
       bypassLimit: false # Sich. Особливі ролі лише один раз
+      jobWhitelists:
+        - popup: rmc-pamphlets-rifleman-warning
+          jobProto: CMRifleman
+
+# Я тільки зараз зрозумів, як воно схоже на шерпу, тому це фактично буде те саме, але на мінімалках. . .
+- type: entity
+  parent: CMPamphlet
+  id: SichPamphletFireman
+  name: довідник перенесення на плечах
+  description: Тут описується, як правильно переносити людей на собі.
+  components:
+    - type: Sprite
+      sprite: _Sich/Objects/Misc/pamphlets.rsi
+      state: pamphlet_sherpa
+    - type: SkillPamphlet
+      addSkills:
+        RMCSkillFireman: 1
       jobWhitelists:
         - popup: rmc-pamphlets-rifleman-warning
           jobProto: CMRifleman

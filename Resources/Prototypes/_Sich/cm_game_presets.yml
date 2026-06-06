@@ -1,4 +1,17 @@
 - type: gamePreset
+  id: SichCalmed
+  alias:
+  - calmed
+  - Calmed
+  - extended
+  - Extended
+  name: sich-calmed-preset-title
+  description: sich-calmed-preset-description
+  showInVote: true
+  rules:
+  - SichCalmed
+
+- type: gamePreset
   id: SichEventSunRiders
   alias:
   - event
@@ -10,12 +23,24 @@
   - SichEventSunRiders
 
 - type: gamePreset
-  id: SichCalmed
+  id: SichDistressSignalCLF
   alias:
-  - calmed
-  - Calmed
-  name: sich-calmed-preset-title
-  description: sich-calmed-preset-description
-  showInVote: true
+  - distresssignalclf
+  - cmdistresssignalclf
+  - cmdsclf
+  name: sich-event-clf-preset-title
+  description: sich-event-clf-preset-description
+  showInVote: false
+  rules:
+  - SichDistressSignalCLF
+
+- type: gamePreset
+  id: MRSandbox
+  alias:
+  - sandbox
+  name: mriya-sandbox-preset-title
+  description: mriya-sandbox-preset-description
+  showInVote: false
   rules:
   - SichCalmed
+  - Sandbox

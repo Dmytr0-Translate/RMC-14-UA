@@ -4,7 +4,7 @@ rmc-ghost-role-information-bureau-rules = Ви [color=cyan][bold]член Бюр
                                              Вам абсолютно [color=red]ЗАБОРОНЕНО[/color] пам'ятати та називати ім'я, заняття, тощо зі свого минулого персонажа.
 
 rmc-ghost-role-information-bureau-marshal-description = Отримуйте інструкції від офісу БКМ та виконуйте їхні накази. Не застосовуйте та не скасовуйте морське право на морському судні, якщо інше не вимагається.
-rmc-ghost-role-information-bureau-observer-description = Контролювати та документувати поводження з розумними істотами на кораблі ООН. Забезпечуйте дотримання прав розумних істот та надавайте медичну допомогу за потреби.
+rmc-ghost-role-information-bureau-observer-description = Контролювати та документувати поводження з розумними істотами на кораблі ОН. Забезпечуйте дотримання прав розумних істот та надавайте медичну допомогу за потреби.
 rmc-ghost-role-information-icb-description = Контролюйте торговельні операції, забезпечуйте дотримання правил та розслідуйте потенційну контрабанду або діяльність на чорному ринку. Від вас очікується співпраця із депутатами БКМ та забезпечення дотримання законів міжзоряної торгівлі.
 
 rmc-ghost-name-bureau-marshal = Маршал БКМ (Дружні)
@@ -15,6 +15,9 @@ rmc-ghost-name-bureau-deputy = Помічник БКМ (Дружні)
 rmc-job-name-bureau-deputy = Помічник БКМ
 rmc-job-prefix-bureau-deputy = ПОМ БКМ
 
+rmc-job-name-bureau-riot-control-team-leader = CMB Riot Control Team Leader
+rmc-job-prefix-bureau-riot-control-team-leader = CMB RCTL
+
 rmc-ghost-name-bureau-observer = Спостерігач за Правами Розумних Істот в Міжзоряному Просторі (Дружні)
 rmc-job-name-bureau-observer = Спостерігач за Правами Розумних Істот в Міжзоряному Просторі
 rmc-job-prefix-bureau-observer = СПВ
@@ -23,4 +26,4 @@ rmc-ghost-name-icb = Представник Бюро Міжзоряної Тор
 rmc-job-name-icb = Представник Бюро Міжзоряної Торгівлі
 rmc-job-prefix-icb = БМТ
 
-# БКМ(CMB) - Бюро Колоніальних Маршалів 
+# БКМ(CMB) - Бюро Колоніальних Маршалів
