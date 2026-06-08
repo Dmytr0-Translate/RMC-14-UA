@@ -94,7 +94,7 @@
     ## Використання та інтерфейс міномета
 
     <Box>
-      <GuideEntityEmbed Entity="RMCMortarInterfaceGuideBook"/>
+      <GuideEntityEmbed Entity="MRMortarInterfaceGuideBook"/>
     </Box>
 
     Міномет працює за системою координат, однак ви також можете змінювати точку влучання за допомогою зміщення.

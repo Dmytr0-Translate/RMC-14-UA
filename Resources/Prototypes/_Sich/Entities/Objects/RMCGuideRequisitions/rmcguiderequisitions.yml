@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: RMCATSSInterfaceGuideBook
+  id: MRATSSInterfaceGuideBook
   name: Інтерфейс АТСС
   description: Інтерфейс АТСС
   suffix: (GuideBookEntity)
@@ -12,7 +12,7 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCLineGuideBook
+  id: MRLineGuideBook
   name: Інтерфейс Стійки Постачань
   description: Інтерфейс Стійки Постачань
   suffix: (GuideBookEntity)
@@ -24,7 +24,7 @@
 
 - type: entity
   parent: BaseItem
-  id: RMCPodsGuideBook
+  id: MRPodsGuideBook
   name: Інтерфейс Подів
   description: Інтерфейс Подів
   suffix: (GuideBookEntity)

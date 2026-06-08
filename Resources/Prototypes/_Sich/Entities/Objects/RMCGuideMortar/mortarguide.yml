@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: RMCMortarInterfaceGuideBook
+  id: MRMortarInterfaceGuideBook
   name: Інтерфейс міномета
   description: Інтерфейс міномета
   suffix: (GuideBookEntity)
