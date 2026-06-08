@@ -71,7 +71,7 @@
   parent: RMC
   id: RMCSurvivor
   priority: 1
-  name: "Виживші"
+  name: "Вцілілі"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCSurvivor.xml"
 
 - type: guideEntry

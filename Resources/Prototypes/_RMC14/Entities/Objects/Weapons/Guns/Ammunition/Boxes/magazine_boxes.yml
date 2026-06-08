@@ -346,7 +346,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CEmpty
-  name: коробка з магазинами (М54С x 10)
+  name: коробка з магазинами (М54С х 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -394,7 +394,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CAPEmpty
-  name: коробка з магазинами (ББ М54С x 10)
+  name: коробка з магазинами (ББ М54С х 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -442,7 +442,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM54CExtEmpty
-  name: коробка з магазинами (Розширені М54С x 8)
+  name: коробка з магазинами (Розширені М54С х 8)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -490,7 +490,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPREmpty
-  name: коробка з магазинами (М4СПГ x 16)
+  name: коробка з магазинами (М4СПГ х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -538,7 +538,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPRAPEmpty
-  name: коробка з магазинами (ББ М4СПГ x 16)
+  name: коробка з магазинами (ББ М4СПГ х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -586,7 +586,7 @@
 - type: entity
   parent: RMCBoxMagazineRifleBase
   id: RMCBoxMagazineRifleM4SPRExtEmpty
-  name: коробка з магазинами (Розширені М4СПГ x 12)
+  name: коробка з магазинами (Розширені М4СПГ х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1752,7 +1752,7 @@
 - type: entity
   parent: RMCBoxMagazineSMGBase
   id: RMCBoxMagazineSMGM63Empty
-  name: коробка з магазинами (М63 x 12)
+  name: коробка з магазинами (М63 х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1800,7 +1800,7 @@
 - type: entity
   parent: RMCBoxMagazineSMGBase
   id: RMCBoxMagazineSMGM63APEmpty
-  name: коробка з магазинами (ББ М63 x 12)
+  name: коробка з магазинами (ББ М63 х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1848,7 +1848,7 @@
 - type: entity
   parent: RMCBoxMagazineSMGBase
   id: RMCBoxMagazineSMGM63ExtEmpty
-  name: коробка з магазинами (Розширені М63 x 10)
+  name: коробка з магазинами (Розширені М63 х 10)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -1989,7 +1989,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM1984Empty
-  name: коробка з магазинами (М1984 x 16)
+  name: коробка з магазинами (М1984 х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2035,7 +2035,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM1984APEmpty
-  name: коробка з магазинами (ББ М1984 x 16)
+  name: коробка з магазинами (ББ М1984 х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2076,7 +2076,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id:  RMCBoxMagazinePistolMK80Empty
-  name: коробка з магазинами (МК80 x 16)
+  name: коробка з магазинами (МК80 х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2122,7 +2122,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolSU6Empty
-  name: коробка з магазинами (СП-6 x 16)
+  name: коробка з магазинами (СП-6 х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2168,7 +2168,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM77APEmpty
-  name: коробка з магазинами (М77 ББ x 16)
+  name: коробка з магазинами (ББ М77 х 16)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2214,7 +2214,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazineRevolverM44Empty
-  name: коробка з швидкозарядниками (М44 x 16)
+  name: коробка з швидкозарядниками (М44 х 16)
   description: Коробка з швидкозарядниками для револьвера.
   components:
   - type: Construction
@@ -2261,7 +2261,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazineRevolverM44MarksmanEmpty
-  name: коробка з швидкозарядниками (М44 для точної стрільби x 16)
+  name: коробка з швидкозарядниками (М44 для точної стрільби х 16)
   description: Коробка з швидкозарядниками для револьвера.
   components:
   - type: Construction
@@ -2524,7 +2524,7 @@
 - type: entity
   parent: RMCBoxMagazineShellBase
   id: RMCBoxShellsBuckshotEmpty
-  name: коробка з набоями (Картеч x 100)
+  name: коробка з набоями (Картеч х 100)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2568,7 +2568,7 @@
 - type: entity
   parent: RMCBoxMagazineShellBase
   id: RMCBoxShellsSlugsEmpty
-  name: коробка з набоями (Кулеві x 100)
+  name: коробка з набоями (Кулеві х 100)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2612,7 +2612,7 @@
 - type: entity
   parent: RMCBoxMagazineShellBase
   id: RMCBoxShellsFlechetteEmpty
-  name: коробка з набоями (Флешетні x 100)
+  name: коробка з набоями (Флешетні х 100)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2656,7 +2656,7 @@
 - type: entity
   parent: RMCBoxMagazineShellBase
   id: RMCBoxShellsBreachingEmpty
-  name: коробка з набоями (Пробивні x 120)
+  name: коробка з набоями (Пробивні х 120)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2890,7 +2890,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13Empty
-  name: коробка з магазинами (М13 x 22)
+  name: коробка з магазинами (М13 х 22)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2936,7 +2936,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13ExtEmpty
-  name: коробка з магазинами (Розширені М13 x 14)
+  name: коробка з магазинами (Розширені М13 х 14)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -2982,7 +2982,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13DrumEmpty
-  name: коробка з магазинами (Барабані М13 x 12)
+  name: коробка з магазинами (Барабанні М13 х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -3028,7 +3028,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13APEmpty
-  name: коробка з магазинами (М13 ББ x 22)
+  name: коробка з магазинами (ББ М13 х 22)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -3074,7 +3074,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13ExtAPEmpty
-  name: коробка з магазинами (Розширені М13 ББ x 14)
+  name: коробка з магазинами (Розширені ББ М13 х 14)
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -3120,7 +3120,7 @@
 - type: entity
   parent: RMCBoxMagazinePistolBase
   id: RMCBoxMagazinePistolM13DrumAPEmpty
-  name: коробка з магазинами (Барабані М13 ББ x 12)
+  name: коробка з магазинами (Барабанні ББ М13 х 12)
   components:
   - type: Construction
     graph: RMCBoxMagazine

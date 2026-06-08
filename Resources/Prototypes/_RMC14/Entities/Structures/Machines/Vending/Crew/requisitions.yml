@@ -19,7 +19,7 @@
   parent: ColMarTechCargo
   id: ColMarTechCargoGuns
   name: автоматизована стійка амуніції АТСС
-  description: Автоматизована стійка постачання, підключена до великого складу різноманітної вогнепальної зброї, вибухових засобів, розвантажувального спорядження та інших предметів. Доступна для вищого командування, Офіцера Логістики та Вантажників.
+  description: Автоматизована стійка постачання, підключена до великого складу різноманітної вогнепальної зброї, вибухових засобів, розвантажувального спорядження та інших предметів. Доступна для Старшого Офіцерського Складу, Офіцера Логістики та Вантажників.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/guns.rsi
@@ -355,7 +355,7 @@
   parent: ColMarTechCargo
   id: ColMarTechCargoAmmo
   name: автоматизована стійка боєприпасів АТСС
-  description: Автоматизована стійка постачання, підключена до великого складу різних типів боєприпасів. Доступна для вищого командування, Офіцера Логістики та Вантажників.
+  description: Автоматизована стійка постачання, підключена до великого складу різних типів боєприпасів. Доступна для Старшого Офіцерського Складу, Офіцера Логістики та Вантажників.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/ammo.rsi
@@ -456,50 +456,50 @@
       hasBoxes: true
       entries:
       - id: RMCBoxMagazinePistolM13
-        name: коробка з магазинами (М13 x 22)
+        name: коробка з магазинами (М13 х 22)
         box: RMCMagazinePistolM13
       - id: RMCBoxMagazinePistolM13Ext
-        name: коробка з магазинами (Розширені М13 x 14)
+        name: коробка з магазинами (Розширені М13 х 14)
         box: RMCMagazinePistolM13Ext
       - id: RMCBoxMagazinePistolM13AP
-        name: коробка з магазинами (М13 ББ x 22)
+        name: коробка з магазинами (ББ М13 х 22)
         box: RMCMagazinePistolM13AP
       - id: RMCBoxMagazinePistolM13ExtAP
-        name: коробка з магазинами (Розширені М13 ББ x 14)
+        name: коробка з магазинами (Розширені ББ М13 х 14)
         box: RMCMagazinePistolM13ExtAP
       - id: RMCBoxMagazineSMGM63
-        name: коробка з магазинами (М63 x 12)
+        name: коробка з магазинами (М63 х 12)
         box: CMMagazineSMGM63
       - id: RMCBoxMagazineSMGM63AP
-        name: коробка з магазинами (ББ М63 x 12)
+        name: коробка з магазинами (ББ М63 х 12)
         box: CMMagazineSMGM63AP
       - id: RMCBoxMagazineSMGM63Ext
-        name: коробка з магазинами (Розширені М63 x 10)
+        name: коробка з магазинами (Розширені М63 х 10)
         box: CMMagazineSMGM63Ext
       - id: RMCBoxMagazineRifleM54C
-        name: коробка з магазинами (М54С x 10)
+        name: коробка з магазинами (М54С х 10)
         box: CMMagazineRifleM54C
       - id: RMCBoxMagazineRifleM54CAP
-        name: коробка з магазинами (ББ М54С x 10)
+        name: коробка з магазинами (ББ М54С х 10)
         box: CMMagazineRifleM54CAP
       - id: RMCBoxMagazineRifleM54CExt
-        name: коробка з магазинами (Розширені М54С x 8)
+        name: коробка з магазинами (Розширені М54С х 8)
         box: CMMagazineRifleM54CExt
       - id: RMCBoxMagazinePistolM1984
-        name: коробка з магазинами (М1984 x 16)
+        name: коробка з магазинами (М1984 х 16)
         box: CMMagazinePistolM1984
 #      - name: Magazine Box (AP M1984 x 16)
 #        box: CMMagazinePistolM1984AP
 #      - name: Magazine Box (HP M1984 x 16)
 #        box: CMMagazineSMGM63
       - id: RMCBoxMagazineRifleM4SPR
-        name: коробка з магазинами (М4СПГ x 16)
+        name: коробка з магазинами (М4СПГ х 16)
         box: CMMagazineRifleM4SPR
       - id: RMCBoxMagazineRifleM4SPRAP
-        name: коробка з магазинами (ББ М4СПГ x 16)
+        name: коробка з магазинами (ББ М4СПГ х 16)
         box: CMMagazineRifleM4SPRAP
       - id: RMCBoxMagazineRifleM4SPRExt
-        name: коробка з магазинами (Розширені М4СПГ x 16)
+        name: коробка з магазинами (Розширені М4СПГ х 16)
         box: CMMagazineRifleM4SPRExt
 #      - name: Magazine Box (M54CE2 x 8)
 #        box: RMCCrateMagazineRifleM54CE2
@@ -510,29 +510,29 @@
 #      - name: Magazine Box (M54C MK1 AP x 8)
 #        box: CMMagazineSMGM63
       - id: RMCBoxShellsBuckshot
-        name: коробка з набоями (Картеч x 100)
+        name: коробка з набоями (Картеч х 100)
         box: RMCBoxShotgunBuckshot
         boxAmount: 4
       - id: RMCBoxShellsFlechette
-        name: коробка з набоями (Флешетні x 100)
+        name: коробка з набоями (Флешетні х 100)
         box: RMCBoxShotgunFlechette
         boxAmount: 4
       - id: RMCBoxShellsSlugs
-        name: коробка з набоями (Кулеві x 100)
+        name: коробка з набоями (Кулеві х 100)
         box: RMCBoxShotgunSlugs
         boxAmount: 4
       - id: RMCBoxShellsBreaching
-        name: коробка з набоями (Пробивні x 120)
+        name: коробка з набоями (Пробивні х 120)
         box: RMCBoxShotgunBreaching
         boxAmount: 4
       - id: RMCBoxMagazinePistolM77AP
-        name: коробка з магазинами (М77 ББ x 16)
+        name: коробка з магазинами (ББ М77 х 16)
         box: CMMagazinePistolM77AP
       - id: RMCBoxMagazinePistolSU6
-        name: коробка з магазинами (СП-6 x 16)
+        name: коробка з магазинами (СП-6 х 16)
         box: RMCMagazinePistolSU6
       - id: RMCBoxMagazinePistolMK80
-        name: коробка з магазинами (МК80 x 16)
+        name: коробка з магазинами (МК80 х 16)
         box: CMMagazinePistolMK80
 #      - name: Magazine Box (XM51 x 8)
 #        box: RMCMagazineShotgunXM51
@@ -545,10 +545,10 @@
 #      - name: Magazine Box (ML66D x 8)
 #        box: CMMagazineSMGM63
       - id: RMCBoxMagazineRevolverM44
-        name: коробка з швидкозарядниками (М44 x 16)
+        name: коробка з швидкозарядниками (М44 х 16)
         box: RMCSpeedLoaderM44
       - id: RMCBoxMagazineRevolverM44Marksman
-        name: коробка з швидкозарядниками (М44 для точної стрільби x 16)
+        name: коробка з швидкозарядниками (М44 для точної стрільби х 16)
         box: RMCSpeedLoader44Marksman
 #      - name: Magazine Box (Heavy M44 x 16)
 #        box: CMMagazineSMGM63
@@ -558,27 +558,27 @@
       hasBoxes: true
       entries:
       - id: RMCBoxBulletsSMG
-        name: коробка набоїв для ПК (10x20 мм) (М63)
+        name: коробка набоїв для ПК (10х20 мм) (М63)
         box: CMMagazineSMGM63
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsSMGAP
-        name: коробка набоїв для ПК (10x20 мм ББ) (М63)
+        name: коробка набоїв для ПК (10х20 мм ББ) (М63)
         box: CMMagazineSMGM63AP
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsRifle
-        name: коробка набоїв для гвинтівок (10x24 мм) (М4СПГ)
+        name: коробка набоїв для гвинтівок (10х24 мм) (М4СПГ)
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifleAP
-        name: коробка набоїв для гвинтівок (10x24 мм ББ) (М4СПГ)
+        name: коробка набоїв для гвинтівок (10х24 мм ББ) (М4СПГ)
         box: CMMagazineRifleM4SPRAP
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifle
-        name: коробка набоїв для гвинтівок (10x24 мм) (М54С)
+        name: коробка набоїв для гвинтівок (10х24 мм) (М54С)
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
       - id: RMCBoxBulletsRifleAP
-        name: коробка набоїв для гвинтівок (10x24 мм ББ) (М54С)
+        name: коробка набоїв для гвинтівок (10х24 мм ББ) (М54С)
         box: CMMagazineRifleM54CAP
         boxSlots: 15 # 600 / 40
 
@@ -587,7 +587,7 @@
   parent: ColMarTechCargo
   id: ColMarTechCargoAttachments
   name: автоматизована стійка оснащення ЕГІДА
-  description: Автоматизована стійка постачання, підключена до великого складу різних типів оснащення для зброї. Доступна для вищого командування, Офіцера Логістики та Вантажників.
+  description: Автоматизована стійка постачання, підключена до великого складу різних типів оснащення для зброї. Доступна для Старшого Офіцерського Складу, Офіцера Логістики та Вантажників.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/attachments.rsi
@@ -688,7 +688,7 @@
   parent: ColMarTechBase
   id: ColMarTechCargoUniform
   name: стійка для додаткового спорядження АТСС
-  description: Автоматизована стійка постачання, підключена до великого складу різного додаткового спорядження. Доступна для вищого командування, Офіцера Логістики та Вантажників.
+  description: Автоматизована стійка постачання, підключена до великого складу різного додаткового спорядження. Доступна для Старшого Офіцерського Складу, Офіцера Логістики та Вантажників.
   suffix: Requisitions
   components:
   - type: AccessReader
