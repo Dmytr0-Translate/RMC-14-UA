@@ -71,7 +71,7 @@
   parent: RMC
   id: RMCSurvivor
   priority: 1
-  name: "Виживші"
+  name: "Вцілілі"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCSurvivor.xml"
 
 - type: guideEntry
@@ -120,7 +120,7 @@
   parent: RMC
   id: RMCGuideRoleSGO
   priority: 8
-  name: "Оператор СмартГану"
+  name: "Оператор СмартГана"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideRoleSGO.xml"
 
 - type: guideEntry # made by teatotaltemplar
