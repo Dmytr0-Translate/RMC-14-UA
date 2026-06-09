@@ -3,8 +3,8 @@
 ## Загальні налаштування
 [game]
 #Налаштування самого серверу. Назва, опис, режим, мапа, час лобі
-hostname = "[UA]🟦🟦🟨🟨 СіЧ Колоніальні Морпіхи. Marine Corpse УКРАЇНСЬКОЮ"
-desc = "СіЧ – перша українська спільнота на просторах СС14. Цей сервер базується на білді RMC (РМС).\nРМС – асиметрична ПВП-гра про боротьбу Морпіхів проти Ксеноморфів. Можливо бути за кожну з сторін!\nУ нас ви знайдете:\n- 💛 Свідому спільноту українців без толерації будь-яких ворожих елементів\n- 📝 Власна версія білду з українським перекладом та міні-додаваннями.\n- 🤝 Привітну адміністрацію та гравців, які завжди будуть раді допомогти\n- 🎭 Періодичні події. Від просто розбавлень звичайних раундів та до власного ПВЕ режиму\n-  🛡️ Бан окупантів по айпі\n\nБільшість збирається на зборах у вихідні або по вечорах, але в інший час можна відіграти у Спокійних раундах (без загрози).\nЗавітайте у наш Дискорд, щоб бути в курсі всіх новин й обговорень та у Гітхаб, якщо маєте бажання щось змінити чи додати!"
+hostname = "[UA]🟦🟦🟨🟨 Колоніальні Морпіхи Мрії. Marine Corpse УКРАЇНСЬКОЮ"
+desc = "Належить до проєкту Мрія, створено від свідомих українців для свідомих українців у Space Station 14. Цей сервер базується на білді RMC (РМС).\nРМС – асиметрична ПВП-гра про боротьбу Морпіхів проти Ксеноморфів. Можливо бути за кожну з сторін!\nУ нас ви знайдете:\n- 💛 Свідому спільноту українців без толерації будь-яких ворожих елементів\n- 📝 Власна версія білду з українським перекладом та міні-додаваннями.\n- 🤝 Привітну адміністрацію та гравців, які завжди будуть раді допомогти\n- 🎭 Періодичні події. Від просто розбавлень звичайних раундів та до власного ПВЕ режиму\n-  🛡️ Бан окупантів по айпі\n\nБільшість збирається на зборах у вихідні або по вечорах, але в інший час можна відіграти у Спокійних раундах (без загрози).\nЗавітайте у наш Дискорд, щоб бути в курсі всіх новин й обговорень та у Гітхаб, якщо маєте бажання щось змінити чи додати!"
 map = "SichSavannah"
 map_pool = "SichDefaultMapPool"
 defaultpreset = "CMDistressSignal"
@@ -14,21 +14,21 @@ round_end_sound_collection = "CMRoundEnd"
 contraband_examine = false
 panic_bunker.enabled = false
 round_end_pvs_overrides = false
-round_restart_time = 180
-lobbyduration = 230
+round_restart_time = 180 # 3 хвилини
+lobbyduration = 300 # 5 хвилин
 
 [infolinks]
 discord = " https://discord.gg/MMUsHnH2Tt"
 github = "https://github.com/Space-station-14-UA/RMC-14-UA"
-patreon = "https://send.monobank.ua/jar/8nmcqa8vnz" #Патреон, але монобанка, бо підтримка серверу йде саме через неї
+patreon = "https://donatello.to/Salco" # Патреон, але Донателло, бо підтримка серверу йде саме через нього
 website = "https://ss14.com.ua/"
-wiki = "https://wiki.rouny-ss14.com"
+wiki = "https://wiki.rouny-ss14.com" # Наша вікі жива умовно, тому легше посилатися на офіційну
 
 [server]
 #Базові налаштування для відображення гайдів та правил Січі
 rules_file = "SichOverview"
 default_guide = "RMC14"
-lobby_name = "Колоніальна Морпіхота Січі"
+lobby_name = "Колоніальна Морпіхота Мрії"
 
 [adminlogs]
 #Назва серверу у адмін нотатках
@@ -52,9 +52,9 @@ admin_prefix = true
 xeno_damage_received_multiplier = 0.85
 xeno_damage_dealt_multiplier = 0.85
 survivors_minimum = 0
-survivors_maximum = 3
+survivors_maximum = 0
 marines_per_survivor = 15
-job_slot_scaling = false
+job_slot_scaling = true
 distress_xenos_minimum = 1
 emote_cooldown_seconds = 0
 force_hijack_end_time_minutes = 15
@@ -62,12 +62,12 @@ late_joins_burrowed_larva_death_time = 0
 disconnected_xeno_ghost_role_time_seconds = 120
 late_joins_per_burrowed_larva_early = 6.5
 late_joins_per_burrowed_larva = 6
-xeno_evolve_same_caste_cooldown_seconds = 60
+xeno_evolve_same_caste_cooldown_seconds = 0
 parasite_spawn_initial_delay_minutes = 0
-xeno_spawn_initial_mute_duration_seconds = 60
+xeno_spawn_initial_mute_duration_seconds = 0
 dropship_initial_delay_minutes = 20
-evolution_points_accumulate_before_minutes = 20
-evolution_early_evo_point_boost_minutes = 20
+evolution_points_accumulate_before_minutes = 30
+evolution_early_evo_point_boost_minutes = 30
 auto_balance_min = 4
 auto_balance_max = 6
 bioscan_initial_delay_seconds = 600
@@ -92,13 +92,13 @@ show_editor_species_button = false
 
 [chat]
 #Інформаційне повідомлення дня
-motd = "Вітаємо на сервері Морпіхоти Січі! Якщо ви бачите відсутність гравців – ймовірно зараз нема збору на який більшість й приходить. Завітайте до нас на вихідних, а також у Дискорд сервер (посилання є у лобі), щоб бути в курсі ситуації."
+motd = "Вітаємо на сервері Морпіхоти Мрії! Якщо ви бачите відсутність гравців – ймовірно зараз більшість зайнята. Завітайте до нас ввечері чи на вихідних, а також у Дискорд сервер (посилання є у лобі), щоб бути в курсі ситуації."
 
 [tips]
 #Поради (вже тут, але не перекладені)
 dataset = "RMC_Tips"
 login_dataset = "RMC_Tips"
-out_of_game_frequency = 115
+out_of_game_frequency = 150 # lobbyduration/2, 2.5 хвилини
 
 [vote]
 #Приколи з голосуванням для РМС. Відредаговано під наші потреби
@@ -117,7 +117,7 @@ voter_playtime = 72
 ## Технічні налаштування серверу
 [net]
 #Тікрейт, вимкнення зайвих повідомлень в консоль серверу
-tickrate = 20
+tickrate = 30 # На сервері фактично 60
 bindto = "::,0.0.0.0"
 log_late_msg = false
 

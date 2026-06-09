@@ -30,6 +30,10 @@
     - Blinded
     - Deaf
     - Unconscious
+  - type: RemoveComponents # Sich
+    components:
+    - type: Thirst
+    - type: Hunger
 
 - type: entity
   id: RMCSmallHost
@@ -49,6 +53,10 @@
     damageCap: 0
     heatDamageThreshold: 423
     coldDamageThreshold: 0
+  - type: RemoveComponents # Sich
+    components:
+    - type: Thirst
+    - type: Hunger
 
 - type: entity
   parent: [RMCSimpleMob, MobMonkey, RMCSmallHost]
@@ -130,6 +138,10 @@
   id: RMCMobMouseDoc
   name: Док
   description: Старший мишачий дослідник з Альмаєра, який також працює на Саванні. Йому подобається сир, експерименти та вибухи!
+  components:
+  - type: UserIFF # Sich. Щоб турелі його не розстрілювали
+    factions:
+    - FactionMarine
 
 - type: entity
   name: пацюк
@@ -362,12 +374,12 @@
 - type: entity
   parent: [RMCSimpleMob, MobCatCalico]
   id: CMMobJones
-  name: Джонс
+  name: Василь # Sich. Джонс в оригіналі, але у нас це став кіт Сирени (PERKARTER в ДС)
   description: Старий, колись безпритульний кіт, походження якого ніхто й не згадає.
   components:
   - type: WarpPoint
     follow: true
-    location: Джонс # Sich, бо це назва
+    location: Василь # Sich, бо це назва
   - type: CrashLandable
   - type: PressureImmunity
   - type: Respirator

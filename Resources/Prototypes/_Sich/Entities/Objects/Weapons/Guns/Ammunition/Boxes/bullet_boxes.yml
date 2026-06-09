@@ -20,7 +20,7 @@
     - state: rifle_ammo_full_rounds_color
       map: [ "enum.BulletBoxLayers2.Fill" ]
       color: "#ffc000"
-  - type: BulletBox
+  - type: BulletBox # 6 магазинів
     max: 3000
     amount: 3000
     bulletType: RMCBoxBulletsSmartGun
@@ -30,6 +30,18 @@
   - type: HeldSpeedModifier
     walkModifier: 0.700
     sprintModifier: 0.700
+
+- type: entity
+  parent: SichBoxBulletsSmartGun
+  id: SichBoxBulletsSmartGunEmpty
+  suffix: Січ, Порожня
+  components:
+  - type: Construction
+    graph: RMCBoxMagazine
+    node: SichBoxBulletsSmartGun
+  - type: BulletBox
+    bulletType: RMCBoxBulletsSmartGun
+    amount: 0
 
 - type: Tag
   id: SichBulletBoxSmartGun
