@@ -36,7 +36,7 @@
   parent: SichMobMothroach
   id: SichMobMothroachSynth
   name: синтетична тарганоміль
-  description: Це чарівно-пустотливий побічний продукт розробки синтетиків у вигляді ніан. Роботичне бззз!
+  description: "Це чарівно-пустотливий побічний продукт розробки синтетиків у вигляді ніан. Роботичне бззз!\nМає ледь помітний напис \"Прототип Люнет\" на лівому крилі."
   suffix: Січ, Адмеме
   components:
   - type: Sprite
@@ -53,12 +53,25 @@
   - type: RMCImmuneToFireTileDamage
   - type: CanEscapeInventory
     baseResistTime: 0.5 # 5 в оригінальної
+  - type: StunOnHit # Щоб кусати тих, хто чипає
+    whitelist:
+      components:
+      - Marine
+  - type: StaminaDamageOnHit
+    damage: 100
+  - type: MeleeRequiresSkill # Щоб не могли бити нею
+    skills:
+      RMCSkillPolice: 3
+  - type: Skills
+    skills:
+      RMCSkillPolice: 3
   - type: TacticalMapIcon
     icon:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: synth
   - type: RemoveComponents
     components:
+    - type: Destructible # Щоб не розривало на шмаття
     - type: ReplacementAccent # Вона може повноцінно балакати
       accent: mothroach
 

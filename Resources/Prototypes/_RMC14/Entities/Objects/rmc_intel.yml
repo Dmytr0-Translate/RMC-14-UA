@@ -259,7 +259,7 @@
           - !type:TechLogisticsDeliveryEvent
             object: RMCOrbitalCannonWarheadCluster
           - !type:TechAnnounceEvent
-            author: СПЕЦІАЛЬНІ АКТИВИ САВАННИ АВТОРИЗОВАНО 
+            author: СПЕЦІАЛЬНІ АКТИВИ САВАННИ АВТОРИЗОВАНО
             message: Додаткова кластерна боєголовка для орбітального бомбардування була передана логістиці через АТСС.
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
@@ -320,19 +320,19 @@
             sprite: _RMC14/Interface/tech_tree.rsi
             state: upgrade
       -
-        - name: Ядерний Пристрій
-          description: Ядерна бомба. Її можна придбати лише через 90 хвилин після початку операції. Ви повинні бути справді впевнені, що вам це необхідно.
+        - name: Експерементальна орбітальна боєголовка # Sich. Заміна нюки на ЕГІДА ОБ, тимчасово
+          description: Боєголовка моделі ЕГІ-328-КРА. Розробка корпорації ЕГІДА, найпотужніший з доступних зарядів. Можна придбати через 90 хвилин з початку операції.
           cost: 5
           timeLock: 90m # Sich. 115m в оригіналі
           events:
           - !type:TechLogisticsDeliveryEvent
-            object: RMCNuke
+            object: MRAegisBoxCommand
           - !type:TechAnnounceEvent
             author: СПЕЦІАЛЬНІ АКТИВИ САВАННИ АВТОРИЗОВАНО
-            message: Розгортання ядерного заряду було санкціоновано, його буде передано логістиці через АТСС.
+            message: Розгортання експерементальної орбітальної боєголовки було санкціоновано, її буде передано логістиці через АТСС.
           icon:
-            sprite: _RMC14/Interface/tech_tree.rsi
-            state: nuke
+            sprite: _RMC14/Interface/map_blips.rsi # Іконка мапи, бо прикольна
+            state: aegisob
 - type: Tag
   id: RMCIntelItem
 
