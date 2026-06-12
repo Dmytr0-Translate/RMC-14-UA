@@ -85,7 +85,7 @@
   paygrade: ВеЯП2
 
 # Synthetics
-# A/N: probably not particularly useful, but I want some variety
+# A/N: probably not particularly useful, but I want some variety WY-SEC
 - type: rank
   id: RMCRankWeYaUtilitySynth # Simple labor synths (drivers, cargo haulers, repairmen)
   name: Утилітарний Синтетик
@@ -103,3 +103,28 @@
   name: Синтетик-Адміністратор
   prefix: Синт. Адм.
   paygrade: ВеЯС3
+
+# Executive Bodyguard
+- type: rank
+  id: RMCRankWeYaBodyguardTPPO
+  name: Стажер-Офіцер Особистої Охорони
+  prefix: СФОО.
+  paygrade: ВеЯ-БЕЗ-1
+
+- type: rank
+  id: RMCRankWeYaBodyguardPPO
+  name: Офіцер Особистої Охорони
+  prefix: ФОО.
+  paygrade: ВеЯ-БЕЗ-2
+
+- type: rank
+  id: RMCRankWeYaBodyguardPPS
+  name: Спеціаліст Особистої Охорони
+  prefix: СОО.
+  paygrade: ВеЯ-БЕЗ-3
+
+- type: rank
+  id: RMCRankWeYaBodyguardPPC
+  name: Координатор Особистої Охорони
+  prefix: КОО.
+  paygrade: ВеЯ-БЕЗ-4

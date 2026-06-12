@@ -129,6 +129,8 @@ ui-options-header-text-other = Інше введення тексту
 
 ui-options-hotkey-keymap = Використовувати клавіші QWERTY (США)
 ui-options-hotkey-toggle-walk = Перемикати біг
+ui-options-hold-to-attack-melee = Утримувати для атаки (ближній бій)
+ui-options-hold-to-attack-ranged = Утримувати для атаки (на відстані)
 
 ui-options-function-move-up = Переміщення вгору
 ui-options-function-move-left = Переміщення вліво

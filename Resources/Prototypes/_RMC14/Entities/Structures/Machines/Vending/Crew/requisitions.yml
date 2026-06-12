@@ -23,6 +23,11 @@
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/guns.rsi
+    layers:
+    - map: ["base"]
+      state: "off"
+    - map: ["enum.PowerDeviceVisualLayers.Powered"]
+      state: "base"
   - type: RMCRequisitionsVendor
   - type: CMAutomatedVendor
     baseSprite:
@@ -90,8 +95,8 @@
         amount: 25
       - id: RMCGrenadeIncendiary
         amount: 4
-      #- id: M40 HPDP White Phosphorus Smoke Grenade
-      #  amount: 4
+      - id: RMCPacketGrenadeWhitePhosphorusCompoundFilled
+        amount: 4
       - id: CMGrenadeSmoke
         amount: 5
       - id: RMC40MMGrenadeM74AGMF
@@ -256,8 +261,8 @@
         amount: 1
       - id: RMCSentryLaptop
         amount: 4
-      #- id: Spare PDT/L Battle Buddy Kit
-      #  amount: 4
+      - id: CMSparePDTLBattleBuddyKit
+        amount: 4
     - name: Ліхтарі та фаєри
       entries:
       - id: RMCFlashlight # Combat Flashlight
@@ -274,8 +279,8 @@
         amount: 10
       - id: RMCScabbardMacheteFilled
         amount: 6
-      #- id: MB-6 Folding Barricades (x3)
-      #   amount: 3
+      - id: CMFoldingBarricadesMB6x3
+        amount: 3
       - id: RMCWeldingGoggles
         amount: 3
       - id: CMFireExtinguisherPortable
@@ -304,6 +309,11 @@
         box: CMGrenadeFragOld
         boxAmount: 3
         boxSlots: 3
+      - id: RMCBoxClaymoreMineFilled
+        name: M20 Claymore anti-personnel mine box
+        box: RMCExplosiveClaymoreMine
+        boxAmount: 5
+        boxSlots: 5
       - id: CMPacketGrenadeHighExplosiveFilled
         name: упаковка гранат М40 ФПП
         box: CMGrenadeHighExplosive
@@ -349,6 +359,9 @@
         box: RMCBatonSlugHIRR
         boxAmount: 3
         boxSlots: 3
+  - type: GuideHelp
+    guides:
+    - RMCRequisitions
 
 #AMMUNITION VENDOR
 - type: entity
@@ -359,6 +372,11 @@
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/ammo.rsi
+    layers:
+    - map: ["base"]
+      state: "off"
+    - map: ["enum.PowerDeviceVisualLayers.Powered"]
+      state: "base"
   - type: RMCRequisitionsVendor
   - type: CMAutomatedVendor
     baseSprite:
@@ -392,10 +410,6 @@
         amount: 100
     - name: Бронебійні набої
       entries:
-      - id: RMCMagazinePistolM13AP
-        amount: 14
-      - id: RMCMagazinePistolM13ExtAP
-        amount: 6
       - id: CMMagazinePistolM77AP
         amount: 50
       - id: CMMagazineRifleM4SPRAP
@@ -408,14 +422,14 @@
         amount: 2
     - name: Збільшені магазини
       entries:
-      - id: RMCMagazinePistolM13Ext
-        amount: 10
       - id: CMMagazineSMGM63Ext
         amount: 10
       - id: CMMagazineRifleM4SPRExt
         amount: 10
       - id: CMMagazineRifleM54CExt
         amount: 8
+      - id: RMCMagazinePistolM13Ext
+        amount: 5
     - name: Спеціальні набої
       entries:
       - id: RMCPowerCellSmartgun
@@ -456,51 +470,61 @@
       hasBoxes: true
       entries:
       - id: RMCBoxMagazinePistolM13
-        name: коробка з магазинами (М13 х 22)
+        name: коробка з магазинами (М13 х 16)
         box: RMCMagazinePistolM13
+
       - id: RMCBoxMagazinePistolM13Ext
-        name: коробка з магазинами (Розширені М13 х 14)
+        name: коробка з магазинами (Розширені М13 х 10)
         box: RMCMagazinePistolM13Ext
-      - id: RMCBoxMagazinePistolM13AP
-        name: коробка з магазинами (ББ М13 х 22)
-        box: RMCMagazinePistolM13AP
-      - id: RMCBoxMagazinePistolM13ExtAP
-        name: коробка з магазинами (Розширені ББ М13 х 14)
-        box: RMCMagazinePistolM13ExtAP
+
       - id: RMCBoxMagazineSMGM63
         name: коробка з магазинами (М63 х 12)
         box: CMMagazineSMGM63
+
       - id: RMCBoxMagazineSMGM63AP
         name: коробка з магазинами (ББ М63 х 12)
         box: CMMagazineSMGM63AP
+
       - id: RMCBoxMagazineSMGM63Ext
         name: коробка з магазинами (Розширені М63 х 10)
         box: CMMagazineSMGM63Ext
+
       - id: RMCBoxMagazineRifleM54C
         name: коробка з магазинами (М54С х 10)
         box: CMMagazineRifleM54C
+
       - id: RMCBoxMagazineRifleM54CAP
         name: коробка з магазинами (ББ М54С х 10)
         box: CMMagazineRifleM54CAP
+
       - id: RMCBoxMagazineRifleM54CExt
         name: коробка з магазинами (Розширені М54С х 8)
         box: CMMagazineRifleM54CExt
+
       - id: RMCBoxMagazinePistolM1984
         name: коробка з магазинами (М1984 х 16)
         box: CMMagazinePistolM1984
-#      - name: Magazine Box (AP M1984 x 16)
-#        box: CMMagazinePistolM1984AP
-#      - name: Magazine Box (HP M1984 x 16)
-#        box: CMMagazineSMGM63
+
+      - id: RMCBoxMagazinePistolM1984AP
+        name: Magazine Box (AP M1984 x 16)
+        box: RMCMagazinePistolM1984AP
+
+      - id: RMCBoxMagazinePistolM1984HP
+        name: Magazine Box (HP M1984 x 16)
+        box: RMCMagazinePistolM1984HP
+
       - id: RMCBoxMagazineRifleM4SPR
         name: коробка з магазинами (М4СПГ х 16)
         box: CMMagazineRifleM4SPR
+
       - id: RMCBoxMagazineRifleM4SPRAP
         name: коробка з магазинами (ББ М4СПГ х 16)
         box: CMMagazineRifleM4SPRAP
+
       - id: RMCBoxMagazineRifleM4SPRExt
         name: коробка з магазинами (Розширені М4СПГ х 16)
         box: CMMagazineRifleM4SPRExt
+
 #      - name: Magazine Box (M54CE2 x 8)
 #        box: RMCCrateMagazineRifleM54CE2
 #      - name: Magazine Box (M54CE2 Holo-Target x 8)
@@ -513,47 +537,60 @@
         name: коробка з набоями (Картеч х 100)
         box: RMCBoxShotgunBuckshot
         boxAmount: 4
+
       - id: RMCBoxShellsFlechette
         name: коробка з набоями (Флешетні х 100)
         box: RMCBoxShotgunFlechette
         boxAmount: 4
+
       - id: RMCBoxShellsSlugs
         name: коробка з набоями (Кулеві х 100)
         box: RMCBoxShotgunSlugs
         boxAmount: 4
+
       - id: RMCBoxShellsBreaching
         name: коробка з набоями (Пробивні х 120)
         box: RMCBoxShotgunBreaching
         boxAmount: 4
+
       - id: RMCBoxMagazinePistolM77AP
         name: коробка з магазинами (ББ М77 х 16)
         box: CMMagazinePistolM77AP
+
       - id: RMCBoxMagazinePistolSU6
         name: коробка з магазинами (СП-6 х 16)
         box: RMCMagazinePistolSU6
+
       - id: RMCBoxMagazinePistolMK80
         name: коробка з магазинами (МК80 х 16)
         box: CMMagazinePistolMK80
+
 #      - name: Magazine Box (XM51 x 8)
 #        box: RMCMagazineShotgunXM51
-#      - name: Magazine Box (.458 SOCOM x 300) # TODO RMC14
-#        box: RMCBox458SOCOM
+      - id: RMCBoxBullets458
+        box: RMCBox458SOCOM
+        boxAmount: 3
+        boxSlots: 3
 #      - name: Magazine Box (M2C x 8)
 #        box: CMMagazineSMGM63
 #      - name: Magazine Box (M56B x 8)
 #        box: CMMagazineSMGM63
 #      - name: Magazine Box (ML66D x 8)
 #        box: CMMagazineSMGM63
+
       - id: RMCBoxMagazineRevolverM44
         name: коробка з швидкозарядниками (М44 х 16)
         box: RMCSpeedLoaderM44
+
       - id: RMCBoxMagazineRevolverM44Marksman
         name: коробка з швидкозарядниками (М44 для точної стрільби х 16)
         box: RMCSpeedLoader44Marksman
+
 #      - name: Magazine Box (Heavy M44 x 16)
 #        box: CMMagazineSMGM63
 #      - name: Magazine Box (UT-Napthal Fuel x 8)
 #        box: CMMagazineSMGM63
+
     - name: Коробки з набоями
       hasBoxes: true
       entries:
@@ -581,6 +618,9 @@
         name: коробка набоїв для гвинтівок (10х24 мм ББ) (М54С)
         box: CMMagazineRifleM54CAP
         boxSlots: 15 # 600 / 40
+  - type: GuideHelp
+    guides:
+    - RMCRequisitions
 
 #ATTACHMENTS VENDOR
 - type: entity
@@ -591,6 +631,11 @@
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/attachments.rsi
+    layers:
+    - map: ["base"]
+      state: "off"
+    - map: ["enum.PowerDeviceVisualLayers.Powered"]
+      state: "base"
   - type: RMCRequisitionsVendor
   - type: CMAutomatedVendor
     baseSprite:
@@ -665,9 +710,9 @@
     - name: Приклад
       entries:
       - id: RMCAttachmentM13StockSolid
-        amount: 5
+        amount: 3
       - id: RMCAttachmentM13StockCollapsible
-        amount: 5
+        amount: 2
       - id: RMCAttachmentM42A2CollapsibleStock
         amount: 5
       - id: RMCAttachmentM63ArmBrace
@@ -682,6 +727,9 @@
         amount: 5
       - id: RMCAttachmentM44MagnumSharpshooterStock
         amount: 5
+  - type: GuideHelp
+    guides:
+    - RMCRequisitions
 
 #UNIFORM VENDOR
 - type: entity
@@ -766,6 +814,8 @@
       entries:
       - id: RMCHeadsetShip
         amount: 5
+      - id: RMCHeadsetMarine
+        amount: 5
       - id: CMEncryptionKeyAlpha
         amount: 5
       - id: CMEncryptionKeyBravo
@@ -841,3 +891,6 @@
         amount: 10
       - id: RMCGuidebookSOP
         amount: 10
+  - type: GuideHelp
+    guides:
+    - RMCRequisitions

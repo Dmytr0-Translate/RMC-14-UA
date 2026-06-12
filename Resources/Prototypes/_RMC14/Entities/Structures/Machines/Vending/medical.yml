@@ -387,7 +387,7 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: RMCNanoMed
-  name: НаноМед
+  name: ШвидкоМед
   description: Настінний дозатор для видачі базових медичних засобів першої допомоги.
   components:
   - type: Fixtures
@@ -438,11 +438,14 @@
       entries:
       - id: CMHealthAnalyzer
         amount: 2
+  - type: ApcPowerReceiver
+    powerLoad: 0
+    needsPower: false
 
 - type: entity
   parent: RMCNanoMed
   id: RMCNanoMedLimited
-  description: A wall-mounted medical equipment dispenser. This version is more limited than standard UNMC NanoMeds.
+  description: A wall-mounted medical equipment dispenser. This version is more limited than standard UNMC QuickMeds.
   suffix: Limited
   components:
   - type: CMSolutionRefiller
@@ -515,8 +518,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorBlood
-  name: Дозатор крові
-  description: Найкращий дозатор крові 2105 року! Надійність, перевірена часом! Забери свій вже сьогодні! #dont update year, that`s a joke from cm13
+  name: Дозатор Кров Авант
+  description: Диспенсер крові від Авант Біомедікал – це найсучасніший диспенсер для крові! Придбайте свій сьогодні! Виготовлено Авант Біомедікал.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/blood.rsi

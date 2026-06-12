@@ -3,6 +3,7 @@ rmc-rangefinder-header = [bold]СПРОЩЕНІ КООРДИНАТИ ЦІЛІ[/b
 rmc-rangefinder-longitude = [font size=28]ДОВГОТА : {$x},[/font]
 rmc-rangefinder-latitude = [font size=28]ШИРОТА : {$y}[/font]
 rmc-rangefinder-examine = {$item} має останні координати: ДОВГОТА {$x}, ШИРОТА {$y}
+rmc-rangefinder-orbital-bombardment = Орбітальне Бомбардування
 
 rmc-laser-designator-out-of-range = Ви не можете бачити так далеко!
 rmc-laser-designator-already-targeting = Ви вже на щось націлюєте!
