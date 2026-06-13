@@ -74,6 +74,8 @@ bioscan_initial_delay_seconds = 600
 bioscan_base_cooldown_seconds = 900
 hide_player_identities = false
 burrowed_larva_evolution_points_per = 500 # 250 в оригіналі
+larva_queue_roundstart_delay_seconds = 0 # 900 в оригіналі
+larva_queue_wait_seconds = 0 # 300 в оригіналі
 
 ## Зміни щодо пілонів та бонусів від них
 king_vote_candidate_time_requirement = 10 # 50 в оригіналі

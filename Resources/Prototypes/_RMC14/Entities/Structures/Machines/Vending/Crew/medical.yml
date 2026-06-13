@@ -276,9 +276,9 @@
     - name: Жилети
       choices: { CMAccessories: 1 }
       entries:
-      - id: CMWebbingSurgicalGreen # Sich
+      - id: RMCWebbingSurgicalGreen # Sich
         recommended: true
-      - id: CMWebbingSurgicalBlue # Sich
+      - id: RMCWebbingSurgicalBlue # Sich
         recommended: true
       - id: CMWebbingBrown
       - id: CMWebbingBlack
