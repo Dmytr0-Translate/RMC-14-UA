@@ -364,7 +364,16 @@
   - type: EmoteCooldown
   - type: RMCMesonsNonviewable
     xenoVisible: true
-  - type: CanBeLarvaQueued
+#  - type: CanBeLarvaQueued – Mriya. Прибираємо чергу лярв
+  - type: GhostRole # Mriya. Лотерея повертається
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: cm-xeno-name
+    description: cm-xeno-description
+    raffle:
+      settings: short
+    rules: cm-xeno-rules
 
 - type: entity
   abstract: true
