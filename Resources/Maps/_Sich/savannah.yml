@@ -119903,7 +119903,7 @@ entities:
     - type: Transform
       pos: -37.5,-38.5
       parent: 1
-- proto: RMCLockerFieldDoctor
+- proto: MMCLockerFieldDoctor
   entities:
   - uid: 13137
     components:
