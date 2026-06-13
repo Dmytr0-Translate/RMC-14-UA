@@ -272,8 +272,6 @@ mriya-chatsan-word-scout-specialist = скутер
 mriya-chatsan-replacement-scout-specialist = люркер інкубаторів
 
 mriya-chatsan-word-mortar = міномет
-mriya-chatsan-replacement-mortar = небесний бум
-
 mriya-chatsan-word-mortars = мортира
 mriya-chatsan-replacement-mortar = небесний бум
 
@@ -415,7 +413,7 @@ mriya-chatsan-word-battery = батарея
 mriya-chatsan-replacement-battery = ядро світла
 
 mriya-chatsan-word-batterys = батареї
-mriya-chatsan-replacement-battery = ядра світла
+mriya-chatsan-replacement-batterys = ядра світла
 
 mriya-chatsan-word-generator = генератор
 mriya-chatsan-replacement-generator = плазмова коробка
