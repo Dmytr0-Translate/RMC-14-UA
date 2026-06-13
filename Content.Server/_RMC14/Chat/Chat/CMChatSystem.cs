@@ -29,7 +29,7 @@ public sealed class CMChatSystem : SharedCMChatSystem
 
     private static readonly ProtoId<ReplacementAccentPrototype> ChatSanitize = "CMChatSanitize";
     private static readonly ProtoId<ReplacementAccentPrototype> MarineChatSanitize = "CMChatSanitizeMarine";
-    private static readonly ProtoId<ReplacementAccentPrototype> XenoChatSanitize = "CMChatSanitizeXeno";
+    private static readonly ProtoId<ReplacementAccentPrototype> XenoChatSanitize = "MRChatSanitizeXeno"; // Mriya. CMChatSanitizeXeno в оригіналі
     private static readonly Regex PrefixesRegex = new(@"^:(\w)+");
 
     private readonly List<ICommonSession> _toRemove = new();
