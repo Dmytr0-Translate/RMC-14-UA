@@ -48,5 +48,5 @@
     state: ammo_pack-0
   - type: SpawnItemsOnUse
     items:
-    - id: MRBackpackAmmo
+    - id: SichBackpackAmmo
       amount: 1
