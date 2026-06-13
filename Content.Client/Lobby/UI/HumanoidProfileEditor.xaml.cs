@@ -1134,7 +1134,7 @@ namespace Content.Client.Lobby.UI
                     // If the job has ranks we will add the options as buttons.
                     if (job.Ranks != null && job.SetRankPreference)
                     {
-                        rankOptions.AddItem("Auto");
+                        rankOptions.AddItem("Авто"); // Mriya. Переклад, "Auto" в оригіналі
 
                         foreach (var rank in job.Ranks)
                         {
@@ -1148,7 +1148,7 @@ namespace Content.Client.Lobby.UI
                             }
                         }
 
-                        rankOptions.SetItemDisabled(rankOptions.ItemCount - 1, true);
+//                        rankOptions.SetItemDisabled(rankOptions.ItemCount - 1, true); – Mriya
                         // If the job only has 1 rank there is nothing to choose.
                         if (rankProtoIds.Count <= 2)
                             rankOptions.Disabled = true;

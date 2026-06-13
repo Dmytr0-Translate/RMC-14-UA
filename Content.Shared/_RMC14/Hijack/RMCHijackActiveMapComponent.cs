@@ -13,7 +13,7 @@ public sealed partial class RMCHijackActiveMapComponent : Component
     public TimeSpan Next;
 
     [DataField]
-    public TimeSpan NextDelay = TimeSpan.FromSeconds(15);
+    public TimeSpan NextDelay = TimeSpan.FromSeconds(45); // Mriya. 15 в оригіналі
 
     [DataField]
     public bool InitialPipeBarragePending;

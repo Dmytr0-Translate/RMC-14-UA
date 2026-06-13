@@ -1081,7 +1081,7 @@
     - id: CMSynthGraft
 
 - type: entity
-  parent: CMWebbingBase
+  parent: RMCWebbingSurgicalGreen
   id: RMCWebbingSurgicalBlue
   name: хірургічний жилет
   description: Міцний жилет, спеціально розроблений для розміщення повного спектру хірургічного обладнання. Зазвичай видається польовим лікарям або синтетичному персоналу.

@@ -190,4 +190,9 @@
     ventCrawlIcon: lesser
   - type: RMCActionOrder # Збереження біндів
     id: RMCXenoLesserCarrier
+  - type: MindTakeoverBehavior
+    ejectFromLarvaQueues: false
+  - type: RemoveComponents
+    components:
+    - type: CanBeLarvaQueued
   # Sich end

@@ -48,10 +48,10 @@ public sealed class RMCHijackRandomDamageSystem : EntitySystem
     private const float PipeMinPercent = 0.01f;
     private const float PipeMaxPercent = 0.015f;
 
-    private const float PipeExplosionTotal = 300f;
+    private const float PipeExplosionTotal = 150f; // Mriya. 300 в оригіналі
     private const float PipeExplosionSlope = 25f;
     private const float PipeExplosionMax = 20f;
-    private const int PipeFireRange = 2;
+    private const int PipeFireRange = 1; // Mriya. 2 в оригіналі
 
     private TimeSpan _hijackCrashStunTime;
 
