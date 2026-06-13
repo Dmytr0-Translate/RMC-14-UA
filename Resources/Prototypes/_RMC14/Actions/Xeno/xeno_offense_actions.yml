@@ -162,8 +162,40 @@
 - type: entity
   parent: ActionXenoTailStabCorrosive
   id: ActionXenoTailStabBoiler
-  name: Кислотний Удар Хвостом
-  description: Атакуйте хвостом в заданому напрямку. Перезарядка відбуватиметься швидше, якщо ви промахнулися. [color=red]Впорскує в ціль розбавлену молекулярну кислоту чи нейротоксин, з часом завдає шкоду або тимчасово позбавляє її можливості рухатися. Що саме зробить ця атака, залежить від обраного типу газу.[/color]
+  name: Corrosive Tail Stab
+  description: Strikes the targeted enemy or barricade. The cooldown is faster if you miss. [color=red]It also injects diluted molecular acid or neurotoxin into the target, dealing damage or stunning over time. Which type depends on current gas type.[/color]
+
+- type: entity
+  id: ActionXenoTailStabLance
+  parent: ActionXenoTailStab
+  name: Tail Lance Stab
+  components:
+  - type: ActionSharedCooldown
+    id: ActionXenoTailStabLance
+    ids:
+    - ActionXenoTailStabLanceAlt
+    cooldown: 10
+
+- type: entity
+  id: ActionXenoTailStabLanceAlt
+  parent: ActionXenoTailStabLance
+  name: Tail Lance Slam
+  description: Strikes the targeted enemy, doing low armor-piercing damage. The cooldown is faster if you miss.
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: tail_attack
+    useDelay: 3
+  - type: WorldTargetAction
+    event: !type:XenoTailStabEvent
+      useAltTailStab: True
+  - type: ActionSharedCooldown
+    id: ActionXenoTailStabLanceAlt
+    ids:
+    - ActionXenoTailStabLance
+    cooldown: 3
 
 - type: entity
   id: ActionXenoLeap
@@ -764,7 +796,7 @@
       state: ready_charge
     useDelay: 14
   - type: TargetAction
-    range: 9
+    range: 7
     checkCanAccess: false
   - type: WorldTargetAction
     event: !type:XenoChargeActionEvent
@@ -935,8 +967,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoImpale
-  name: Проколоти (80)
-  description: Пронижіть ворога своїм хвостом. Двічі б'є по позначеній цілі і знімає позначку. Пробиває деяку броню.
+  name: Impale (80)
+  description: Impales an adjacent enemy with your tail. Hits twice on a marked target and removes the mark. Pierces some armor. [color=green]Attacking or using Impale on an enemy with a critical mark refunds cooldown.[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -945,8 +977,9 @@
       state: prae_impale
     useDelay: 13
   - type: TargetAction
-    range: 1.5
+    range: 2
     deselectOnMiss: false
+    repeat: true
   - type: EntityTargetAction
     event: !type:XenoImpaleActionEvent
   - type: XenoOffensiveAction
@@ -954,12 +987,13 @@
   - type: XenoActionPlasma
     cost: 80
   - type: RMCCooldownOnMiss
+    missCooldown: 0.7
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailTrip
-  name: Змах Хвостом (30)
-  description: Обеззброює та приголомшує ворога. Позначеного ворога приголомшує на довший період, а також знімає з нього позначку.
+  name: Tail Trip (30)
+  description: Disarms and dazes an unmarked enemy. Stuns and dazes for longer on a marked target, and removes the mark. [color=green]Attacking or using Tail Trip on an enemy with a critical mark refunds cooldown.[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -970,6 +1004,7 @@
   - type: TargetAction
     range: 2
     deselectOnMiss: false
+    repeat: true
   - type: EntityTargetAction
     event: !type:XenoTailTripActionEvent
   - type: XenoOffensiveAction
@@ -977,6 +1012,7 @@
     cost: 30
   - type: ActionBlockIfResting
   - type: RMCCooldownOnMiss
+    missCooldown: 0.7
 
 - type: entity
   parent: ActionXenoBase

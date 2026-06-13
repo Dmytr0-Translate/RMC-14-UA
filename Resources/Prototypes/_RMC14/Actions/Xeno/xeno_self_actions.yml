@@ -427,15 +427,15 @@
 - type: entity
   id: ActionXenoDodge
   parent: ActionXenoBase
-  name: Ухилення (200)
-  description: Отримуєте прискорення на 7 секунд і можете вільно проходити крізь союзників та ворогів. Ваша швидкість подвоюється поблизу нерухомих ворогів.
+  name: Ухилення
+  description: Gain a speed boost for 7 seconds and move through allies and enemies unimpeded. You dodge every 3rd projectile that could hit you [color=red]excluding sniper bullets and rockets[/color]. Can be toggled off early to stop dodging, cooldown is equal to twice the duration used.
   components:
   - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_dodge
-    useDelay: 19
+    useDelay: 13
   - type: InstantAction
     event: !type:XenoDodgeActionEvent
 

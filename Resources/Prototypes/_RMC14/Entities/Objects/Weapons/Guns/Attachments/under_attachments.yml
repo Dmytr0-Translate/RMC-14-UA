@@ -283,7 +283,7 @@
   - type: Tag
     tags:
     - RMCAttachmentUnderbarrel
-    - RMCAttachmentFlamer
+    - RMCAttachmentMiniFlamethrower
   - type: Item
     size: Normal
   - type: Gun
@@ -432,7 +432,7 @@
   - type: Tag
     tags:
     - RMCAttachmentUnderbarrel
-    - RMCAttachmentExtinguisher
+    - RMCAttachmentUnderbarrelExtinguisher
   - type: Item
     size: Normal
   - type: Gun
@@ -1071,10 +1071,10 @@
   id: RMCAttachmentLaserLightModule
 
 - type: Tag
-  id: RMCAttachmentFlamer
+  id: RMCAttachmentMiniFlamethrower
 
 - type: Tag
-  id: RMCAttachmentExtinguisher
+  id: RMCAttachmentUnderbarrelExtinguisher
 
 - type: Tag
   id: RMCAttachmentL90GL

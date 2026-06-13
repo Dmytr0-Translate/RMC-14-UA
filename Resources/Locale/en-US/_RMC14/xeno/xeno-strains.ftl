@@ -15,12 +15,19 @@ rmc-xeno-trapper-popup = Поле битви – це моє полотно. Я 
 
 rmc-xeno-dancer-name = Танцівниця
 rmc-xeno-dancer-description = Ви жертвуєте плювком, кислотною кулею, розбризкуванням кислоти, їдкою кислотою, ривком і частиною броні задля високої шкоди по одній цілі.
-   Ви отримуєте можливість:
+   You lose:
+   - Your dash and acid abilities
+   - The ability to fully benefit from recovery pheromones better than 'strong'
+   You gain the ability to:
+   - Better health regen overtime.
+   - The ability to dodge every 6th projectile that would hit you (note: you can still be hit by snipers and rockets).
    - Break walls and other simple structures with your slash attack.
    - Cause enemies to be marked on slash and tail stab hits which effects your other abilities.
+   - Tail Lance, which can be used as a normal tail stab or one that has 1/3rd the cooldown, much less damage, but ignores armor.
    - Impale an enemy for your base slash damage and pierce some armor, hitting twice on marked.
    - Trip an enemy to disarm them, or stun them if marked.
-   - Gain a temporary speed boost thats doubled around your enemies.
+   - Cause critical marks on nearby enemies if you crit or kill an enemy. These act like normal marks, but impale and tail trip will have no cooldown if used on a critical marked enemy. Additionally, hitting an critical marked enemy with your slash or tail lash will end the cooldowns of both impale and tail trip.
+   - Gain a temporary speed boost that allows you to move through enemies and allies, as well as dodge every 3rd projectile instead of every 6th.
 rmc-xeno-dancer-popup = Цей виступ гідний самої Королеви та стане моїм інструментом смерті.
 
 rmc-xeno-oppressor-name = Гнобителька
