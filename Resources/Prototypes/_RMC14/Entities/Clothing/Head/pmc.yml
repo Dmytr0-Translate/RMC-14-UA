@@ -142,7 +142,7 @@
 
 - type: entity
   parent: RMCArmorHelmetPMCTactical
-  id: ArmorHelmetPMCCommando
+  id: RMCArmorHelmetPMCDeathsquad
   name: шолом ПВК М5Х
   description: Повністю закритий, броньований шолом, зроблений для доповнення екзоскелету М5Х.
   components:

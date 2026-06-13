@@ -35,16 +35,16 @@ public abstract class SharedCommendationSystem : EntitySystem
     /// </summary>
     protected static readonly IReadOnlyList<EntProtoId> SpecialMedalIds = new[]
     {
-        new ProtoId<EntityPrototype>("RMCMedalHighCommandHonor"),
+        new EntProtoId("RMCMedalHighCommandHonor"),
         // Sich starts. Костиль, подробиці в Prototypes\_Sich\Entities\Objects\medals.yml
-        new ProtoId<EntityPrototype>("SichMedalGoldExceptionalHeroismEngilsh"),
-        new ProtoId<EntityPrototype>("SichMedalSilverValorEngilsh"),
-        new ProtoId<EntityPrototype>("SichMedalBronzeDistinguishedConductEngilsh"),
-        new ProtoId<EntityPrototype>("SichMedalBronzeHeartEngilsh"),
-        new ProtoId<EntityPrototype>("SichMedalGoldExceptionalHeroismUkrainian"),
-        new ProtoId<EntityPrototype>("SichMedalSilverValorUkrainian"),
-        new ProtoId<EntityPrototype>("SichMedalBronzeDistinguishedConductUkrainian"),
-        new ProtoId<EntityPrototype>("SichMedalBronzeHeartUkrainian")
+        new EntProtoId("SichMedalGoldExceptionalHeroismEngilsh"),
+        new EntProtoId("SichMedalSilverValorEngilsh"),
+        new EntProtoId("SichMedalBronzeDistinguishedConductEngilsh"),
+        new EntProtoId("SichMedalBronzeHeartEngilsh"),
+        new EntProtoId("SichMedalGoldExceptionalHeroismUkrainian"),
+        new EntProtoId("SichMedalSilverValorUkrainian"),
+        new EntProtoId("SichMedalBronzeDistinguishedConductUkrainian"),
+        new EntProtoId("SichMedalBronzeHeartUkrainian")
         // Sich ends.
     };
 

@@ -2,7 +2,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaShuttleNS #Not Sulaco
-  name: Shuttle
+  name: Шатл
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -26,7 +26,7 @@
 - type: entity
   parent: RMCAreaShuttleNS
   id: RMCAreaShuttleERT
-  name: ERT Shuttle
+  name: Шатл ГШР
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_almayer.rsi
@@ -35,7 +35,7 @@
 - type: entity
   parent: RMCAreaShuttleNS
   id: RMCAreaShuttleEscapePod
-  name: Escape Pod
+  name: Под Евакуації
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_almayer.rsi

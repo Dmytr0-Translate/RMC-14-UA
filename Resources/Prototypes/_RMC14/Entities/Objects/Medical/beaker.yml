@@ -552,8 +552,8 @@
 - type: entity
   parent: RMCBeakerHighCapacity
   id: RMCReagentJug
-  name: reagent jug
-  description: A large jug made of non-reactive plastic, capable of carrying large amounts of diverse chemicals to wherever they are needed. Holds 500 units.
+  name: глечик для реагентів
+  description: Великий глечик з нереактивного пластику для зберігання великих обсягів хімікатів. Вміщує до 500 одиниць рідини.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Chemistry/reagent_jug.rsi

@@ -1029,7 +1029,7 @@
 
 - type: entity
   parent: CMWebbingBase
-  id: CMWebbingSurgicalGreen
+  id: RMCWebbingSurgicalGreen
   name: хірургічний жилет
   description: Міцний жилет, спеціально розроблений для розміщення повного спектру хірургічного обладнання. Зазвичай видається польовим лікарям або синтетичному персоналу.
   suffix: Medical, Filled
@@ -1082,7 +1082,7 @@
 
 - type: entity
   parent: CMWebbingBase
-  id: CMWebbingSurgicalBlue
+  id: RMCWebbingSurgicalBlue
   name: хірургічний жилет
   description: Міцний жилет, спеціально розроблений для розміщення повного спектру хірургічного обладнання. Зазвичай видається польовим лікарям або синтетичному персоналу.
   suffix: Medical, Filled

@@ -2,7 +2,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: CMMobSmallHostMonkey
-  name: monkey
+  name: мавпа
+  description: Нова церква неодарвіністів вважає, що КОЖНА тварина еволюціонувала від мавпи... Якого біса вона тут робе?? # Mriya
   suffix: RMC, Small Host
   components:
   - type: Speech
@@ -13,7 +14,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: CMMobSmallHostKobold
-  name: kobold
+  name: кобольд
+  description: Нова церква неодарвіністів вважає, що КОЖЕН унатх еволюціонувала від кобольда... Якого біса він тут робе?? # Mriya
   suffix: RMC, Small Host
   components:
   - type: LizardAccent
@@ -81,7 +83,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: RMCMobSmallHostFarwa
-  name: farwa
+  name: фарва
+  description: Церква неодарвіністів вважає, що-... Що це чорт забирай таке та що воно тут в біса робе?? # Mriya
   suffix: RMC, Small Host
   components:
   - type: Sprite
@@ -127,7 +130,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: RMCMobSmallHostNeaera
-  name: neaera
+  name: неара
+  description: Якась інопланетна істота з капюшоном на голові. Навіть церква неодарвіністів не знає, що це таке... Звідки це та що воно тут робе?? # Mriya
   suffix: RMC, Small Host
   components:
   - type: Sprite
@@ -168,7 +172,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: RMCMobSmallHostStok
-  name: stok
+  name: сток
+  description: О Боже! Це схоже на гуманоїдного общипаного пташеня! Як ця істота ще жива та чому її не спалили?? # Mriya
   suffix: RMC, Small Host
   components:
   - type: Sprite
@@ -215,7 +220,8 @@
 - type: entity
   parent: [RMCSmallHost]
   id: RMCMobSmallHostYiren
-  name: yiren
+  name: їрен
+  description: Воно дуже пухнасте та миле... Але що це таке та що воно тут робе – це все ще велике питання! # Mriya
   suffix: RMC, Small Host
   components:
   - type: Sprite
