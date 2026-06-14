@@ -17,11 +17,11 @@
 - type: entity
   parent: SquadBase
   id: SquadAlpha
-  name: Alpha
+  name: Ананас
   components:
   - type: SquadTeam
     roundStart: true
-    color: "#E61919"
+    color: "#e61994"
     radio: MarineAlpha
     accessLevels:
     - CMAccessAlpha
@@ -50,7 +50,7 @@
   name: Charlie
   components:
   - type: SquadTeam
-    roundStart: true
+    roundStart: false
     color: "#C864C8"
     radio: MarineCharlie
     accessLevels:
@@ -65,7 +65,7 @@
   name: Delta
   components:
   - type: SquadTeam
-    roundStart: true
+    roundStart: false
     color: "#4148C8"
     radio: MarineDelta
     accessLevels:

@@ -701,6 +701,10 @@ public abstract class SharedOverwatchConsoleSystem : EntitySystem
             if (console.Group != "ADMINISTRATOR" && team.Group != console.Group)
                 continue;
 
+            var protoId = MetaData(uid).EntityPrototype?.ID;
+            if (protoId is "SquadCharlie" or "SquadDelta")
+                continue;
+
             var netUid = GetNetEntity(uid);
             var squad = new OverwatchSquad(netUid, Name(uid), team.Color, null, team.CanSupplyDrop, team.LeaderIcon, new Dictionary<SquadObjectiveType, string>(team.Objectives));
             var members = marines.GetOrNew(netUid);

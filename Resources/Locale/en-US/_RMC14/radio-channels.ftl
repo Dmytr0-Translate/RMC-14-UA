@@ -9,7 +9,7 @@ chat-radio-marine-requisition = Логістика
 chat-radio-marine-intel = Розвідка
 chat-radio-marine-jtac = КАТА 
 
-chat-radio-marine-alpha = Альфа
+chat-radio-marine-alpha = Ананас
 chat-radio-marine-bravo = Браво
 chat-radio-marine-charlie = Чарлі
 chat-radio-marine-delta = Дельта
