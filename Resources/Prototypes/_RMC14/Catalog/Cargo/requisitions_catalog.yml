@@ -19,7 +19,7 @@
       - cost: 4000
         crate: RMCCrateBoxAmmo458
       - cost: 6000
-        crate: SichRMCCrateBoxBulletsSmartGun # Sich
+        crate: SichCrateBoxBulletsSmartGun # Sich
       - cost: 2000
         crate: RMCCrateBoxMagazineRifleM54C
       - cost: 4000
@@ -42,6 +42,8 @@
         crate: RMCCrateBoxMagazinePistolM1984
       - cost: 3000
         crate: RMCCrateBoxMagazinePistolM1984AP
+      - cost: 3000
+        crate: RMCCrateBoxMagazinePistolM1984HP
       - cost: 3000
         crate: RMCCrateBoxShellsShotgunSlugs
       - cost: 3000
@@ -88,6 +90,8 @@
         crate: RMCCrateMagazineML66DDrum
       - cost: 2500
         crate: RMCCrateMagazineM2C
+      - cost: 6000
+        crate: RMCCrateMagazineAmmoSurplus
     - name: Обвіси
       entries:
       - cost: 3000
@@ -170,8 +174,8 @@
         crate: RMCCrateGlassSheets
       - cost: 2000
         crate: RMCCrateWoodenPlanks
-#      - cost: 2000
-#        crate: RMCCrateFoldingBarricades
+      - cost: 2000
+        crate: RMCCrateFoldingBarricades
 #      - cost: 3000
 #        crate: RMCCrateSuperconductingMagneticCoil
       - cost: 2000
@@ -201,6 +205,10 @@
       # leaving this commented, as it is not parity, but we might want it in the future
       #- cost: 2000
       #  crate: RMCCrateGrenadesSmoke
+      - cost: 3200
+        crate: RMCCrateExplosiveWhitePhosphorusCompound
+      - cost: 10800
+        crate: RMCCrateExplosiveWhitePhosphorusCompoundBox
       - cost: 4000
         crate: RMCCrateGrenadesFragOld
       - cost: 3000
@@ -229,6 +237,8 @@
         crate: RMCCrateGrenadesBatonSlug
       - cost: 3000
         crate: RMCCrateExplosiveClaymoreMine
+      - cost: 4000
+        crate: RMCCrateExplosivesSurplus
     - name: Їжа
       entries:
       - cost: 1000
@@ -301,6 +311,8 @@
         crate: RMCCrateRestrictedEquipmentArmorB12
       - cost: 2000
         crate: RMCCrateRestrictedEquipmentIntelSupportKit
+      - cost: 10000 # Sich
+        crate: SichCrateRestrictedEquipmentChairSupplyDrop
     - name: Витратники
       entries:
       - cost: 2000
@@ -335,10 +347,12 @@
         crate: RMCCrateXM51
       - cost: 4000
         crate: RMCCrateM85A1
-#      - cost: 6000 – Sich. Імба зброя, тимчасова міра
-#        crate: RMCCrateML66D
-#      - cost: 6000
-#        crate: RMCCrateM2C
+      - cost: 8000 # Sich. 6000 в оригіналі, це буде бісове крило літака, хай Інтел працює
+        crate: RMCCrateML66D
+      - cost: 8000 # Sich. Теж саме, що й трохи вище
+        crate: RMCCrateM2C
+      - cost: 10000 # Sich. Повернуто, бо чому ні
+        crate: RMCCrateSmartGunSet
     - name: Спеціальна Амуніція
       entries:
       - cost: 4000
@@ -357,8 +371,8 @@
         crate: RMCCrateM5DemoSpecHighExplosive
       - cost: 3000
         crate: RMCCrateM5DemoSpecAntiArmor
-#      - cost: 3000
-#        crate: RMCCrateM5DemoSpecWhitePhosphorous
+      - cost: 3000
+        crate: RMCCrateM5DemoSpecWhitePhosphorus
       - cost: 4000
         crate: RMCCrateMagazineM4SPRCustomMixed
       - cost: 3000

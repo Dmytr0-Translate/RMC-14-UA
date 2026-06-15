@@ -76,7 +76,7 @@
   parent: ActionMarineBase
   id: CMActionToggleAttachable
   name: Перемкнути Обвіс
-  description: Перемикає стан обвісу. 
+  description: Перемикає стан обвісу.
   components:
   - type: Action
     icon:
@@ -114,6 +114,18 @@
     useDelay: 0.5
   - type: InstantAction
     event: !type:RMCTelephoneActionEvent
+
+- type: entity
+  parent: RMCActionTelephone
+  id: RMCActionTelephoneScout
+  name: Use Helmet Microphone
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Objects/phone.rsi
+      state: scout_microphone
+    useDelay: 0.5
 
 - type: Tag
   id: RMCActionCycleZoomLevel
@@ -233,8 +245,21 @@
   - type: InstantAction
     event: !type:DismountActionEvent
 
-# Посібники
+# CBRN
+- type: entity
+  parent: BaseAction
+  id: ActionToggleCBRNHelmet
+  name: Toggle CBRN Mask
+  description: Raise or lower the integrated MOPP mask to toggle full fire protection.
+  components:
+  - type: Action
+    icon:
+      sprite: _RMC14/Actions/marine_firewalk_actions.rsi
+      state: firewalk
+  - type: InstantAction
+    event: !type:ToggleClothingEvent { }
 
+# Посібники
 - type: entity
   id: RMCGuidebookActionSniperBase
   abstract: true

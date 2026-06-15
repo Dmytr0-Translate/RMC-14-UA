@@ -7,7 +7,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: CMJobDoctor
-    time: 36000 # 10 hours
+    time: 18000 # Sich. 5 годин, 10 в оригіналі
   ranks:
     RMCRankSecondLT: []
   startingGear: CMGearFieldDoctor
@@ -15,7 +15,8 @@
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-cmo
   accessGroups:
-  - CMMedbay
+  - RMCFieldDoctor
+  - Researcher # Sich
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial

@@ -73,7 +73,7 @@
         types:
           Blunt: 35
     - type: Synth
-  hidden: true
+#  hidden: true – Sich
 
 - type: startingGear
   id: RMCGearSyntheticEquipped
@@ -83,6 +83,7 @@
     id: RMCIDCardSynth
     ears: RMCHeadsetSynth
     belt: CMBeltUtilityFilled
+    pocket1: RMCUniversalRecorder
 
 - type: entity
   parent: CMSpawnPointJobBase

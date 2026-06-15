@@ -43,11 +43,11 @@
   - [bold]1 МЛ66A СмартГан (заряджений)[/bold]
   - [bold]1 бойове кріплення МЛ66А[/bold]
   - [bold]1 налобний візор МЛ66А[/bold]
-  - [bold]1 батерея для СмартГану МЛ66А[/bold]
+  - [bold]1 батарея для СмартГана МЛ66А[/bold]
   - [bold]3 барабана МЛ66А[/bold]
 
   <Box>
-    <GuideEntityEmbed Entity="RMCPowerCellSmartgun" Caption="батерея МЛ66А"/>
+    <GuideEntityEmbed Entity="RMCPowerCellSmartgun" Caption="батарея МЛ66А"/>
     <GuideEntityEmbed Entity="RMCMagazineSmartGun" Caption="барабан МЛ66А"/>
   </Box>
 
@@ -66,7 +66,7 @@
   - [bold]Носіння боєкомплекту[/bold]: вам знадобиться щонайменше [bold]один (1) Великий загальний підсумок[/bold], який здатний вмістити [bold]два додаткові барабани[/bold] або інше спорядження.
 
   <Box>
-    <GuideEntityEmbed Entity="RMCPouchGeneralLargeFilledSmartGunDrums" Caption="Великий загальний підсумок"/>
+    <GuideEntityEmbed Entity="RMCPouchGeneralLargeFilledSmartGunDrums" Caption="великий загальний підсумок"/>
   </Box>
 
   Після екіпірування перевірте [bold]стійку амуніції КолМарТех[/bold] на стороні вашого загону в основному залі збору, щоб отримати [bold]додаткові безкоштовні барабани[/bold]. Нові барабани з'являються в міру пробудження морпіхів, тож загляньте ще раз перед розгортання.

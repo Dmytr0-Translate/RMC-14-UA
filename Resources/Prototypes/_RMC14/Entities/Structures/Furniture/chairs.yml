@@ -44,13 +44,17 @@
             max: 1
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
   parent: [ CMSeatBase, ChairFolding ]
   id: CMChair
   name: стілець
   description: Прямокутний металевий каркас на чотирьох ніжках зі спинкою. Призначений для більш-менш зручного сидячого положення.
-  components: 
+  components:
 #  - type: Transform - Sich. Крутити та тягати стільці.
 #    anchored: true
 #  - type: Physics
@@ -137,7 +141,7 @@
   parent: CMSeatBase
   id: CMChairComfy
   name: зручний стілець
-  description: Стілець зі шкіряною оббивкою та регульованим підголовником. У такому можна сидіти вічно.  
+  description: Стілець зі шкіряною оббивкою та регульованим підголовником. У такому можна сидіти вічно.
   placement:
     mode: SnapgridCenter
   components:
@@ -264,6 +268,39 @@
   - type: Sprite
     state: comfychair_alien
 
+# Sofa
+- type: entity
+  parent: CMSeatBase
+  id: RMCSofa
+  name: sofa
+  description: A very comfortable looking sofa for one. Watch out, lest you fall asleep in it's soft upholstery.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Furniture/Couches/sofa.rsi
+    state: sofa
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+
+- type: entity
+  parent: RMCSofa
+  id: RMCSofaRed
+  name: red sofa
+  components:
+  - type: Sprite
+    state: sofa_red
+
+- type: entity
+  parent: RMCSofa
+  id: RMCSofaBlack
+  name: black sofa
+  components:
+  - type: Sprite
+    state: sofa_black
+
 # Office chair
 - type: entity
   parent: CMSeatBase
@@ -281,7 +318,7 @@
 - type: entity
   parent: CMChairOfficeDark
   id: CMChairOfficeWhite
-  name: біле офісне крісло
+  name: світле офісне крісло
   components:
   - type: Sprite
     state: officechair_white
