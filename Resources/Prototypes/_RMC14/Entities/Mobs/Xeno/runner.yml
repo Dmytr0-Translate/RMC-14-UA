@@ -9,11 +9,9 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoRunnerBase
-  name: Бігунша
+  name: Бігунка
   description: Невеличка червона та дуже аеродинамічна чужопланетна істота, схоже її лапи створені для бігу.
   components:
-  - type: GhostRole
-    name: cm-job-name-xeno-runner
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
   - type: Eye
@@ -118,7 +116,7 @@
     baseWalkSpeed: 5.55
     baseSprintSpeed: 10
   - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.1
+    value: 0.4 # 0.1 в оригіналі
   - type: MobCollision
     minimumSpeedModifier: 0.1
   - type: FixedIdentity

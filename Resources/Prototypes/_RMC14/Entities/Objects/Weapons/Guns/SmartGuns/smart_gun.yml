@@ -151,6 +151,9 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/smartgun_mouse.rsi
       state: all
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleSGO
 
 - type: entity
   parent: RMCSmartGunNoCamo
@@ -340,7 +343,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSmartGun
-  name: МЛ66A барабанний магазин (10x30 мм)
+  name: МЛ66A барабанний магазин (10х30 мм)
   components:
   - type: Tag
     tags:
@@ -363,11 +366,14 @@
     - suitStorage
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsSmartGun
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleSGO
 
 - type: entity
   parent: RMCMagazineSmartGun
   id: RMCMagazineSmartGunirradiated
-  name: МЛ79A барабанний магазин зі збідненим ураном (10x30 мм)
+  name: МЛ79A барабанний магазин зі збідненим ураном (10х30 мм)
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -419,7 +425,7 @@
 - type: entity
   parent: CMCartridgeSmartGun10x30mm
   id: RMCCartridgeSmartGun10x30mmHT
-  name: ГН набій (10x30 мм)
+  name: ГН набій (10х30 мм)
   components:
   - type: CartridgeAmmo
     proto: RMCBulletSmartGun10x30mmHT

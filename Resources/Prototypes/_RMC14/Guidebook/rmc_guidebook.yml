@@ -66,12 +66,13 @@
   - RMCGuideMarineCommunications
   - RMCGuideCorporateLiaison
   - RMCGuideSquadLeader
+  - RMCGuideNewIcons
 
 - type: guideEntry
   parent: RMC
   id: RMCSurvivor
   priority: 1
-  name: "Виживші"
+  name: "Вцілілі"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCSurvivor.xml"
 
 - type: guideEntry
@@ -120,7 +121,7 @@
   parent: RMC
   id: RMCGuideRoleSGO
   priority: 8
-  name: "Оператор СмартГану"
+  name: "Оператор СмартГана"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideRoleSGO.xml"
 
 - type: guideEntry # made by teatotaltemplar
@@ -142,6 +143,13 @@
   - RMCGuideRoleSpecGrenadier
   - RMCGuideRoleSpecDemo
   - RMCGuideRoleSpecSniper
+
+- type: guideEntry
+  parent: RMC
+  id: RMCGuideNewIcons
+  priority: 11
+  name: "New Player Icons"
+  text: "/ServerInfo/Guidebook/_RMC14/Guides/RMCGuideNewIcons.xml"
 
 - type: guideEntry
   parent: RMC
@@ -423,6 +431,15 @@
   priority: 4
   name: "Boiler Guide"
   text: "/ServerInfo/Guidebook/_RMC14/Guides/Xenonid/RMCGuideRoleBoiler.xml"
+  children:
+  - RMCGuideRoleSapper
+
+- type: guideEntry
+  parent: RMC
+  id: RMCGuideRoleSapper
+  priority: 4
+  name: "Trapper Guide"
+  text: "/ServerInfo/Guidebook/_RMC14/Guides/Xenonid/RMCGuideRoleSapper.xml"
 
 - type: guideEntry
   parent: RMC
