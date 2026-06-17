@@ -1,0 +1,194 @@
+- type: entity
+  parent: BaseItem
+  id: MRMagazineWhoIWhereIN1
+  name: Хто я? Де я? Випуск №1.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Сьогодення: чому все навколо таке дивне?'."
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Misc/whoIwhereI_magazine.rsi
+    state: icon-1
+  - type: Item
+    size: Small
+    sprite: _Sich/Objects/Misc/whoIwhereI_magazine.rsi
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-01
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN2
+  name: Хто Я? Де я? Випуск №2.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ОН: чому навколо неї все крутиться?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-02
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN3
+  name: Хто Я? Де я? Випуск №3.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'КМПОН: хто ці люди й чому вони круті?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-03
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN4
+  name: Хто Я? Де я? Випуск №4.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вестон-Ямада: чому ця компанія всюди?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-04
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN5
+  name: Хто Я? Де я? Випуск №5.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ксеноморфи: чому не варто наближатися до яєць?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-05
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN6
+  name: Хто Я? Де я? Випуск №6.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'СПН: хто вони й чому комуняки досі існують?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-06
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN7
+  name: Хто Я? Де я? Випуск №7.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ІТС: чому це імперія і скільки в неї сонць?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-07
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN8
+  name: Хто Я? Де я? Випуск №8.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ФВК: повстанці, партизани чи головний біль колоній?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-08
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN9
+  name: Хто Я? Де я? Випуск №9.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Люди: чому їх так багато й чому ти, ймовірно, працюєш на них?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-09
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN10
+  name: Хто Я? Де я? Випуск №10.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ніани: чому вони летять на світло?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-10
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBoots11
+  name: Хто Я? Де я? Випуск №11.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Дворфи: чому вони люблять алкоголь?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-11
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN12
+  name: Хто Я? Де я? Випуск №12.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Слаймолюди: чому вони не розтікаються по підлозі?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-12
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN13
+  name: Хто Я? Де я? Випуск №13.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Діони: чому рослина говорить?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-13
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN14
+  name: Хто Я? Де я? Випуск №14.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Феленіди: чому їх любить один полковник?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-14
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN15
+  name: Хто Я? Де я? Випуск №15.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Арахніди: чому... Чому?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-15
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN16
+  name: Хто Я? Де я? Випуск №16.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Унатхи: чому вони лускаті?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-16
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN17
+  name: Хто Я? Де я? Випуск №17.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Авалі: чому вони схожі на птахів?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-17
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN18
+  name: Хто Я? Де я? Випуск №18.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вульпканіни: чому вони найкращі друзі для людей?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-18
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN19
+  name: Хто Я? Де я? Випуск №19.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Роденти: чому сир - це круто?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-19
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN20
+  name: Хто Я? Де я? Випуск №20.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Фероксі: чому хочеться співати?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-20
+
+- type: entity
+  parent: MRMagazineWhoIWhereIN1
+  id: MRMagazineBootsN21
+  name: Хто Я? Де я? Випуск №21.
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Скрели: чому вони не квакають?'."
+  components:
+  - type: RMCLoreExaminable
+    content: mr-lore-examinable-whoIwhereI-21
