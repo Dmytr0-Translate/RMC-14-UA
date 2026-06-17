@@ -660,6 +660,8 @@
         amount: 11
       - id: RMCAttachmentRecoilCompensator
         amount: 7
+      - id: RMCAttachmentBarrelCharger # Mriya
+        amount: 3
       - id: RMCAttachmentRecoilCompensatorM13
         amount: 7
       - id: RMCAttachmentSuppressor

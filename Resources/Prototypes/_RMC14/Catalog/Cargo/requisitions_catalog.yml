@@ -136,6 +136,8 @@
         crate: RMCCrateAttachmentShotgunStock
       - cost: 3000
         crate: RMCCrateAttachmentSmgStock
+      - cost: 3000 # Mriya
+        crate: MRCrateAttachmentBarrelCharger
     - name: Одяг
       entries:
       - cost: 2000

@@ -1651,7 +1651,7 @@ namespace Content.Client.Lobby.UI
 
         private void UpdatePlaytimeRankPreferenceControls()
         {
-            var preferenceAdjusted = false;
+//            var preferenceAdjusted = false; – Mriya
             foreach (var (jobID, optionsButton, rankIds) in _rankPriorities)
             {
                 if (!_prototypeManager.TryIndex(jobID, out JobPrototype? job) || job == null)
@@ -1666,17 +1666,17 @@ namespace Content.Client.Lobby.UI
                 if (selectedIndex < 0)
                     selectedIndex = 0;
 
-                if (preferredRank is { } rank && rank == rankIds.Last())
-                {
-                    Profile = Profile?.WithRankPreference(jobID, null);
-                    preferenceAdjusted = true;
-                }
+//                if (preferredRank is { } rank && rank == rankIds.Last()) – Mriya
+//                {
+//                    Profile = Profile?.WithRankPreference(jobID, null);
+//                    preferenceAdjusted = true;
+//                }
 
                 optionsButton.Select(selectedIndex);
             }
 
-            if (preferenceAdjusted)
-                Save?.Invoke();
+//            if (preferenceAdjusted) – Mriya
+//                Save?.Invoke();
         }
 
         private void UpdateSquadPreferenceControls()
