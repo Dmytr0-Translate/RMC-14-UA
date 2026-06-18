@@ -11,8 +11,6 @@
   name: Мисливиця
   description: Лячна червона чужопланетна істота з великими лезами на лапах та дивною пащою.
   components:
-  - type: GhostRole
-    name: cm-job-name-xeno-lurker
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Lurker/lurker.rsi
   - type: MobState
@@ -95,7 +93,7 @@
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: lurker
   - type: IntelRecoverCorpseObjectiveOnDeath
-    value: 0.2
+    value: 0.7 # Sich. 0.2 в оригіналі
   - type: FixedIdentity
     name: cm-job-name-xeno-lurker
   - type: RMCSurgeryXenoHeart

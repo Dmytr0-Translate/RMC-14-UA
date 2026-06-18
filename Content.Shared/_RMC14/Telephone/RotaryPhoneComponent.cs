@@ -11,7 +11,7 @@ namespace Content.Shared._RMC14.Telephone;
 public sealed partial class RotaryPhoneComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public string Category = "Almayer";
+    public string Category = "Саванна"; // Sich. Almayer в оригіналі
 
     [DataField, AutoNetworkedField]
     public bool CanDnd;
@@ -33,6 +33,9 @@ public sealed partial class RotaryPhoneComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntProtoId<RMCTelephoneComponent> PhoneId = "RMCTelephone";
+
+    [DataField, AutoNetworkedField]
+    public bool PhoneCanBeTransferred = true;
 
     [DataField, AutoNetworkedField]
     public string ContainerId = "rmc_rotary_phone_telephone";
