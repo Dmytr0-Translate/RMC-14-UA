@@ -16,7 +16,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN2
-  name: Хто Я? Де я? Випуск №2.
+  name: Хто я? Де я? Випуск №2.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ОН: чому навколо неї все крутиться?'."
   components:
   - type: RMCLoreExaminable
@@ -25,7 +25,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN3
-  name: Хто Я? Де я? Випуск №3.
+  name: Хто я? Де я? Випуск №3.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'КМПОН: хто ці люди й чому вони круті?'."
   components:
   - type: RMCLoreExaminable
@@ -34,7 +34,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN4
-  name: Хто Я? Де я? Випуск №4.
+  name: Хто я? Де я? Випуск №4.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вестон-Ямада: чому ця компанія всюди?'."
   components:
   - type: RMCLoreExaminable
@@ -43,7 +43,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN5
-  name: Хто Я? Де я? Випуск №5.
+  name: Хто я? Де я? Випуск №5.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ксеноморфи: чому не варто наближатися до яєць?'."
   components:
   - type: RMCLoreExaminable
@@ -52,7 +52,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN6
-  name: Хто Я? Де я? Випуск №6.
+  name: Хто я? Де я? Випуск №6.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'СПН: хто вони й чому комуняки досі існують?'."
   components:
   - type: RMCLoreExaminable
@@ -61,7 +61,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN7
-  name: Хто Я? Де я? Випуск №7.
+  name: Хто я? Де я? Випуск №7.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ІТС: чому це імперія і скільки в неї сонць?'."
   components:
   - type: RMCLoreExaminable
@@ -70,7 +70,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN8
-  name: Хто Я? Де я? Випуск №8.
+  name: Хто я? Де я? Випуск №8.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ФВК: повстанці, партизани чи головний біль колоній?'."
   components:
   - type: RMCLoreExaminable
@@ -79,7 +79,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN9
-  name: Хто Я? Де я? Випуск №9.
+  name: Хто я? Де я? Випуск №9.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Люди: чому їх так багато й чому ти, ймовірно, працюєш на них?'."
   components:
   - type: RMCLoreExaminable
@@ -88,7 +88,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN10
-  name: Хто Я? Де я? Випуск №10.
+  name: Хто я? Де я? Випуск №10.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ніани: чому вони летять на світло?'."
   components:
   - type: RMCLoreExaminable
@@ -97,7 +97,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN11
-  name: Хто Я? Де я? Випуск №11.
+  name: Хто я? Де я? Випуск №11.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Дворфи: чому вони люблять алкоголь?'."
   components:
   - type: RMCLoreExaminable
@@ -106,7 +106,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN12
-  name: Хто Я? Де я? Випуск №12.
+  name: Хто я? Де я? Випуск №12.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Слаймолюди: чому вони не розтікаються по підлозі?'."
   components:
   - type: RMCLoreExaminable
@@ -115,7 +115,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN13
-  name: Хто Я? Де я? Випуск №13.
+  name: Хто я? Де я? Випуск №13.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Діони: чому рослина говорить?'."
   components:
   - type: RMCLoreExaminable
@@ -124,7 +124,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN14
-  name: Хто Я? Де я? Випуск №14.
+  name: Хто я? Де я? Випуск №14.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Феленіди: чому їх любить один полковник?'."
   components:
   - type: RMCLoreExaminable
@@ -133,7 +133,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN15
-  name: Хто Я? Де я? Випуск №15.
+  name: Хто я? Де я? Випуск №15.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Арахніди: чому... Чому?'."
   components:
   - type: RMCLoreExaminable
@@ -142,7 +142,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN16
-  name: Хто Я? Де я? Випуск №16.
+  name: Хто я? Де я? Випуск №16.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Унатхи: чому вони лускаті?'."
   components:
   - type: RMCLoreExaminable
@@ -151,7 +151,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN17
-  name: Хто Я? Де я? Випуск №17.
+  name: Хто я? Де я? Випуск №17.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Авалі: чому вони схожі на птахів?'."
   components:
   - type: RMCLoreExaminable
@@ -160,7 +160,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN18
-  name: Хто Я? Де я? Випуск №18.
+  name: Хто я? Де я? Випуск №18.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вульпканіни: чому вони найкращі друзі для людей?'."
   components:
   - type: RMCLoreExaminable
@@ -169,7 +169,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN19
-  name: Хто Я? Де я? Випуск №19.
+  name: Хто я? Де я? Випуск №19.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Роденти: чому сир – це круто?'."
   components:
   - type: RMCLoreExaminable
@@ -178,7 +178,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN20
-  name: Хто Я? Де я? Випуск №20.
+  name: Хто я? Де я? Випуск №20.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Фероксі: чому хочеться співати?'."
   components:
   - type: RMCLoreExaminable
@@ -187,7 +187,7 @@
 - type: entity
   parent: MRMagazineWhoIWhereIN1
   id: MRMagazineWhoIWhereIN21
-  name: Хто Я? Де я? Випуск №21.
+  name: Хто я? Де я? Випуск №21.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Скрели: чому вони не квакають?'."
   components:
   - type: RMCLoreExaminable
