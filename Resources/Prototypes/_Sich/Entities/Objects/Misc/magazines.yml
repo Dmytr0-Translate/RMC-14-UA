@@ -15,7 +15,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN2
+  id: MRMagazineWhoIWhereIN2
   name: Хто Я? Де я? Випуск №2.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ОН: чому навколо неї все крутиться?'."
   components:
@@ -24,7 +24,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN3
+  id: MRMagazineWhoIWhereIN3
   name: Хто Я? Де я? Випуск №3.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'КМПОН: хто ці люди й чому вони круті?'."
   components:
@@ -33,7 +33,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN4
+  id: MRMagazineWhoIWhereIN4
   name: Хто Я? Де я? Випуск №4.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вестон-Ямада: чому ця компанія всюди?'."
   components:
@@ -42,7 +42,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN5
+  id: MRMagazineWhoIWhereIN5
   name: Хто Я? Де я? Випуск №5.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ксеноморфи: чому не варто наближатися до яєць?'."
   components:
@@ -51,7 +51,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN6
+  id: MRMagazineWhoIWhereIN6
   name: Хто Я? Де я? Випуск №6.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'СПН: хто вони й чому комуняки досі існують?'."
   components:
@@ -60,7 +60,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN7
+  id: MRMagazineWhoIWhereIN7
   name: Хто Я? Де я? Випуск №7.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ІТС: чому це імперія і скільки в неї сонць?'."
   components:
@@ -69,7 +69,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN8
+  id: MRMagazineWhoIWhereIN8
   name: Хто Я? Де я? Випуск №8.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'ФВК: повстанці, партизани чи головний біль колоній?'."
   components:
@@ -78,7 +78,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN9
+  id: MRMagazineWhoIWhereIN9
   name: Хто Я? Де я? Випуск №9.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Люди: чому їх так багато й чому ти, ймовірно, працюєш на них?'."
   components:
@@ -87,7 +87,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN10
+  id: MRMagazineWhoIWhereIN10
   name: Хто Я? Де я? Випуск №10.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Ніани: чому вони летять на світло?'."
   components:
@@ -96,7 +96,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBoots11
+  id: MRMagazineWhoIWhereIN11
   name: Хто Я? Де я? Випуск №11.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Дворфи: чому вони люблять алкоголь?'."
   components:
@@ -105,7 +105,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN12
+  id: MRMagazineWhoIWhereIN12
   name: Хто Я? Де я? Випуск №12.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Слаймолюди: чому вони не розтікаються по підлозі?'."
   components:
@@ -114,7 +114,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN13
+  id: MRMagazineWhoIWhereIN13
   name: Хто Я? Де я? Випуск №13.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Діони: чому рослина говорить?'."
   components:
@@ -123,7 +123,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN14
+  id: MRMagazineWhoIWhereIN14
   name: Хто Я? Де я? Випуск №14.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Феленіди: чому їх любить один полковник?'."
   components:
@@ -132,7 +132,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN15
+  id: MRMagazineWhoIWhereIN15
   name: Хто Я? Де я? Випуск №15.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Арахніди: чому... Чому?'."
   components:
@@ -141,7 +141,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN16
+  id: MRMagazineWhoIWhereIN16
   name: Хто Я? Де я? Випуск №16.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Унатхи: чому вони лускаті?'."
   components:
@@ -150,7 +150,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN17
+  id: MRMagazineWhoIWhereIN17
   name: Хто Я? Де я? Випуск №17.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Авалі: чому вони схожі на птахів?'."
   components:
@@ -159,7 +159,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN18
+  id: MRMagazineWhoIWhereIN18
   name: Хто Я? Де я? Випуск №18.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Вульпканіни: чому вони найкращі друзі для людей?'."
   components:
@@ -168,16 +168,16 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN19
+  id: MRMagazineWhoIWhereIN19
   name: Хто Я? Де я? Випуск №19.
-  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Роденти: чому сир - це круто?'."
+  description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Роденти: чому сир – це круто?'."
   components:
   - type: RMCLoreExaminable
     content: mr-lore-examinable-whoIwhereI-19
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN20
+  id: MRMagazineWhoIWhereIN20
   name: Хто Я? Де я? Випуск №20.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Фероксі: чому хочеться співати?'."
   components:
@@ -186,7 +186,7 @@
 
 - type: entity
   parent: MRMagazineWhoIWhereIN1
-  id: MRMagazineBootsN21
+  id: MRMagazineWhoIWhereIN21
   name: Хто Я? Де я? Випуск №21.
   description: "Єдиний офіційний журнал від невідомого видавництва. Заголовок випуску:'Скрели: чому вони не квакають?'."
   components:
