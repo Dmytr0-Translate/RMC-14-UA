@@ -34,14 +34,14 @@
   components: []
   language: Chinese
 
-- type: trait
-  id: RussianLanguage
-  name: rmc-trait-russian-language-name
-  description: rmc-trait-russian-language-desc
-  category: SpeechTraits
-  cost: 1
-  components: []
-  language: Russian
+#- type: trait – Mriya. Ні.
+#  id: RussianLanguage
+#  name: rmc-trait-russian-language-name
+#  description: rmc-trait-russian-language-desc
+#  category: SpeechTraits
+#  cost: 1
+#  components: []
+#  language: Russian
 
 - type: trait
   id: GermanLanguage

@@ -28,18 +28,20 @@
       - English
       - French
       - Japanese
-      - Russian
+#      - Russian – Mriya. Ні.
       - German
       - Chinese
       - Spanish
+      - MREnglish # Mriya. Так.
       understoodLanguages:
       - English
       - French
       - Japanese
-      - Russian
+#      - Russian – Mriya. Ні.
       - German
       - Chinese
       - Spanish
+      - MREnglish # Mriya. Так
       currentLanguage: English
       defaultLanguage: English
     - type: LanguageLearning

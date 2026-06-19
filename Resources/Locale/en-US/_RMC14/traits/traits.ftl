@@ -33,5 +33,5 @@ rmc-trait-russian-language-desc = Та блять. Іді нахуй х2.
 rmc-trait-german-language-name = Німецька мова
 rmc-trait-german-language-desc = Ви можете спілкуватися та розуміти німецьку. Хало!
 
-rmc-trait-group-languages = Мови
-rmc-trait-group-other-speech = Мови, які може знати ваш персонаж
+rmc-trait-group-languages = Знання мов
+rmc-trait-group-other-speech = Особливості вимови
