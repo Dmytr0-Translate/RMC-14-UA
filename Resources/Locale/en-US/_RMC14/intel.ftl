@@ -3,16 +3,16 @@ rmc-intel-unlocked = {$baseName} ({$unlocked})
 rmc-intel-label-name = {$baseName} {$label}
 rmc-intel-label-name-parenthetical = {$baseName} ({$label})
 rmc-intel-serial-name = {$baseName} #{$serial}
-rmc-intel-serial-examine = The serial number is {$serial}.
-rmc-intel-announcement = TECH REPORT: {$points} points available.
-rmc-intel-announcement-gain = TECH REPORT: {$points} points available (+{$change}).
-rmc-intel-reports = Reports
-rmc-intel-folders = Folders
-rmc-intel-manuals = Manuals
-rmc-intel-data = Data
-rmc-intel-retrieve = Retrieve
-rmc-intel-misc = Miscellaneous
-rmc-intel-personal = Personal Clues
+rmc-intel-serial-examine = Серійний номер {$serial}.
+rmc-intel-announcement = ТЕХНІЧНИЙ ЗВІТ: {$points} очків доступно.
+rmc-intel-announcement-gain = ТЕХНІЧНИЙ ЗВІТ: {$points} очків доступно (+{$change}).
+rmc-intel-reports = Звіти
+rmc-intel-folders = Папки
+rmc-intel-manuals = Посібники
+rmc-intel-data = Дані
+rmc-intel-retrieve = Відновлене
+rmc-intel-misc = Різне
+rmc-intel-personal = Особисті підказки
 
 rmc-intel-data-disk-uploaded = {$baseName} (uploaded)
 rmc-intel-color-red = red
@@ -79,83 +79,83 @@ rmc-intel-survivor-corpse-pull = I can't save {$thing}, they'll only slow me dow
 
 
 ## Intel Objectives Window
-rmc-ui-intel-title = Marine Tech Tree Objectives
-rmc-ui-intel-header = [bold]Marine Tech Tree Objectives[/bold]
-rmc-ui-intel-tech-points = [bold]Tech Points[/bold]
-rmc-ui-intel-tier = [bold]Tier[/bold]
-rmc-ui-intel-objectives = [bold]Objectives[/bold]
-rmc-ui-intel-documents = [color=#5B88B0]Documents:[/color]
-rmc-ui-intel-upload-data = [color=#5B88B0]Upload data:[/color]
-rmc-ui-intel-retrieve-items = [color=#5B88B0]Retrieve items:[/color]
-rmc-ui-intel-miscellaneous = [color=#5B88B0]Miscellaneous:[/color]
-rmc-ui-intel-analyze-chemicals = [color=#5B88B0]Analyze chemicals:[/color]
-rmc-ui-intel-rescue-survivors = [color=#5B88B0]Rescue survivors:[/color]
-rmc-ui-intel-recover-corpses = [color=#5B88B0]Recover corpses:[/color]
-rmc-ui-intel-colony-comms = [color=#5B88B0]Colony communications:[/color]
-rmc-ui-intel-colony-power = [color=#5B88B0]Colony power:[/color]
-rmc-ui-intel-clues = [bold]Clues[/bold]
+rmc-ui-intel-title = Статистика Розвідки Морпіхоти
+rmc-ui-intel-header = [bold]Статистика Розвідки Морпіхоти[/bold]
+rmc-ui-intel-tech-points = [bold]Технічні очки[/bold]
+rmc-ui-intel-tier = [bold]Рівень[/bold]
+rmc-ui-intel-objectives = [bold]Статистика[/bold]
+rmc-ui-intel-documents = [color=#5B88B0]Документи:[/color]
+rmc-ui-intel-upload-data = [color=#5B88B0]Завантажені дані:[/color]
+rmc-ui-intel-retrieve-items = [color=#5B88B0]Відновлені об'єкти:[/color]
+rmc-ui-intel-miscellaneous = [color=#5B88B0]Різне:[/color]
+rmc-ui-intel-analyze-chemicals = [color=#5B88B0]Аналізовані хімікати:[/color]
+rmc-ui-intel-rescue-survivors = [color=#5B88B0]Врятовані цивільні:[/color]
+rmc-ui-intel-recover-corpses = [color=#5B88B0]Відновлені трупи:[/color]
+rmc-ui-intel-colony-comms = [color=#5B88B0]Зв'язок Колонії:[/color]
+rmc-ui-intel-colony-power = [color=#5B88B0]Енергопостачання Колонії:[/color]
+rmc-ui-intel-clues = [bold]Підказки[/bold]
 rmc-ui-intel-points-value = { $value }
 rmc-ui-intel-tier-value = { $value }
-rmc-ui-intel-total-credits = Total earned credits: { $value }
+rmc-ui-intel-total-credits = Всього зароблено очок: { $value }
 rmc-ui-intel-progress = { $current } / { $total }
 rmc-ui-intel-infinite-progress = { $current } / ∞
 rmc-ui-intel-colony-status =
     { $online ->
-        [true] Online.
-       *[false] Offline.
+        [true] Онлайн
+       *[false] Офлайн
     }
 
 ## Tech Control Console
-rmc-ui-tech-tier-header = [font size=14][bold]Tier: { $tier }[/bold][/font]
-rmc-ui-tech-points = [font size=14][bold]Points: { $points }[/bold][/font]
-rmc-ui-tech-points-value = Tech points: { $value }
-rmc-ui-tech-repurchasable = Repurchasable
-rmc-ui-tech-incremental-price = Incremental price: +{ $increase } per purchase
-rmc-ui-tech-purchase-button = Purchase
+rmc-ui-tech-tier-header = [font size=14][bold]Рівень: { $tier }[/bold][/font]
+rmc-ui-tech-points = [font size=14][bold]Очків: { $points }[/bold][/font]
+rmc-ui-tech-points-value = Тех. Очків: { $value }
+rmc-ui-tech-repurchasable = Повторно Купляється
+rmc-ui-tech-incremental-price = Збільшення ціни: +{ $increase } за покупку
+rmc-ui-tech-purchase-button = Купити
 
-rmc-ui-tech-information-header = [bold]Information[/bold]
-rmc-ui-tech-name-label = [color=#5B88B0]Name:[/color]
-rmc-ui-tech-description-label = [color=#5B88B0]Description:[/color]
-rmc-ui-tech-cost-label = [color=#5B88B0]Cost:[/color]
-rmc-ui-tech-statistics-label = [color=#5B88B0]Statistics:[/color]
+rmc-ui-tech-information-header = [bold]Інформація[/bold]
+rmc-ui-tech-name-label = [color=#5B88B0]Назва:[/color]
+rmc-ui-tech-description-label = [color=#5B88B0]Опис:[/color]
+rmc-ui-tech-cost-label = [color=#5B88B0]Ціна:[/color]
+rmc-ui-tech-statistics-label = [color=#5B88B0]Додаткові дані:[/color]
 
 ## Tech Tree Options
-rmc-intel-tech-unlock-tier-1-name = Unlock Tier 1
-rmc-intel-tech-unlock-tier-2-name = Unlock Tier 2
-rmc-intel-tech-unlock-tier-3-name = Unlock Tier 3
-rmc-intel-tech-unlock-tier-4-name = Unlock Tier 4
-rmc-intel-tech-unlock-tier-description = Transitions the tree to another tier.
-rmc-intel-tech-requisition-arc-name = Humvee ARC
-rmc-intel-tech-requisition-arc-description = Unlocks the ARC-configured humvee for vehicle supply.
-rmc-intel-tech-requisition-budget-name = Requisition Budget Increase
-rmc-intel-tech-requisition-budget-description = Distributes resources to requisitions for spending.
-rmc-intel-tech-dropship-budget-name = Dropship Budget Increase
-rmc-intel-tech-dropship-budget-description = Distributes resources to the dropship fabricator.
-rmc-intel-tech-ob-he-name = Additional OB projectiles - HE
-rmc-intel-tech-ob-he-description = Highly explosive bombardment ammo, to be loaded into the orbital cannon.
-rmc-intel-tech-ob-incendiary-name = Additional OB projectiles - Incendiary
-rmc-intel-tech-ob-incendiary-description = Highly flammable bombardment ammo, to be loaded into the orbital cannon.
-rmc-intel-tech-ob-cluster-name = Additional OB projectiles - Cluster
-rmc-intel-tech-ob-cluster-description = Highly explosive bombardment ammo that fragments, to be loaded into the orbital cannon.
-rmc-intel-tech-wake-troops-name = Wake Up Additional Troops
-rmc-intel-tech-wake-troops-description = Wakes up additional troops to fight against any threats.
-rmc-intel-tech-wake-specialist-name = Wake Up Additional Specialist
-rmc-intel-tech-wake-specialist-description = Wakes up an additional specialist to fight against any threats.
+rmc-intel-tech-unlock-tier-1-name = Розблокувати Рівень 1
+rmc-intel-tech-unlock-tier-2-name = Розблокувати Рівень 2
+rmc-intel-tech-unlock-tier-3-name = Розблокувати Рівень 3
+rmc-intel-tech-unlock-tier-4-name = Розблокувати Рівень 4
+rmc-intel-tech-unlock-tier-description = Підвищує рівень авторизації активів.
+rmc-intel-tech-requisition-arc-name = БТР-Р Хамві
+rmc-intel-tech-requisition-arc-description = Розблоковує Хамві в розвідницькій модифікації, як транспорт.
+rmc-intel-tech-requisition-budget-name = Додатковий бюджет для Логістики
+rmc-intel-tech-requisition-budget-description = Збільшує бюджет логістики для закупівлі оснащення. Додаткові 10000 доларів.
+rmc-intel-tech-dropship-budget-name = Додатковий бюджет для Шатлів
+rmc-intel-tech-dropship-budget-description = Розподіляє ресурси до фабрикатора деталей шатлів. Додаткові 2000 поінтів.
+rmc-intel-tech-ob-he-name = Додаткова Фугасна Орбітальна Боєголовка
+rmc-intel-tech-ob-he-description = Фугасний боєприпас для орбітального бомбардування, що заряджається в орбітальну гармату.
+rmc-intel-tech-ob-incendiary-name = Додаткова Запальна Орбітальна Боєголовка
+rmc-intel-tech-ob-incendiary-description = Запальний боєприпас для орбітального бомбардування, що заряджається в орбітальну гармату.
+rmc-intel-tech-ob-cluster-name = Додаткова Кластерна Орбітальна Боєголовка
+rmc-intel-tech-ob-cluster-description = Кластерний боєприпас для орбітального бомбардування, що заряджається в орбітальну гармату.
+rmc-intel-tech-wake-troops-name = Пробудження додаткових Бійців
+rmc-intel-tech-wake-troops-description = Пробуджує додатковий загін бійців для боротьби з будь-якими загрозами.
+rmc-intel-tech-wake-specialist-name = Пробудження додаткового Спеціаліста
+rmc-intel-tech-wake-specialist-description = Пробуджує додаткового спеціаліста для боротьби з будь-якими загрозами.
 rmc-intel-tech-nuclear-device-name = Nuclear Device
 rmc-intel-tech-nuclear-device-description = Purchase a nuclear device. Only purchasable 116 minutes into the operation. It's the only way to be sure.
 
 ## Tech Tree Announcements
-rmc-intel-tech-announcement-special-assets-author = ALMAYER SPECIAL ASSETS AUTHORIZED
-rmc-intel-tech-announcement-defcon-author = ALMAYER DEFCON LEVEL INCREASED
-rmc-intel-tech-announcement-arc = ARC deployment has been authorised for this operation.
-rmc-intel-tech-announcement-requisition-budget = Additional supply budget has been authorised for this operation.
-rmc-intel-tech-announcement-dropship-budget = Additional dropship part fabricator points have been authorised for this operation.
-rmc-intel-tech-announcement-tier-2 = THREAT ASSESSMENT LEVEL INCREASED TO LEVEL 2. LEVEL 2 assets have been authorised to handle the situation.
-rmc-intel-tech-announcement-ob-he = Additional Orbital Bombardment warheads (HE) have been delivered to Requisitions' ASRS.
-rmc-intel-tech-announcement-ob-incendiary = Additional Orbital Bombardment warheads (Incendiary) have been delivered to Requisitions' ASRS.
-rmc-intel-tech-announcement-ob-cluster = Additional Orbital Bombardment warheads (Cluster) have been delivered to Requisitions' ASRS.
-rmc-intel-tech-announcement-tier-3 = THREAT ASSESSMENT LEVEL INCREASED TO LEVEL 3. LEVEL 3 assets have been authorised to handle the situation.
-rmc-intel-tech-announcement-wake-troops = Additional troops are being taken out of cryo.
-rmc-intel-tech-announcement-wake-specialist = An additional specialist is being taken out of cryo.
-rmc-intel-tech-announcement-tier-4 = THREAT ASSESSMENT LEVEL INCREASED TO LEVEL 4. LEVEL 4 assets have been authorised to handle the situation.
+rmc-intel-tech-announcement-special-assets-author = СПЕЦІАЛЬНІ АКТИВИ САВАННИ АВТОРИЗОВАНО
+rmc-intel-tech-announcement-defcon-author = ПІДВИЩЕННЯ РІВНЯ ГОТОВНОСТІ ЗАХИСТУ САВАННИ
+rmc-intel-tech-announcement-arc = Висадка БТР-Р була авторизована для цієї операції.
+rmc-intel-tech-announcement-requisition-budget = На цю операцію було виділено додатковий бюджет для логістики.
+rmc-intel-tech-announcement-dropship-budget = Для цієї операції надано додаткові ресурси фабрикатора деталей шатлів.
+rmc-intel-tech-announcement-tier-2 = РІВЕНЬ ОЦІНКИ ЗАГРОЗИ ПІДВИЩЕНО ДО ДРУГОГО РІВНЯ. Активи ДРУГОГО РІВНЯ були авторизовані для врегулювання ситуації.
+rmc-intel-tech-announcement-ob-he = Додаткова фугасна боєголовка для орбітального бомбардування була передана логістиці через АТСС.
+rmc-intel-tech-announcement-ob-incendiary = Додаткова запальна боєголовка для орбітального бомбардування була передана логістиці через АТСС.
+rmc-intel-tech-announcement-ob-cluster = Додаткова кластерна боєголовка для орбітального бомбардування була передана логістиці через АТСС.
+rmc-intel-tech-announcement-tier-3 = РІВЕНЬ ОЦІНКИ ЗАГРОЗИ ПІДВИЩЕНО ДО ТРЕТЬОГО РІВНЯ. Активи ТРЕТЬОГО РІВНЯ були авторизовані для врегулювання ситуації.
+rmc-intel-tech-announcement-wake-troops = З кріогенного сну виводяться додаткові бійці.
+rmc-intel-tech-announcement-wake-specialist = З кріогенного сну виводиться додатковий спеціаліст.
+rmc-intel-tech-announcement-tier-4 = РІВЕНЬ ОЦІНКИ ЗАГРОЗИ ПІДВИЩЕНО ДО ЧЕТВЕРТОГО РІВНЯ. Активи ЧЕТВЕРТОГО РІВНЯ були авторизовані для врегулювання ситуації.
 rmc-intel-tech-announcement-nuclear-device = The deployment of Nuclear Ordnance has been authorized and will be delivered to the Requisitions Department via ASRS.

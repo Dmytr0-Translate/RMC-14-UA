@@ -443,7 +443,7 @@
             author: rmc-intel-tech-announcement-special-assets-author
             message: mriya-intel-tech-announcement-ob-aegis
           icon:
-            sprite: _RMC14/Interface/map_blips.rsi # Іконка мапи, бо прикольна
+            sprite: _RMC14/Interface/map_blips.rsi # Mriya. Іконка мапи, бо прикольна
             state: aegisob
   - type: VehicleSupplyTech
 

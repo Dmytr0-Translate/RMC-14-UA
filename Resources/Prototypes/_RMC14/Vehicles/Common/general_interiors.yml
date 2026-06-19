@@ -443,7 +443,7 @@
 - type: entity
   parent: RMCRotaryPhoneWallmount
   id: VehicleInteriorWallPhone
-  name: wall phone
+  name: Телефон Транспорту
   placement:
     mode: PlaceFree
   components:
