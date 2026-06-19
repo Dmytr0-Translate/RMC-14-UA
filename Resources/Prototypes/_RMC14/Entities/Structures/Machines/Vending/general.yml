@@ -52,6 +52,7 @@
         amount: 10
     - name: Журнали
       entries:
+      # Mriya start. Журнали "Хто я? Де я?"
       - id: MRMagazineWhoIWhereIN1
         amount: 10
       - id: MRMagazineWhoIWhereIN2
@@ -93,7 +94,8 @@
       - id: MRMagazineWhoIWhereIN20
         amount: 10
       - id: MRMagazineWhoIWhereIN21
-        amount: 10        
+        amount: 10
+      # Mriya end    
       - id: RMCMagazineBootsN160
         amount: 10
       - id: RMCMagazineBootsN07
