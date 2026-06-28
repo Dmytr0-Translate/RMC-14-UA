@@ -60,6 +60,7 @@
   priority: 3
   text: "/ServerInfo/Guidebook/_Sich/RMC14.xml"
   children:
+  - RMCMarineStructure
   - RMCGuideCommandRoles
   - RMCMedical
   - RMCGuideMarineCommunications
@@ -75,6 +76,13 @@
   - RMCGuideFood
   - RMCGuideDrinks
   - RMCGuideNewIcons
+
+- type: guideEntry # Створив Dmytr0-Translate
+  parent: Mriya
+  id: RMCMarineStructure
+  priority: 1
+  name: "Структура морської піхоти"
+  text: "/ServerInfo/Guidebook/_Sich/Guides/Marines/RMCMarineStructure.xml"
 
 - type: guideEntry # Перекладав Dmytr0-Translate
   parent: Mriya
