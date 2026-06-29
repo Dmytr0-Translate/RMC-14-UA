@@ -18,7 +18,7 @@
 
   ## Комбінації клавіш РМС14 
   - [color=yellow][bold][keybind="CMUniqueAction"][/bold][/color]: Дія зі зброєю (пересмикування цівки дробовика, відкривання патронника гранатомета)
-  - [color=yellow][bold][keybind="CMXenoWideSwing"][/bold][/color]: Широка атака ксеноморфа в ближньому бою.
+  - [color=yellow][bold][keybind="CMXenoWideSwing"][/bold][/color]: Направлена атака ксеноморфа в ближньому бою.
   - [color=yellow][bold][keybind="RMCActivateAttachableUnderbarrel"][/bold][/color]: Активація підствольного кріплення зброї.
   - [color=yellow][bold][keybind="RMCCycleFireMode"][/bold][/color]: Перемикання режиму стрільби.
   - [color=yellow][bold][keybind="CMHolsterPrimary"][/bold][/color]: Взяти або прибрати основний предмет.
