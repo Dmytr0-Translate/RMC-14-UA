@@ -570,7 +570,7 @@
 
     <ColorBox>
     <Box HorizontalAlignment="Left" Margin="4">
-      Військовий Кориспондент (ВК)
+      Військовий Кореспондент (ВК)
     </Box>
   </ColorBox>
 
@@ -624,7 +624,7 @@
 
         <ColorBox>
     <Box HorizontalAlignment="Left" Margin="4">
-      Корпоративний Охоронець (КО)
+      Корпоративний Охоронець (КОх)
     </Box>
   </ColorBox>
 
@@ -642,7 +642,7 @@
 
         <ColorBox>
     <Box HorizontalAlignment="Left" Margin="4">
-      Кориспондент (ПРЕСС)
+      Кореспондент (ПРЕСС)
     </Box>
   </ColorBox>
 
